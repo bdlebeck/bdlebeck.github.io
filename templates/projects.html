@@ -1,0 +1,19 @@
+<div class="content">
+	<h2>Favorite Projects</h2> 
+
+	<div>
+		{{ #items }}
+		<article class="" page="{{id}}" id="{{ id }}">
+			{{ projectTitleLong }}
+		</article>	
+		{{ /items }}
+	</div>
+</div>
+
+<script>
+	$( ".projects-container article" ).click(function() {
+		var item = this.getAttribute("page");
+		localStorage.setItem('current', item); 
+		window.location='details-project.html'
+	});	
+</script>

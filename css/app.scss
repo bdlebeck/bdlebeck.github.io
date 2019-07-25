@@ -1,0 +1,94 @@
+$background-color:	#ffffff;
+$primary: 			#14a8fc;
+$font: 				14px;
+$font-color: 		#555555;
+
+@import url('normalize.css');
+@import 'mixins';
+@import 'layout';
+@import 'design';
+@import 'details';
+
+
+html,
+body {
+	box-sizing: border-box;
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-size: 2.2rem;
+	margin: 0 0 2.0rem 0;
+}
+h2 {
+	font-size: 1.8rem;
+	margin: 0 0 2rem 0;
+
+}
+h3 {
+	font-size: 1.4rem;
+	margin: .5rem 0;
+}
+h4 {
+	font-size: 1.2rem;
+}
+h5 {
+	font-size: 1.0rem;	
+}
+h6 {
+	font-size: .9rem;	
+}
+
+a, a:visited, a:active {
+	color: $primary;
+	text-decoration: none;
+}
+
+a:hover {
+	color: darken($primary, 15%);
+	text-decoration: none;
+}
+
+.show {
+	display: block;
+	-webkit-animation: fadeIn .1s;
+    animation: fadeIn .1s;	
+}
+
+.hidden {
+	display: none;
+	-webkit-animation: fadeIn .1s;
+    animation: fadeIn .1s;	
+}
+
+
+
+
+.responsive {
+	width:100%; 
+	height: auto; 
+	max-width: 600px;
+}
+
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}  
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+.career__list {
+	margin: 0;
+	padding: 0;
+}
+
+.career__highlights {
+	webkit-animation: fadeIn .6s;
+	animation: fadeIn .6s;
+	display: inline-block;
+	vertical-align: top;
+
+	.career__screenshot {
+		max-width: 40%;
+	}
+}
+
+
+
+
+.pagination {
+	text-align: center;
+	.page {
+		background-color: $primary;
+		border: 0px solid darken($primary, 10%);
+		border-radius: 50%;
+		cursor: pointer;
+		display: inline-block;
+		margin: 0 .3rem;
+		width: 1.1rem;
+		height: 1.1rem;
+	}
+
+	.page:hover {
+		transform: scale(1.5);	
+		transition: all 200ms;		
+	}		
+
+	a.active {
+		background-color: #f3f3f3;
+		border: 0px solid blue;
+	}		
+}
+
+.pagination-container {
+	display: flex;
+	padding: 2rem;
+	width: 100%;
+
+	.home, .back, .next {
+		cursor: pointer;
+		opacity: 1;
+	}	
+
+	.next {
+		text-align: right;
+	}		
+}
+
+
+
+
+
+
+
+

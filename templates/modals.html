@@ -1,0 +1,11 @@
+{{ #projects }}
+	<div class="remodal" data-remodal-id="modal{{ id }}" role="dialog">
+		<button data-remodal-action="close" class="remodal-close"></button>
+		<h1>{{ projectTitleLong }}</h1>
+		<span>{{ date }}</span>
+		<div>
+			<p>{{ description }}</p>
+		</div>
+		<button data-remodal-action="confirm" class="remodal-confirm">Close</button>
+	</div>
+{{ /projects }}
