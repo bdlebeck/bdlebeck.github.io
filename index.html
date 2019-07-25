@@ -1,8 +1,93 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>Brian Lebeck - Github</title>
-</head>
-<body>
-<h1>Github homepage</h1>
-</body>
+	<head>
+	    <meta charset="utf-8" />
+	    <title>Brian Lebeck Resume</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	    <link rel="stylesheet" href="css/normalize.css">
+	    <link rel="stylesheet" href="css/app.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+	</head>
+	<body id="body" class="home">
+
+		<nav>
+			<ul class="navigation" role="navigation">
+				<li><a id="home-btn">Home</a></li>
+				<li><a id="strength-btn">Strengths</a></li>
+				<li><a id="career-btn">Career</a></li>
+				<li><a id="projects-btn">Projects</a></li>
+			</ul>
+		</nav>
+
+		<main>
+
+			<div id="section-home" class="scrollpage about-container">
+				<div class="content">
+					<ul class="">
+						<li>Brian Lebeck</li>
+						<li>Web|UI Designer</li>
+						<li>Portland, Oregon</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="section-skills" class="skills-container scrollpage"></div>
+			<div class="quote1-container">
+				<div class="content">
+					<p>"To create the HTML, CSS, and presentational JavaScript code that powers web products’ user interfaces."</p>
+				</div>
+			</div>				
+			<div id="section-career" class="scrollpage career-container"></div>
+			<div id="section-projects" class="scrollpage projects-container"></div>
+			<div class="quote2-container">
+					<div class="content">
+						<p>"To architect resilient CSS code with a focus on modularity, flexibility, compatibility, and extensibility."</p>
+					</div>
+				</div>			
+			<div id="section-education" class="scrollpage education-container"></div>
+
+
+		</main>
+
+	</body> 
+
+
+
+	<script type="text/javascript" src="node_modules/zepto/dist/zepto.min.js"></script>
+	<script type="text/javascript" src="node_modules/mustache/mustache.min.js" ></script>	
+	<script type="text/javascript" src="scripts/content.js" ></script>	
+	<script type="text/javascript" src="scripts/scripts.min.js" ></script>	
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js"></script>
+		
+	
+	<script>
+		var section1Btn = document.getElementById("home-btn"),
+				section2Btn = document.getElementById("strength-btn"),
+				section3Btn = document.getElementById("career-btn"),
+				section4Btn = document.getElementById("projects-btn");
+				section5Btn = document.getElementById("education-btn");
+
+		section1Btn.onclick = function() {
+			TweenLite.to(window, .3, {scrollTo:{y:"#section-home", offsetY:0, totalDuration: .3, autoKill:false}});
+		}
+
+		section2Btn.onclick = function() {
+			TweenLite.to(window, .3, {scrollTo:{y:"#section-skills", offsetY:0, totalDuration: .3, autoKill:false}});
+		}
+
+		section3Btn.onclick = function() {
+			TweenLite.to(window, .3, {scrollTo:{y:"#section-career", offsetY:0, totalDuration: .3, autoKill:false}});
+		}
+
+		section4Btn.onclick = function() {
+			TweenLite.to(window, .3, {scrollTo:{y:"#section-projects", offsetY:0, totalDuration: .3, autoKill:false}});
+		}	
+	
+	</script>	
+
 </html>
+
