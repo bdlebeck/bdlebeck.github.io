@@ -261,9 +261,9 @@ var education = {
 
 var skill = {
 	business: [
-		{ name : "Whiteboard/wireframe user workflow" },
 		{ name : "Business requirement mockups" },
-		{ name : "Clickable workflow prototypes" },
+		{ name : "Wireframe user workflow" },
+		{ name : "Dynamic prototypes" },
 		{ name : "UX discussion" },
 		{ name : "Agile story writing" }
 	],	
