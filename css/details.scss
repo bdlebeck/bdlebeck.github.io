@@ -1,36 +1,55 @@
-.career__list {
-	margin: 0;
-	padding: 0;
-}
+
 
 .career__highlights {
 	webkit-animation: fadeIn .6s;
 	animation: fadeIn .6s;
-	display: inline-block;
+	@include flexbox();
+	@include flex-direction(row);
+	@include flex-wrap(wrap);
 	vertical-align: top;
+	width: 70%;
+	margin: 0 auto;
+
+	> div {
+		padding: 2rem;
+	}
+
+	.career__screenshots {
+		max-width: 400px;
+	}
 
 	.career__screenshot {
-		max-width: 40%;
+		max-width: 100%;
+		min-width: 400px;
 	}
 }
 
 
+.pagination-container {
+	padding: 2rem;
+	text-align: center;
 
+	.home, .back, .next {
+		cursor: pointer;
+		display: inline;
+		opacity: 1;
+	}		
+}
 
 .pagination {
-	text-align: center;
-	.page {
+	display: inline;
+	a {
 		background-color: $primary;
 		border: 0px solid darken($primary, 10%);
 		border-radius: 50%;
 		cursor: pointer;
 		display: inline-block;
 		margin: 0 .3rem;
-		width: 1.1rem;
-		height: 1.1rem;
+		width: 15px;
+		height: 15px;
 	}
 
-	.page:hover {
+	a:hover {
 		transform: scale(1.5);	
 		transition: all 200ms;		
 	}		
@@ -40,23 +59,6 @@
 		border: 0px solid blue;
 	}		
 }
-
-.pagination-container {
-	display: flex;
-	padding: 2rem;
-	width: 100%;
-
-	.home, .back, .next {
-		cursor: pointer;
-		opacity: 1;
-	}	
-
-	.next {
-		text-align: right;
-	}		
-}
-
-
 
 
 

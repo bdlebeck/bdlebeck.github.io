@@ -1,15 +1,18 @@
-<div class="content">
+<div class="container">
 	<h2>Career History</h2>
-	<div>
+	<div class="content">
 		{{#items}}
-		<article class="" page="{{id}}" id="career{{ id }}">
-			{{ jobTitle }} - {{ company }} - {{ date }}
+		<article page="{{id}}" id="career{{ id }}">
+			<span class="title">{{ jobTitle }}</span> 
+			<span class="company">{{ company }}</span> 
+			<span class="date"> {{ date }}</span>
 		</article>
 		{{/items}}
 	</div>
 </div>
+
 <script>
-	$( ".career-container article" ).click(function() {
+	$( ".career article" ).click(function() {
 		var item = this.getAttribute("page");
 		localStorage.setItem('current', item); 
 		window.location='details-career.html'

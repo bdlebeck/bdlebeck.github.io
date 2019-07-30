@@ -1,17 +1,18 @@
-<div class="content">
+<div class="container">
 	<h2>Favorite Projects</h2> 
-
-	<div>
+	<div class="content">
 		{{ #items }}
-		<article class="" page="{{id}}" id="{{ id }}">
-			{{ projectTitleLong }}
+		<article page="{{id}}" id="{{ id }}">
+				<span class="title">{{ title }}</span> 
+				<span class="company">{{ company }}</span> 
+				<span class="date"> {{ date }}</span>
 		</article>	
 		{{ /items }}
 	</div>
 </div>
 
 <script>
-	$( ".projects-container article" ).click(function() {
+	$( ".projects article" ).click(function() {
 		var item = this.getAttribute("page");
 		localStorage.setItem('current', item); 
 		window.location='details-project.html'

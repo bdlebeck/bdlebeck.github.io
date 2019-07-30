@@ -98,8 +98,8 @@ function getCircles() {
 	var current = getCurrent();
 	var total = getTotal() +1;
 	for (i=1;i<total;i++) {  
-		var page = $("<a class='page' page='"+i+"' id='page"+i+"'></a>");
-		var activepage = $("<a class='page active' page='"+i+"' id='page"+i+"'></a>");
+		var page = $("<a class='' page='"+i+"' id='page"+i+"'></a>");
+		var activepage = $("<a class='active' page='"+i+"' id='page"+i+"'></a>");
 
 		if(i === current){
 			$('#pages').append(activepage);

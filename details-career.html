@@ -11,62 +11,54 @@
 	</head>
 	<body class="details">
 
-		<main style="width: 1200px;">
-			<div class="pagination-container">
-				<div class="home column"><i class="fas fa-home"></i></div>
-				<div class="back column"><i class="fas fa-arrow-alt-circle-left"></i></div>
-				<div class="pagination">
-					<div id="pages">
-					</div>
-				</div>
-				<div class="next column"><i class="fas fa-arrow-alt-circle-right"></i></div>
-			</div>			
+		<div class="pagination-container">
+			<span class="home"><i class="fas fa-home"></i></span>
+			<span class="back"><i class="fas fa-arrow-alt-circle-left"></i></span>
+			<div  id="pages" class="pagination"></div>
+			<span class="next"><i class="fas fa-arrow-alt-circle-right"></i></span>
+		</div>
+
+		<main>
 			<section id="details"></section>
 		</main>
 
 		<script id="template" type="x-tmpl-mustache">
-			<ul class="career__list">
+
 			{{#items}}
-				<li id="{{id}}" class="career__highlights hidden">
+				<div id="{{id}}" class="career__highlights hidden">
 
-					<div class="row flex-wrap">
-						<div class="column"> 
-							<h3>
-								{{ jobTitle }} - {{ company }} - {{ date }}
-							</h3>							
-							<p>
-								{{ description }}
-							</p>	
-							
-							<h3>Accomplishments</h3>
-							<ul>
-							{{#accomplishments}}
-								<li>{{{ accomplishment }}}</li>
-							{{/accomplishments}}
-							</ul>	
-							
-							<h3>Role</h3>
-							<ul class=">
-							{{ #duties }}
-								<li class="career__duties__item">{{ duty }}</li>
-							{{ /duties }}
-							</ul>							
+					<div class="career__screenshots">
+						{{ #screenshots }}
+							<img src="images/{{ url }}" class="career__screenshot"/>
+						{{ /screenshots }}
+					</div>
+					<div> 
+						<h3>
+							{{ jobTitle }} - {{ company }} - {{ date }}
+						</h3>							
+						<p>
+							{{ description }}
+						</p>	
+						
+						<h3>Accomplishments</h3>
+						<ul>
+						{{#accomplishments}}
+							<li>{{{ accomplishment }}}</li>
+						{{/accomplishments}}
+						</ul>	
+						
+						<h3>Role</h3>
+						<ul class=">
+						{{ #duties }}
+							<li class="">{{ duty }}</li>
+						{{ /duties }}
+						</ul>							
 
-						</div>					
-	
 					</div>
 
-					<div class="row flex-nowrap flex-space-between">
-						<div class="career__screenshots column">
-							{{ #screenshots }}
-								<img src="images/{{ url }}" class="career__screenshot"/>
-							{{ /screenshots }}
-						</div>				
-					</div>
-
-				</li>
+				</div>
 			{{/items}}
-			</ul>
+
 		</script>
 
 

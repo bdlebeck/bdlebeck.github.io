@@ -11,44 +11,37 @@
 	</head>
 	<body class="details">
 
-		<main style="width: 1200px;">
-			<div class="pagination-container">
+		<div class="pagination-container">
+			<span class="home"><i class="fas fa-home"></i></span>
+			<span class="back"><i class="fas fa-arrow-alt-circle-left"></i></span>
+			<div  id="pages" class="pagination"></div>
+			<span class="next"><i class="fas fa-arrow-alt-circle-right"></i></span>
+		</div>
 
-				<div class="home column"><i class="fas fa-home"></i></div>
-
-				<div class="pagination">
-					<div id="pages">
-					</div>
-				</div>
-
-				<div class="next column"><i class="fas fa-arrow-alt-circle-right"></i></div>
-
-			</div>			
+		<main>			
 			<section id="details"></section>
 		</main>			
-
-
 
 		<script id="template" type="x-tmpl-mustache">
 			{{#items}}
 				<div id="{{id}}" class="career__highlights hidden">
 					
-					<h1 class="career__title">
+					<h2 class="">
 						{{ title }}
-					</h1>							
-					<h3 class="career__date">
+					</h2>							
+					<h3 class="">
 						{{ company }} {{ date }}
 					</h3>					
 
-					<div class="row flex-wrap">
+					<div class="">
 
-						<div class="career__overview column"> 							
+						<div class=""> 							
 							<p class="career__description">
 								{{{ description }}}
-							</p>							
+							</p>	
 						</div>
 
-						<div class="career__screenshots column hidden">
+						<div class="career__screenshots hidden">
 							{{ #screenshots }}
 							<span class="">
 								<img src="images/{{ url }}" class="career__screenshot"/>
@@ -56,11 +49,11 @@
 							{{ /screenshots }}
 						</div>
 
-						<div class="career__duties column">
-							<h3 class="career__duties__title">Duties</h3>
-							<ul class="career__duties__list">
+						<div class="">
+							<h3 class="">Duties</h3>
+							<ul class="">
 							{{ #duties }}
-								<li class="career__duties__item">{{ duty }}</li>
+								<li class="">{{ duty }}</li>
 							{{ /duties }}
 							</ul>
 						</div>
