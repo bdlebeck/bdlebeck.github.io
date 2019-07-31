@@ -189,25 +189,27 @@ nav {
     background-color: gold;
     color: black; }
 
-.page {
+.area {
   background-color: #ffffff;
   font-size: 1.0rem;
   padding: 1rem 0; }
-  .page .content {
+  .area h2 {
+    margin: 1rem 0; }
+  .area .content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem 0; }
-    .page .content h4 {
+    .area .content h4 {
       font-weight: 600; }
-    .page .content div {
+    .area .content div {
       margin-bottom: 2rem; }
-  .page article {
+  .area article {
     cursor: pointer;
     display: block;
     padding: .5rem .3rem; }
-  .page article:hover {
+  .area article:hover {
     background-color: royalblue;
     color: #ffffff; }
 
@@ -274,16 +276,17 @@ nav {
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  vertical-align: top;
-  width: 70%;
-  margin: 0 auto; }
+  vertical-align: top; }
   .career__highlights > div {
     padding: 2rem; }
-  .career__highlights .career__screenshots {
-    max-width: 400px; }
-  .career__highlights .career__screenshot {
-    max-width: 100%;
-    min-width: 400px; }
+  .career__highlights .career__screenshots .career__screenshot {
+    margin: 20px 30px 0 0;
+    width: 400px;
+    object-fit: contain;
+    align-self: flex-start; }
+  .career__highlights .career__content {
+    min-width: 300px;
+    max-width: 500px; }
 
 .pagination-container {
   padding: 2rem;

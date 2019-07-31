@@ -51,12 +51,14 @@ nav {
   }
 }
 
-.page {
+.area {
 	background-color: #ffffff;
 	font-size: 1.0rem;
 	padding: 1rem 0;
 
-	h2 {}	
+	h2 {
+		margin: 1rem 0;
+	}	
 
 	.content {
 		display: flex;

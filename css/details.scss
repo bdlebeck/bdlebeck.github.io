@@ -6,22 +6,27 @@
 	@include flexbox();
 	@include flex-direction(row);
 	@include flex-wrap(wrap);
+
 	vertical-align: top;
-	width: 70%;
-	margin: 0 auto;
 
 	> div {
 		padding: 2rem;
 	}
 
 	.career__screenshots {
-		max-width: 400px;
+		.career__screenshot {
+			margin: 20px 30px 0 0;
+			width: 400px;
+			object-fit: contain;
+			align-self: flex-start;
+		}	
+	}
+	.career__content {
+		min-width: 300px;
+		max-width: 500px;
 	}
 
-	.career__screenshot {
-		max-width: 100%;
-		min-width: 400px;
-	}
+
 }
 
 

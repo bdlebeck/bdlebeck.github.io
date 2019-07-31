@@ -26,39 +26,33 @@
 			{{#items}}
 				<div id="{{id}}" class="career__highlights hidden">
 					
-					<h2 class="">
-						{{ title }}
-					</h2>							
-					<h3 class="">
-						{{ company }} {{ date }}
-					</h3>					
+					<div class="career__screenshots hidden">
+						{{ #screenshots }}
+							<img src="images/{{ url }}" class="career__screenshot"/>
+						{{ /screenshots }}
+					</div>				
 
-					<div class="">
+					<div> 		
+						<h2>
+							{{ title }}
+						</h2>							
+						<h3>
+							{{ company }} {{ date }}
+						</h3>								
 
-						<div class=""> 							
-							<p class="career__description">
-								{{{ description }}}
-							</p>	
-						</div>
+						<p class="career__description">
+							{{{ description }}}
+						</p>	
 
-						<div class="career__screenshots hidden">
-							{{ #screenshots }}
-							<span class="">
-								<img src="images/{{ url }}" class="career__screenshot"/>
-							</span>
-							{{ /screenshots }}
-						</div>
-
-						<div class="">
-							<h3 class="">Duties</h3>
-							<ul class="">
-							{{ #duties }}
-								<li class="">{{ duty }}</li>
-							{{ /duties }}
-							</ul>
-						</div>
-
+						<h3>Duties</h3>
+						<ul>
+						{{ #duties }}
+							<li class="">{{ duty }}</li>
+						{{ /duties }}
+						</ul>
 					</div>
+
+
 				</div>
 			{{/items}}
 		</script>
