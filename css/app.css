@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("normalize.css");
 .edge--bottom {
   position: relative;
@@ -217,6 +218,10 @@ nav {
   width: 70%;
   margin: .5rem auto; }
 
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    margin: .5rem auto; } }
 .about ul {
   font-size: 1.8rem;
   margin: 0;
@@ -236,27 +241,56 @@ nav {
 .projects .content {
   flex-direction: column; }
 
-.quote1-container,
-.quote2-container {
+.quote1,
+.quote2 {
   background-color: #333333;
   color: #ffffff;
-  padding: 1rem;
+  padding: .5rem;
   margin: 2rem 0; }
-  .quote1-container .content,
-  .quote2-container .content {
-    margin: 0 auto;
-    width: 70%; }
-    .quote1-container .content p,
-    .quote2-container .content p {
-      font-family: 'Lora', serif;
-      font-size: 1.5em;
-      margin: 0; }
-
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-  .quote1-container .content,
-  .quote2-container .content {
+  .quote1 .content .quotation,
+  .quote2 .content .quotation {
+    font-size: 20px;
+    quotes: "“" "”" "‘" "’";
+    line-height: 1.4; }
+  .quote1 .content .quotation:before,
+  .quote2 .content .quotation:before {
+    content: open-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: -10px;
+    position: relative;
+    top: 30px;
+    color: #ccc;
+    font-size: 3em; }
+  .quote1 .content .quotation::after,
+  .quote2 .content .quotation::after {
+    content: close-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: 10px;
+    position: relative;
+    top: 35px;
+    color: #ccc;
+    font-size: 3em; }
+  .quote1 .content footer,
+  .quote2 .content footer {
     margin: 0;
-    width: 100%; } }
+    text-align: right;
+    font-size: 1.5em;
+    font-style: italic; }
+  .quote1 .content p,
+  .quote2 .content p {
+    font-family: 'Lora', serif;
+    font-size: 1.5em;
+    margin: 0; }
+
+@media only screen and (max-width: 600px) {
+  .quote1 .content,
+  .quote2 .content {
+    margin: 0;
+    width: 90%; } }
 .career__highlights {
   webkit-animation: fadeIn .6s;
   animation: fadeIn .6s;
