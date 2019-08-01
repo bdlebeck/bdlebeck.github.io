@@ -10,7 +10,7 @@
 	vertical-align: top;
 
 	> div {
-		padding: 2rem;
+		padding: 1rem;
 	}
 
 	.career__screenshots {
@@ -31,7 +31,7 @@
 
 
 .pagination-container {
-	padding: 2rem;
+	padding: 1rem;
 	text-align: center;
 
 	.home, .back, .next {
@@ -44,14 +44,8 @@
 .pagination {
 	display: inline;
 	a {
-		background-color: $primary;
-		border: 0px solid darken($primary, 10%);
-		border-radius: 50%;
 		cursor: pointer;
-		display: inline-block;
 		margin: 0 .3rem;
-		width: 15px;
-		height: 15px;
 	}
 
 	a:hover {
@@ -60,8 +54,6 @@
 	}		
 
 	a.active {
-		background-color: #f3f3f3;
-		border: 0px solid blue;
 	}		
 }
 

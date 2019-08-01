@@ -70,8 +70,12 @@ $( ".page" ).click(function() {
 	//Update Pagination
 	var currentPage = document.getElementById('page'+current);
 	var gotoPage = document.getElementById('page'+gotopage);
-	currentPage.classList.remove("active");
-	gotoPage.classList.add("active");	
+
+	currentPage.classList.remove("far");
+	currentPage.classList.add("fas");
+
+	gotoPage.classList.remove("fas");
+	gotoPage.classList.add("far");	
 
 	localStorage.setItem('current', gotopage);	
 });
@@ -95,8 +99,8 @@ function getCircles() {
 	var current = getCurrent();
 	var total = getTotal() +1;
 	for (i=1;i<total;i++) {  
-		var page = $("<a class='page' page='"+i+"' id='page"+i+"'></a>");
-		var activepage = $("<a class='active page' page='"+i+"' id='page"+i+"'></a>");
+		var page = $("<a class='page' page='"+i+"'><i id='page"+i+"' class='fas fa-circle fa-2x'></i></a>");
+		var activepage = $("<a class='active page' page='"+i+"'><i id='page"+i+"' class='far fa-circle fa-2x'></i></a>");
 
 		if(i === current){
 			$('#pages').append(activepage);
@@ -146,12 +150,18 @@ function updatePagination(e) {
 	var nextPage = document.getElementById('page'+next);
 
 	if (direction == 'next') {
-		currentPage.classList.remove("active");
-		nextPage.classList.add("active");
+		currentPage.classList.remove("far");
+		currentPage.classList.add("fas");
+	
+		nextPage.classList.remove("fas");
+		nextPage.classList.add("far");			
 	}
 	else if (direction == 'back') {
-		currentPage.classList.remove("active");
-		previousPage.classList.add("active");
+		currentPage.classList.remove("far");
+		currentPage.classList.add("fas");
+	
+		previousPage.classList.remove("fas");
+		previousPage.classList.add("far");		
 	}
 	else {
 		currentPage.classList.add("active");

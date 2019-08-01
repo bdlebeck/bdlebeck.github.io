@@ -309,7 +309,7 @@ nav {
   flex-wrap: wrap;
   vertical-align: top; }
   .career__highlights > div {
-    padding: 2rem; }
+    padding: 1rem; }
   .career__highlights .career__screenshots .career__screenshot {
     margin: 20px 30px 0 0;
     width: 400px;
@@ -320,7 +320,7 @@ nav {
     max-width: 500px; }
 
 .pagination-container {
-  padding: 2rem;
+  padding: 1rem;
   text-align: center; }
   .pagination-container .home, .pagination-container .back, .pagination-container .next {
     cursor: pointer;
@@ -330,20 +330,11 @@ nav {
 .pagination {
   display: inline; }
   .pagination a {
-    background-color: #14a8fc;
-    border: 0px solid #038cda;
-    border-radius: 50%;
     cursor: pointer;
-    display: inline-block;
-    margin: 0 .3rem;
-    width: 15px;
-    height: 15px; }
+    margin: 0 .3rem; }
   .pagination a:hover {
     transform: scale(1.5);
     transition: all 200ms; }
-  .pagination a.active {
-    background-color: #f3f3f3;
-    border: 0px solid blue; }
 
 html,
 body {
