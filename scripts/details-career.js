@@ -71,11 +71,11 @@ $( ".page" ).click(function() {
 	var currentPage = document.getElementById('page'+current);
 	var gotoPage = document.getElementById('page'+gotopage);
 
-	currentPage.classList.remove("far");
-	currentPage.classList.add("fas");
+	currentPage.classList.remove("fa-dot-circle");
+	currentPage.classList.add("fa-circle");
 
-	gotoPage.classList.remove("fas");
-	gotoPage.classList.add("far");	
+	gotoPage.classList.remove("fa-circle");
+	gotoPage.classList.add("fa-dot-circle");	
 
 	localStorage.setItem('current', gotopage);	
 });
@@ -100,7 +100,7 @@ function getCircles() {
 	var total = getTotal() +1;
 	for (i=1;i<total;i++) {  
 		var page = $("<a class='page' page='"+i+"'><i id='page"+i+"' class='fas fa-circle fa-2x'></i></a>");
-		var activepage = $("<a class='active page' page='"+i+"'><i id='page"+i+"' class='far fa-circle fa-2x'></i></a>");
+		var activepage = $("<a class='active page' page='"+i+"'><i id='page"+i+"' class='fas fa-dot-circle fa-2x'></i></a>");
 
 		if(i === current){
 			$('#pages').append(activepage);
@@ -150,18 +150,18 @@ function updatePagination(e) {
 	var nextPage = document.getElementById('page'+next);
 
 	if (direction == 'next') {
-		currentPage.classList.remove("far");
-		currentPage.classList.add("fas");
+		currentPage.classList.remove("fa-dot-circle");
+		currentPage.classList.add("fa-circle");
 	
-		nextPage.classList.remove("fas");
-		nextPage.classList.add("far");			
+		nextPage.classList.remove("fa-circle");
+		nextPage.classList.add("fa-dot-circle");			
 	}
 	else if (direction == 'back') {
-		currentPage.classList.remove("far");
-		currentPage.classList.add("fas");
+		currentPage.classList.remove("fa-dot-circle");
+		currentPage.classList.add("fa-circle");
 	
-		previousPage.classList.remove("fas");
-		previousPage.classList.add("far");		
+		previousPage.classList.remove("fa-circle");
+		previousPage.classList.add("fa-dot-circle");		
 	}
 	else {
 		currentPage.classList.add("active");

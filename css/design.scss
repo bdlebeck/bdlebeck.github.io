@@ -51,13 +51,17 @@ nav {
   }
 }
 
+
+.container {
+	width: 70%;
+	margin: .5rem auto;
+}
+
 .area {
-	background-color: #ffffff;
-	font-size: 1.0rem;
-	padding: 1rem 0;
+	margin-bottom: 4rem;
 
 	h2 {
-		margin: 1rem 0;
+		margin-bottom: .5rem;
 	}	
 
 	.content {
@@ -65,7 +69,7 @@ nav {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;	
-		padding: 1rem 0;
+		padding: 0;
 
 		h4 {
 			font-weight: 600;
@@ -78,17 +82,13 @@ nav {
 	article {
 		cursor: pointer;
 		display: block;
-		padding: .5rem .3rem;
+		padding: .6rem .6rem;
+		border-radius: 6px;
 	}
 	article:hover {
 		background-color: royalblue;
 		color: #ffffff;
 	}	
-}
-
-.container {
-	width: 70%;
-	margin: .5rem auto;
 }
 
 @media only screen and (max-width: 600px) {
@@ -172,9 +172,11 @@ nav {
 			font-size: 3em;
 		  }
 		  footer{
+			display: block;
 			margin:0;
 			text-align: right;
-			font-size: 1.5em;
+			font-family: 'Lora', serif;
+			font-size: 1.0em;
 			font-style: italic;
 		  }
 
