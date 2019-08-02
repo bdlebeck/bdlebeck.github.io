@@ -122,11 +122,17 @@ nav {
 	.content {
 		flex-direction: column;
 	}	
+	article {
+		font-size: 1.2rem;
+	}
 }
 
 .projects {
 	.content {
 		flex-direction: column;
+	}	
+	article {
+		font-size: 1.2rem;
 	}	
 }
 
@@ -139,51 +145,44 @@ nav {
 	background-color: #333333;
 	color: #ffffff;
 	padding: .5rem;
-	margin: 2rem 0;
+	margin-bottom: 4rem;
 
 	.content {
-
+		
 		.quotation{
-			font-size: 20px;
+			font-family: 'Lora', serif;
+			font-size: 1.4rem;
 			quotes: "\201C""\201D""\2018""\2019";
 			line-height: 1.4;
-		  }
-		  
-		  .quotation:before {
-			content: open-quote;
+			margin: 0;
+		}
+		.quotation:before, .quotation:after  {
 			display: inline;
 			height: 0;
+			line-height: 0;
+			position: relative;
+			color: rgb(126, 126, 126);
+			font-size: 4rem;
+		}
+		.quotation:before {
+			content: open-quote;
 			line-height: 0;
 			left: -10px;
-			position: relative;
 			top: 30px;
-			color: #ccc;
-			font-size: 3em;
-		  }
-		  .quotation::after {
+		}		  
+		.quotation::after {
 			content: close-quote;
-			display: inline;
-			height: 0;
 			line-height: 0;
 			left: 10px;
-			position: relative;
 			top: 35px;
-			color: #ccc;
-			font-size: 3em;
-		  }
-		  footer{
+		}		  
+		footer{
 			display: block;
 			margin:0;
 			text-align: right;
 			font-family: 'Lora', serif;
-			font-size: 1.0em;
+			font-size: 1.0rem;
 			font-style: italic;
-		  }
-
-		p {
-			font-family: 'Lora', serif;
-			font-size: 1.5em;
-			margin: 0;
 		}
 	}
 

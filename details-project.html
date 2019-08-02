@@ -15,7 +15,7 @@
 			<span class="back"><i class="fas fa-arrow-alt-circle-left fa-2x"></i></span>
 			<div id="pages" class="pagination"></div>
 			<span class="next"><i class="fas fa-arrow-alt-circle-right fa-2x"></i></span>
-			<span class="home" style="float: right"><i class="fas fa-times-circle fa-3x"></i></span>
+			<span class="home" style="float: left"><i class="fas fa-times-circle fa-2x"></i></span>
 		</div>
 
 		<main>			
@@ -26,7 +26,7 @@
 			{{#items}}
 				<div id="{{id}}" class="career__highlights hidden">
 					
-					<div class="career__screenshots hidden">
+					<div class="career__screenshots">
 						{{ #screenshots }}
 							<img src="images/{{ url }}" class="career__screenshot"/>
 						{{ /screenshots }}
@@ -34,20 +34,16 @@
 
 					<div> 		
 						<h2>
-							{{ title }}
-						</h2>							
-						<h3>
-							{{ company }} {{ date }}
-						</h3>								
-
-						<p class="career__description">
+							{{ title }} {{ company }} {{ date }}
+						</h2>														
+						<p>
 							{{{ description }}}
 						</p>	
 
 						<h3>Duties</h3>
 						<ul>
 						{{ #duties }}
-							<li class="">{{ duty }}</li>
+							<li>{{ duty }}</li>
 						{{ /duties }}
 						</ul>
 					</div>

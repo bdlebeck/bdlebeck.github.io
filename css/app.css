@@ -236,56 +236,56 @@ nav {
 
 .career .content {
   flex-direction: column; }
+.career article {
+  font-size: 1.2rem; }
 
 .projects .content {
   flex-direction: column; }
+.projects article {
+  font-size: 1.2rem; }
 
 .quote1,
 .quote2 {
   background-color: #333333;
   color: #ffffff;
   padding: .5rem;
-  margin: 2rem 0; }
+  margin-bottom: 4rem; }
   .quote1 .content .quotation,
   .quote2 .content .quotation {
-    font-size: 20px;
+    font-family: 'Lora', serif;
+    font-size: 1.4rem;
     quotes: "“" "”" "‘" "’";
-    line-height: 1.4; }
+    line-height: 1.4;
+    margin: 0; }
+  .quote1 .content .quotation:before, .quote1 .content .quotation:after,
+  .quote2 .content .quotation:before,
+  .quote2 .content .quotation:after {
+    display: inline;
+    height: 0;
+    line-height: 0;
+    position: relative;
+    color: #7e7e7e;
+    font-size: 4rem; }
   .quote1 .content .quotation:before,
   .quote2 .content .quotation:before {
     content: open-quote;
-    display: inline;
-    height: 0;
     line-height: 0;
     left: -10px;
-    position: relative;
-    top: 30px;
-    color: #ccc;
-    font-size: 3em; }
+    top: 30px; }
   .quote1 .content .quotation::after,
   .quote2 .content .quotation::after {
     content: close-quote;
-    display: inline;
-    height: 0;
     line-height: 0;
     left: 10px;
-    position: relative;
-    top: 35px;
-    color: #ccc;
-    font-size: 3em; }
+    top: 35px; }
   .quote1 .content footer,
   .quote2 .content footer {
     display: block;
     margin: 0;
     text-align: right;
     font-family: 'Lora', serif;
-    font-size: 1.0em;
+    font-size: 1.0rem;
     font-style: italic; }
-  .quote1 .content p,
-  .quote2 .content p {
-    font-family: 'Lora', serif;
-    font-size: 1.5em;
-    margin: 0; }
 
 @media only screen and (max-width: 600px) {
   .quote1 .content,
@@ -304,31 +304,36 @@ nav {
   -moz-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 100%;
   vertical-align: top; }
   .career__highlights > div {
     padding: 1rem; }
   .career__highlights .career__screenshots .career__screenshot {
     margin: 20px 30px 0 0;
-    width: 400px;
+    width: 500px;
     object-fit: contain;
     align-self: flex-start; }
   .career__highlights .career__content {
-    min-width: 300px;
-    max-width: 500px; }
+    /*max-width: 500px;*/
+    font-size: 1.4rem; }
 
+@media only screen and (max-width: 600px) {
+  .career__highlights {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
 .pagination-container {
   padding: 1rem;
   text-align: center; }
   .pagination-container .home, .pagination-container .back, .pagination-container .next {
+    color: #024c76;
     cursor: pointer;
     display: inline;
     opacity: 1; }
   .pagination-container .home {
-    color: #f3f3f3; }
+    color: #505050; }
 
 .pagination {
   display: inline; }
@@ -338,6 +343,8 @@ nav {
   .pagination a:hover {
     transform: scale(1.5);
     transition: all 200ms; }
+  .pagination .active {
+    color: #79cdfd; }
 
 html,
 body {
