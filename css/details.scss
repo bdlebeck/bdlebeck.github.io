@@ -4,27 +4,21 @@
 	webkit-animation: fadeIn .6s;
 	animation: fadeIn .6s;
 	@include flexbox();
-	@include flex-direction(row);
+	@include flex-direction(column);
 	margin: 0 auto;
 	max-width: 100%;
-
 	vertical-align: top;
 
-	> div {
-		padding: 1rem;
-	}
-
 	.career__screenshots {
+		margin: 4rem auto;
 		.career__screenshot {
-			margin: 20px 30px 0 0;
-			width: 500px;
-			object-fit: contain;
-			align-self: flex-start;
+			
 		}	
 	}
 	.career__content {
-		/*max-width: 500px;*/
 		font-size: 1.4rem;
+		margin: 0 auto;
+		width: 800px;
 	}
 }
 
@@ -36,17 +30,19 @@
 
 
 .pagination-container {
-	padding: 1rem;
-	text-align: center;
+	background-color: #333333;
+	@include flexbox();
+	@include flex-direction(row);	
+	@include justify-content(space-between);	
+	@include align-items(center);
+	padding: .5rem;
 
 	.home, .back, .next {
-		color: darken($primary, 30%);
+		color: #ffffff;
 		cursor: pointer;
 		display: inline;
-		opacity: 1;
 	}	
-	.home {
-		color: #505050;
+	.home {;
 	}			
 }
 
@@ -63,7 +59,7 @@
 	}		
 
 	.active {
-		color: lighten($primary, 20%);
+		color: lighten($primary, 50%);
 	}		
 }
 

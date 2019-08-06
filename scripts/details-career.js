@@ -101,8 +101,8 @@ function getCircles() {
 	var current = getCurrent();
 	var total = getTotal() +1;
 	for (i=1;i<total;i++) {  
-		var page = $("<a class='page' page='"+i+"'><i id='page"+i+"' class='fas fa-circle fa-2x'></i></a>");
-		var activepage = $("<a class='page' page='"+i+"'><i id='page"+i+"' class='fas fa-dot-circle fa-2x active'></i></a>");
+		var page = $("<a class='page' page='"+i+"'><i id='page"+i+"' class='fas fa-circle'></i></a>");
+		var activepage = $("<a class='page' page='"+i+"'><i id='page"+i+"' class='fas fa-dot-circle active'></i></a>");
 
 		if(i === current){
 			$('#pages').append(activepage);

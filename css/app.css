@@ -128,22 +128,6 @@
 .-green {
   background: #5e9b42; }
 
-.block {
-  color: #fff;
-  font-family: 'Fira Sans', sans-serif;
-  margin: 0 0 200px;
-  padding: 20% 20px;
-  text-align: center; }
-
-h1 {
-  font-size: 32px;
-  font-weight: 500; }
-
-p {
-  font-size: 14px;
-  font-weight: 300;
-  margin-top: 0.5em; }
-
 body {
   background-color: #ffffff; }
 
@@ -300,23 +284,19 @@ nav {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: row;
-  -moz-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 0 auto;
   max-width: 100%;
   vertical-align: top; }
-  .career__highlights > div {
-    padding: 1rem; }
-  .career__highlights .career__screenshots .career__screenshot {
-    margin: 20px 30px 0 0;
-    width: 500px;
-    object-fit: contain;
-    align-self: flex-start; }
+  .career__highlights .career__screenshots {
+    margin: 4rem auto; }
   .career__highlights .career__content {
-    /*max-width: 500px;*/
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    margin: 0 auto;
+    width: 800px; }
 
 @media only screen and (max-width: 600px) {
   .career__highlights {
@@ -325,15 +305,31 @@ nav {
     -ms-flex-direction: column;
     flex-direction: column; } }
 .pagination-container {
-  padding: 1rem;
-  text-align: center; }
+  background-color: #333333;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: .5rem; }
   .pagination-container .home, .pagination-container .back, .pagination-container .next {
-    color: #024c76;
+    color: #ffffff;
     cursor: pointer;
-    display: inline;
-    opacity: 1; }
-  .pagination-container .home {
-    color: #505050; }
+    display: inline; }
 
 .pagination {
   display: inline; }
@@ -344,7 +340,7 @@ nav {
     transform: scale(1.5);
     transition: all 200ms; }
   .pagination .active {
-    color: #79cdfd; }
+    color: white; }
 
 html,
 body {
