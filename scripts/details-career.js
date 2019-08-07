@@ -93,7 +93,7 @@ function getNext() {
 }
 
 function getTotal() {
-	var total = parseInt(document.querySelectorAll('.career__highlights').length);
+	var total = parseInt(document.querySelectorAll('.details-highlights').length);
 	return total;
 }
 

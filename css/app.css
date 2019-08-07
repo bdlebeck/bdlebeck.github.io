@@ -276,7 +276,7 @@ nav {
   .quote2 .content {
     margin: 0;
     width: 90%; } }
-.career__highlights {
+.details-highlights {
   webkit-animation: fadeIn .6s;
   animation: fadeIn .6s;
   display: -webkit-box;
@@ -284,26 +284,34 @@ nav {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0 auto;
-  max-width: 100%;
-  vertical-align: top; }
-  .career__highlights .career__screenshots {
-    margin: 4rem auto; }
-  .career__highlights .career__content {
-    font-size: 1.4rem;
-    margin: 0 auto;
-    width: 800px; }
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+  .details-highlights .details-screenshots {
+    margin: 2rem;
+    max-width: 600px; }
+    .details-highlights .details-screenshots .career__screenshot {
+      min-width: 300px;
+      max-width: 100%;
+      height: auto; }
+  .details-highlights .details-content {
+    max-width: 400px;
+    font-size: 1.0rem;
+    margin: 2rem; }
+    .details-highlights .details-content h3 {
+      font-size: 1.1rem;
+      font-weight: 600px;
+      margin: 0; }
 
 @media only screen and (max-width: 600px) {
-  .career__highlights {
+  .details-highlights {
     -webkit-flex-direction: column;
     -moz-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column; } }
+    flex-direction: column; }
+    .details-highlights .details-content {
+      max-width: 100%; } }
 .pagination-container {
   background-color: #333333;
   display: -webkit-box;

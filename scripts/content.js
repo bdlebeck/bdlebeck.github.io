@@ -10,9 +10,12 @@ var career = {
 			description : "I am currently working at Surescripts as a web/frontend developer on Agile Team 12.  Since starting, I have completed three projects creating software from concept to production.  From mocking up business requirements to working on the front-end code in development.  Surescripts delivers nearly two billion e-prescriptions annually.",			
 
 			accomplishments: [
-				{ "accomplishment" : "Frontend designer on the software engineering team that produced Surescript's <a href='https://surescripts.com/inform-care-decisions/insights-alerts/' target='new'>Medication Management for Adherence</a> and <a href='http://surescripts.com/enhance-prescribing/' target='new'>Specialty Patient Enrollment</a>." },
-				{ "accomplishment" : "Design and development of dynamic HTML/JS software prototypes demoed to leading national pharmacy chains and health insurance companies." },
-				{ "accomplishment" : "Member of the UI Line Architecture Group in charge of designing UI components for a consistent look and feel across products." }
+				{ "accomplishment" : "Built shared SCSS/CSS package to style themable components across multiple products." },
+				{ "accomplishment" : "Member of the UI Architecture Team in charge of implementing consistent UI." },
+				{ "accomplishment" : "Worked between the product owner and development team to translate business requirements into mockups and prototypes." },
+				{ "accomplishment" : "Development of dynamic html/javascript prototypes demoed to national pharmacy chains and leading electronic health records (EHR) companies." },
+				{ "accomplishment" : "Overhauled and updated several products from Bootstrap 3.x to 4.x." },
+				{ "accomplishment" : "Implemented front-end to adhere to corporate styleguide for several Surescripts products." }
 			],
 			duties: [
 				{ "duty" : "HTML, CSS3 architecture" },

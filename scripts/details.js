@@ -71,7 +71,7 @@ $("#"+dynamicContent).removeClass('hidden');
 
 /* Back and Next */
 $( ".next" ).click(function() {
-	var total = parseInt(document.querySelectorAll('.career__highlights').length) -1;
+	var total = parseInt(document.querySelectorAll('.details-highlights').length) -1;
 	var id = parseInt($(this).attr('id'));
 	var next = id + 1;
 	if (id != total) {
@@ -84,7 +84,7 @@ $( ".next" ).click(function() {
 });
 
 $( ".back" ).click(function() {
-	var total = parseInt(document.querySelectorAll('.career__highlights').length) -1;
+	var total = parseInt(document.querySelectorAll('.details-highlights').length) -1;
 	var id = parseInt($(this).attr('id'));
 	var back = id - 1;
 

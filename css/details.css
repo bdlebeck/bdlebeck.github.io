@@ -5,7 +5,7 @@ Error: Undefined mixin 'flexbox'.
 
 1: 
 2: 
-3: .career__highlights {
+3: .details-highlights {
 4: 	webkit-animation: fadeIn .6s;
 5: 	animation: fadeIn .6s;
 6: 	@include flexbox();
@@ -66,4 +66,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'flexbox'.\A         on line 6 of /Users/brianlebeck/Sites/bdlebeck.github.io/css/details.scss, in `flexbox'\A         from line 6 of /Users/brianlebeck/Sites/bdlebeck.github.io/css/details.scss\A \A 1: \A 2: \A 3: .career__highlights {\A 4: 	webkit-animation: fadeIn .6s;\A 5: 	animation: fadeIn .6s;\A 6: 	@include flexbox();\A 7: 	@include flex-direction(row);\A 8: 	@include flex-wrap(wrap);\A 9: 	vertical-align: top;\A 10: 	width: 100%;\A 11: 	margin: 0 auto;"; }
+  content: "Error: Undefined mixin 'flexbox'.\A         on line 6 of /Users/brianlebeck/Sites/bdlebeck.github.io/css/details.scss, in `flexbox'\A         from line 6 of /Users/brianlebeck/Sites/bdlebeck.github.io/css/details.scss\A \A 1: \A 2: \A 3: .details-highlights {\A 4: 	webkit-animation: fadeIn .6s;\A 5: 	animation: fadeIn .6s;\A 6: 	@include flexbox();\A 7: 	@include flex-direction(row);\A 8: 	@include flex-wrap(wrap);\A 9: 	vertical-align: top;\A 10: 	width: 100%;\A 11: 	margin: 0 auto;"; }

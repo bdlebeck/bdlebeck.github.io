@@ -12,15 +12,15 @@
 
 		<div class="pagination-container">
 			<div>
-				<span class="home"><i class="fas fa-times-circle fa-2x"></i></span>
-			</div>
-			<div>
-				<span class="back"><i class="fas fa-arrow-alt-circle-left fa-2x"></i></span>
-				<span class="next"><i class="fas fa-arrow-alt-circle-right fa-2x"></i></span>
+				<span class="home"><i class="fas fa-th fa-2x"></i></span>
 			</div>
 			<div>
 				<div id="pages" class="pagination"></div>				
 			</div>
+			<div>
+				<span class="back"><i class="fas fa-arrow-alt-circle-left fa-2x"></i></span>
+				<span class="next"><i class="fas fa-arrow-alt-circle-right fa-2x"></i></span>
+			</div>			
 		</div>	
 
 		<main>
@@ -32,15 +32,15 @@
 		<script id="template" type="x-tmpl-mustache">
 
 			{{#items}}
-				<div id="{{id}}" class="career__highlights hidden">
+				<div id="{{id}}" class="details-highlights hidden">
 
-					<div class="career__screenshots">
+					<div class="details-screenshots">
 						{{ #screenshots }}
 							<img src="images/{{ url }}" class="career__screenshot"/>
 						{{ /screenshots }}
 					</div>
 					
-					<div class="career__content"> 
+					<div class="details-content"> 
 						<h3>
 							{{ jobTitle }} - {{ company }} - {{ date }}
 						</h3>							
@@ -55,10 +55,10 @@
 						{{/accomplishments}}
 						</ul>	
 						
-						<h3>Role</h3>
-						<ul class=">
+
+						<ul class="hidden">
 						{{ #duties }}
-							<li class="">{{ duty }}</li>
+							<li>{{ duty }}</li>
 						{{ /duties }}
 						</ul>							
 

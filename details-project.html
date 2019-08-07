@@ -11,12 +11,18 @@
 	</head>
 	<body class="details">
 
-		<div class="pagination-container">
-			<span class="back"><i class="fas fa-arrow-alt-circle-left fa-2x"></i></span>
-			<div id="pages" class="pagination"></div>
-			<span class="next"><i class="fas fa-arrow-alt-circle-right fa-2x"></i></span>
-			<span class="home" style="float: left"><i class="fas fa-times-circle fa-2x"></i></span>
-		</div>
+			<div class="pagination-container">
+				<div>
+					<span class="home"><i class="fas fa-th fa-2x"></i></span>
+				</div>
+				<div>
+					<div id="pages" class="pagination"></div>				
+				</div>
+				<div>
+					<span class="back"><i class="fas fa-arrow-alt-circle-left fa-2x"></i></span>
+					<span class="next"><i class="fas fa-arrow-alt-circle-right fa-2x"></i></span>
+				</div>			
+			</div>
 
 		<main>			
 			<section id="details"></section>
@@ -24,15 +30,15 @@
 
 		<script id="template" type="x-tmpl-mustache">
 			{{#items}}
-				<div id="{{id}}" class="career__highlights hidden">
+				<div id="{{id}}" class="details-highlights hidden">
 					
-					<div class="career__screenshots">
+					<div class="details-screenshots">
 						{{ #screenshots }}
 							<img src="images/{{ url }}" class="career__screenshot"/>
 						{{ /screenshots }}
 					</div>				
 
-					<div> 		
+					<div class="details-content"> 		
 						<h2>
 							{{ title }} {{ company }} {{ date }}
 						</h2>														
