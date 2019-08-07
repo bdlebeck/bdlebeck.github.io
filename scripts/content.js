@@ -28,7 +28,7 @@ var career = {
 			links: [
 			],
 			screenshots: [
-				{ "url" : "caremanager1@2x.png" }
+				{ "url" : "caremanager.png" }
 			]
 
 		},
@@ -56,7 +56,7 @@ var career = {
 				{ "text" : "Enli Health Solutions website", "link" : "http://www.enli.net" }
 			],
 			screenshots: [
-				{ "url" : "caremanager2.png" }
+				{ "url" : "caremanager.png" }
 			]
 		},
 		{
@@ -87,7 +87,7 @@ var career = {
 				{ "text" : "Metro One company history - OregonLive.com", "link" : "http://www.oregonlive.com/business/index.ssf/2005/11/metro_ones_travails_offer_less.html" }
 			],
 			screenshots: [
-				{ "url" : "insights.png" }
+				{ "url" : "caremanager.png" }
 			]
 		},
 		{

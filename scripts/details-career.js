@@ -114,8 +114,8 @@ function getCircles() {
 }
 
 function navigateBack() {
-	var total = getTotal();
 	var current = getCurrent();
+	var total = getTotal();
 
 	var next = current + 1;
 	var back = current - 1;
@@ -132,6 +132,7 @@ function navigateBack() {
 function navigateNext() {
 	var current = getCurrent();
 	var next = current + 1;
+	var total = getTotal();
 
 	var currentItem = document.getElementById(current);
 	var nextItem = document.getElementById(next);
