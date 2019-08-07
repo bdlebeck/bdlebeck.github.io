@@ -288,6 +288,10 @@ nav {
   -moz-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row; }
+  .details-highlights h3 {
+    font-size: 1.2rem;
+    font-weight: 600px;
+    margin: 0; }
   .details-highlights .details-screenshots {
     margin: 2rem;
     max-width: 600px; }
@@ -299,10 +303,6 @@ nav {
     max-width: 400px;
     font-size: 1.0rem;
     margin: 2rem; }
-    .details-highlights .details-content h3 {
-      font-size: 1.1rem;
-      font-weight: 600px;
-      margin: 0; }
 
 @media only screen and (max-width: 600px) {
   .details-highlights {
