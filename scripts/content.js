@@ -28,7 +28,7 @@ var career = {
 			links: [
 			],
 			screenshots: [
-				{ "url" : "caremanager1.png" }
+				{ "url" : "caremanager1@2x.png" }
 			]
 
 		},
