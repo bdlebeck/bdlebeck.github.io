@@ -34,8 +34,6 @@ $( ".back" ).click(function() {
 	else {
 		navigateBack();
 		localStorage.setItem('current', total);		
-		//localStorage.clear();
-		//window.location.href = "index.html";
 	}
 
 	zenscroll.toY(0)    
@@ -55,8 +53,6 @@ $( ".next" ).click(function() {
 	else {
 		navigateNext();
 		localStorage.setItem('current', 1);
-		//localStorage.clear();
-		//window.location.href = "index.html";
 	} 
 });
 
@@ -128,18 +124,10 @@ function navigateBack() {
 		var last = total;
 		document.getElementById(1).classList.add("hidden");
 		document.getElementById(last).classList.remove("hidden");
-
-		//var currentItem = document.getElementById(current);
-		//var backItem = document.getElementById(last);		
-		//currentItem.classList.add("hidden");
-		//backItem.classList.remove("hidden");
-
 	}
 	else {
-		var currentItem = document.getElementById(current);
-		var backItem = document.getElementById(back);		
-		currentItem.classList.add("hidden");
-		backItem.classList.remove("hidden");	
+		var currentItem = document.getElementById(current).classList.add("hidden");
+		var backItem = document.getElementById(back).classList.remove("hidden");		
 	}
 	updatePagination('back');
 }
@@ -149,8 +137,6 @@ function navigateNext() {
 	var next = current + 1;
 	var total = getTotal();
 	var last = getTotal();
-	var currentItem = document.getElementById(current);
-	var nextItem = document.getElementById(next);
 
 	if (current == total) {
 		next = 1;
@@ -158,8 +144,8 @@ function navigateNext() {
 		document.getElementById(next).classList.remove("hidden");
 	}
 	else {
-		currentItem.classList.add("hidden");
-		nextItem.classList.remove("hidden");
+		document.getElementById(current).classList.add("hidden");
+		document.getElementById(next).classList.remove("hidden");
 	}
 	updatePagination('next');
 	
@@ -180,30 +166,30 @@ function updatePagination(e) {
 		back = total;
 	}
 
-	var currentPage = document.getElementById('page'+current);
-	var previousPage = document.getElementById('page'+back);
-	var nextPage = document.getElementById('page'+next);
+	var currentPage = document.getElementById('page'+current).classList;
+	var previousPage = document.getElementById('page'+back).classList;
+	var nextPage = document.getElementById('page'+next).classList;
 
 	if (direction == 'next') {
-		currentPage.classList.remove("fa-dot-circle");
-		currentPage.classList.remove("active");
-		currentPage.classList.add("fa-circle");
+		currentPage.remove("fa-dot-circle");
+		currentPage.remove("active");
+		currentPage.add("fa-circle");
 	
-		nextPage.classList.remove("fa-circle");
-		nextPage.classList.add("fa-dot-circle");
-		nextPage.classList.add("active");		
+		nextPage.remove("fa-circle");
+		nextPage.add("fa-dot-circle");
+		nextPage.add("active");		
 	}
 	else if (direction == 'back') {
-		currentPage.classList.remove("fa-dot-circle");
-		currentPage.classList.remove("active");
-		currentPage.classList.add("fa-circle");
+		currentPage.remove("fa-dot-circle");
+		currentPage.remove("active");
+		currentPage.add("fa-circle");
 	
-		previousPage.classList.remove("fa-circle");
-		previousPage.classList.add("fa-dot-circle");
-		previousPage.classList.add("active");		
+		previousPage.remove("fa-circle");
+		previousPage.add("fa-dot-circle");
+		previousPage.add("active");		
 	}
 	else {
-		currentPage.classList.add("active");
+		currentPage.add("active");
 	}
 	
 }

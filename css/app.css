@@ -379,7 +379,7 @@ nav {
     transform: scale(1.5);
     transition: all 200ms; }
   .pagination .active {
-    color: white; }
+    color: #ffffff; }
 
 html,
 body {

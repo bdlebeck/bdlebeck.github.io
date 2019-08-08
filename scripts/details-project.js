@@ -18,7 +18,7 @@ getCircles();
 // Home click
 $( ".home" ).click(function() {
 	localStorage.clear();
-	window.location.href = "index.html#career";
+	window.location.href = "index.html#projects";
 });
 
 // Back click
@@ -33,8 +33,8 @@ $( ".back" ).click(function() {
 		localStorage.setItem('current', back);
 	}
 	else {
-		localStorage.clear();
-		window.location.href = "index.html";
+		navigateBack();
+		localStorage.setItem('current', total);		
 	}
 
 	zenscroll.toY(0)    
@@ -52,8 +52,8 @@ $( ".next" ).click(function() {
 		localStorage.setItem('current', next);
 	}
 	else {
-		localStorage.clear();
-		window.location.href = "index.html";
+		navigateNext();
+		localStorage.setItem('current', 1);
 	} 
 });
 
@@ -117,30 +117,38 @@ function getCircles() {
 }
 
 function navigateBack() {
-	var total = getTotal();
 	var current = getCurrent();
-
 	var next = current + 1;
 	var back = current - 1;
+	var total = getTotal();
 
-	var currentItem = document.getElementById(current);
-	var backItem = document.getElementById(back);
-
-	currentItem.classList.add("hidden");
-	backItem.classList.remove("hidden");	
+	if (current == 1) {
+		var last = total;
+		document.getElementById(1).classList.add("hidden");
+		document.getElementById(last).classList.remove("hidden");
+	}
+	else {
+		var currentItem = document.getElementById(current).classList.add("hidden");
+		var backItem = document.getElementById(back).classList.remove("hidden");		
+	}
 	updatePagination('back');
-
 }
 
 function navigateNext() {
 	var current = getCurrent();
 	var next = current + 1;
+	var total = getTotal();
+	var last = getTotal();
 
-	var currentItem = document.getElementById(current);
-	var nextItem = document.getElementById(next);
-
-	currentItem.classList.add("hidden");
-	nextItem.classList.remove("hidden");
+	if (current == total) {
+		next = 1;
+		document.getElementById(last).classList.add("hidden");
+		document.getElementById(next).classList.remove("hidden");
+	}
+	else {
+		document.getElementById(current).classList.add("hidden");
+		document.getElementById(next).classList.remove("hidden");
+	}
 	updatePagination('next');
 }
 
@@ -149,31 +157,39 @@ function updatePagination(e) {
 	var direction = e;
 	var back = current - 1;
 	var next = current + 1;
+	var total = getTotal();
 
-	var currentPage = document.getElementById('page'+current);
-	var previousPage = document.getElementById('page'+back);
-	var nextPage = document.getElementById('page'+next);
+	if (current == total) {
+		next = 1;
+	}
+	else if (current == 1) {
+		back = total;
+	}
+
+	var currentPage = document.getElementById('page'+current).classList;
+	var previousPage = document.getElementById('page'+back).classList;
+	var nextPage = document.getElementById('page'+next).classList;
 
 	if (direction == 'next') {
-		currentPage.classList.remove("fa-dot-circle");
-		currentPage.classList.remove("active");
-		currentPage.classList.add("fa-circle");
+		currentPage.remove("fa-dot-circle");
+		currentPage.remove("active");
+		currentPage.add("fa-circle");
 	
-		nextPage.classList.remove("fa-circle");
-		nextPage.classList.add("fa-dot-circle");
-		nextPage.classList.add("active");	
+		nextPage.remove("fa-circle");
+		nextPage.add("fa-dot-circle");
+		nextPage.add("active");		
 	}
 	else if (direction == 'back') {
-		currentPage.classList.remove("fa-dot-circle");
-		currentPage.classList.remove("active");
-		currentPage.classList.add("fa-circle");
+		currentPage.remove("fa-dot-circle");
+		currentPage.remove("active");
+		currentPage.add("fa-circle");
 	
-		previousPage.classList.remove("fa-circle");
-		previousPage.classList.add("fa-dot-circle");
-		previousPage.classList.add("active");
+		previousPage.remove("fa-circle");
+		previousPage.add("fa-dot-circle");
+		previousPage.add("active");		
 	}
 	else {
-		currentPage.classList.add("active");
+		currentPage.add("active");
 	}
 	
 }
