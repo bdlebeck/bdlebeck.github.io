@@ -304,8 +304,8 @@ nav {
     flex: 1 1 auto; }
     .details-highlights .details-screenshots .career__screenshot {
       /*min-width: 300px;*/
-      width: 100%;
-      height: auto; }
+      height: auto;
+      max-width: 500px; }
   .details-highlights .details-content {
     /*max-width: 400px;*/
     font-size: 1.0rem;
