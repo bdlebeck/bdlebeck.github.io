@@ -28,7 +28,7 @@ var career = {
 			links: [
 			],
 			screenshots: [
-				{ "url" : "caremanager1.png" }
+				{ "url" : "caremanager.png" }
 			]
 
 		},
@@ -56,7 +56,7 @@ var career = {
 				{ "text" : "Enli Health Solutions website", "link" : "http://www.enli.net" }
 			],
 			screenshots: [
-				{ "url" : "caremanager2.png" }
+				{ "url" : "caremanager-poc.png" }
 			]
 		},
 		{
@@ -111,7 +111,8 @@ var career = {
 				{ "text" : "Hewlett Packard - Corporate website", "link" : "http://www.hp.com" }
 			],
 			screenshots: [
-				{ "url" : "hp-01.jpg" }
+				{ "url" : "hp.png" },
+				{ "url" : "hp-2.png" }
 			]				
 		},
 		{
