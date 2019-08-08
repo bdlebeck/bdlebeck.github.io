@@ -288,6 +288,7 @@ nav {
   -moz-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  line-height: 1.6rem;
   width: 90%;
   margin: 0 auto; }
   .details-highlights h3 {
@@ -303,7 +304,7 @@ nav {
     flex: 1 1 auto; }
     .details-highlights .details-screenshots .career__screenshot {
       /*min-width: 300px;*/
-      max-width: 600px;
+      width: 100%;
       height: auto; }
   .details-highlights .details-content {
     /*max-width: 400px;*/
@@ -314,6 +315,25 @@ nav {
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto; }
+    .details-highlights .details-content .detail-header {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      justify-content: space-between;
+      -ms-flex-pack: space-between; }
+    .details-highlights .details-content ul {
+      max-width: 400px; }
+      .details-highlights .details-content ul li {
+        margin-bottom: 1rem; }
 
 @media only screen and (max-width: 600px) {
   .details-highlights {

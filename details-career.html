@@ -41,9 +41,16 @@
 					</div>
 					
 					<div class="details-content"> 
-						<h3>
-							{{ jobTitle }} - {{ company }} - {{ date }}
-						</h3>							
+						<div class="detail-header">
+							<h3>
+								{{ company }}
+							</h3>
+							<span>
+								{{ date }}
+							</span>
+						</div>
+							
+						<span>{{ jobTitle }} </span>						
 						<p>
 							{{ description }}
 						</p>	
@@ -60,7 +67,7 @@
 						{{ #duties }}
 							<li>{{ duty }}</li>
 						{{ /duties }}
-						</ul>							
+						</ul>	
 
 					</div>
 

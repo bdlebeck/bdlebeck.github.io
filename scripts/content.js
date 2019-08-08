@@ -28,7 +28,7 @@ var career = {
 			links: [
 			],
 			screenshots: [
-				{ "url" : "caremanager.png" }
+				{ "url" : "caremanager1.png" }
 			]
 
 		},
@@ -56,7 +56,7 @@ var career = {
 				{ "text" : "Enli Health Solutions website", "link" : "http://www.enli.net" }
 			],
 			screenshots: [
-				{ "url" : "caremanager.png" }
+				{ "url" : "caremanager2.png" }
 			]
 		},
 		{
@@ -87,7 +87,7 @@ var career = {
 				{ "text" : "Metro One company history - OregonLive.com", "link" : "http://www.oregonlive.com/business/index.ssf/2005/11/metro_ones_travails_offer_less.html" }
 			],
 			screenshots: [
-				{ "url" : "caremanager.png" }
+				{ "url" : "insights.png" }
 			]
 		},
 		{
@@ -116,7 +116,7 @@ var career = {
 		},
 		{
 			id : "5",
-			company : "Ralston Group - Ad Agency",
+			company : "Ralston Group",
 			jobTitle : "Web Designer",
 			date : "1998 - 2000",
 			city : "Bend, OR",

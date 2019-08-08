@@ -5,6 +5,7 @@
 	animation: fadeIn .6s;
 	@include flexbox();
 	@include flex-direction(row);
+	line-height: 1.6rem;
 	width: 90%;
 	margin: 0 auto;
 
@@ -20,7 +21,7 @@
 		
 		.career__screenshot {
 			/*min-width: 300px;*/
-			max-width: 600px;
+			width: 100%;
 			height: auto;
 		}	
 	}
@@ -30,6 +31,18 @@
 		margin: 2rem;
 		@include flex(1 1 auto);
 
+		.detail-header {
+			@include flexbox();
+			@include flex-direction(row);
+			@include justify-content(space-between);
+		}
+
+		ul {
+			max-width: 400px;
+			li {
+				margin-bottom: 1rem;
+			}
+		}
 
 
 	}
