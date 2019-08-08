@@ -5,6 +5,8 @@
 	animation: fadeIn .6s;
 	@include flexbox();
 	@include flex-direction(row);
+	width: 90%;
+	margin: 0 auto;
 
 	h3 {
 		font-size: 1.2rem;
@@ -14,18 +16,19 @@
 
 	.details-screenshots {
 		margin: 2rem;
-		max-width: 600px;
+		@include flex(1 1 auto);
 		
 		.career__screenshot {
-			min-width: 300px;
-			max-width: 100%;
+			/*min-width: 300px;*/
+			max-width: 600px;
 			height: auto;
 		}	
 	}
 	.details-content {
-		max-width: 400px;
+		/*max-width: 400px;*/
 		font-size: 1.0rem;
 		margin: 2rem;
+		@include flex(1 1 auto);
 
 
 

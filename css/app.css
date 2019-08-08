@@ -287,22 +287,33 @@ nav {
   -webkit-flex-direction: row;
   -moz-flex-direction: row;
   -ms-flex-direction: row;
-  flex-direction: row; }
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto; }
   .details-highlights h3 {
     font-size: 1.2rem;
     font-weight: 600px;
     margin: 0; }
   .details-highlights .details-screenshots {
     margin: 2rem;
-    max-width: 600px; }
+    -webkit-box-flex: 1 1 auto;
+    -moz-box-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto; }
     .details-highlights .details-screenshots .career__screenshot {
-      min-width: 300px;
-      max-width: 100%;
+      /*min-width: 300px;*/
+      max-width: 600px;
       height: auto; }
   .details-highlights .details-content {
-    max-width: 400px;
+    /*max-width: 400px;*/
     font-size: 1.0rem;
-    margin: 2rem; }
+    margin: 2rem;
+    -webkit-box-flex: 1 1 auto;
+    -moz-box-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto; }
 
 @media only screen and (max-width: 600px) {
   .details-highlights {

@@ -32,8 +32,10 @@ $( ".back" ).click(function() {
 		localStorage.setItem('current', back);
 	}
 	else {
-		localStorage.clear();
-		window.location.href = "index.html";
+		navigateBack();
+		localStorage.setItem('current', total);		
+		//localStorage.clear();
+		//window.location.href = "index.html";
 	}
 
 	zenscroll.toY(0)    
@@ -51,8 +53,10 @@ $( ".next" ).click(function() {
 		localStorage.setItem('current', next);
 	}
 	else {
-		localStorage.clear();
-		window.location.href = "index.html";
+		navigateNext();
+		localStorage.setItem('current', 1);
+		//localStorage.clear();
+		//window.location.href = "index.html";
 	} 
 });
 
@@ -115,38 +119,66 @@ function getCircles() {
 
 function navigateBack() {
 	var current = getCurrent();
-	var total = getTotal();
-
 	var next = current + 1;
 	var back = current - 1;
+	var total = getTotal();
 
-	var currentItem = document.getElementById(current);
-	var backItem = document.getElementById(back);
 
-	currentItem.classList.add("hidden");
-	backItem.classList.remove("hidden");	
+	if (current == 1) {
+		var last = total;
+		document.getElementById(1).classList.add("hidden");
+		document.getElementById(last).classList.remove("hidden");
+
+		//var currentItem = document.getElementById(current);
+		//var backItem = document.getElementById(last);		
+		//currentItem.classList.add("hidden");
+		//backItem.classList.remove("hidden");
+
+	}
+	else {
+		var currentItem = document.getElementById(current);
+		var backItem = document.getElementById(back);		
+		currentItem.classList.add("hidden");
+		backItem.classList.remove("hidden");	
+	}
 	updatePagination('back');
-
 }
 
 function navigateNext() {
 	var current = getCurrent();
 	var next = current + 1;
 	var total = getTotal();
-
+	var last = getTotal();
 	var currentItem = document.getElementById(current);
 	var nextItem = document.getElementById(next);
 
-	currentItem.classList.add("hidden");
-	nextItem.classList.remove("hidden");
+	if (current == total) {
+		next = 1;
+		document.getElementById(last).classList.add("hidden");
+		document.getElementById(next).classList.remove("hidden");
+	}
+	else {
+		currentItem.classList.add("hidden");
+		nextItem.classList.remove("hidden");
+	}
 	updatePagination('next');
+	
 }
 
 function updatePagination(e) {
+	
 	var current = getCurrent();
 	var direction = e;
 	var back = current - 1;
 	var next = current + 1;
+	var total = getTotal();
+
+	if (current == total) {
+		next = 1;
+	}
+	else if (current == 1) {
+		back = total;
+	}
 
 	var currentPage = document.getElementById('page'+current);
 	var previousPage = document.getElementById('page'+back);
