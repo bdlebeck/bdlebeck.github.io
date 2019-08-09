@@ -128,9 +128,6 @@
 .-green {
   background: #5e9b42; }
 
-body {
-  background-color: #ffffff; }
-
 html,
 body {
   color: #555555;
@@ -304,8 +301,7 @@ nav {
     flex: 1 1 auto; }
     .details-highlights .details-screenshots .career__screenshot {
       /*min-width: 300px;*/
-      height: auto;
-      max-width: 500px; }
+      max-width: 100%; }
   .details-highlights .details-content {
     /*max-width: 400px;*/
     font-size: 1.0rem;
@@ -329,7 +325,13 @@ nav {
       -moz-justify-content: space-between;
       -ms-justify-content: space-between;
       justify-content: space-between;
-      -ms-flex-pack: space-between; }
+      -ms-flex-pack: space-between;
+      font-weight: 700; }
+      .details-highlights .details-content .detail-header h3 {
+        font-size: 1.4rem;
+        font-weight: 600; }
+      .details-highlights .details-content .detail-header .date {
+        font-size: 1.0rem; }
     .details-highlights .details-content ul {
       max-width: 400px; }
       .details-highlights .details-content ul li {

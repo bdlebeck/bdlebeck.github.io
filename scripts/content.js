@@ -5,6 +5,7 @@ var career = {
 			company : "Surescripts",
 			jobTitle : "Web Developer",
 			date : "2015 - Current",
+			shortdate : "2019",
 			city : "Beaverton, OR",
 			intro : "Frontend designer on the software engineering team at Surescripts.",
 			description : "I am currently working at Surescripts as a web/frontend developer on Agile Team 12.  Since starting, I have completed three projects creating software from concept to production.  From mocking up business requirements to working on the front-end code in development.  Surescripts delivers nearly two billion e-prescriptions annually.",			
@@ -37,6 +38,7 @@ var career = {
 			company : "ENLI Health Intelligence",
 			jobTitle : "UI Designer",
 			date : "2007 - 2015",
+			shortdate : "2015",
 			city : "Beaverton, OR",
 			intro : "Frontend designer on the software engineering team at Enli.",
 			description : "While at ENLI (formerly Kryptiq Corporation) I was the frontend/UI designer on the software engineering team. Delivering population health management software to healthcare providers.",
@@ -64,6 +66,7 @@ var career = {
 			company : "Metro One Telecommuications",
 			jobTitle : "Web Designer",
 			date : "2003 - 2007",
+			shortdate : "2007",
 			city : "Beaverton, OR",
 			intro : "Web designer on the software engineering team at Metro One Telecommuications.",
 			description : "Before the debut of the iPhone, I worked at Metro One, a nationwide telecommuications company.  The company provided operator-based telcom services, address and phone data scrubbing and Infone, an operator-based concierge service.  ",
@@ -87,7 +90,7 @@ var career = {
 				{ "text" : "Metro One company history - OregonLive.com", "link" : "http://www.oregonlive.com/business/index.ssf/2005/11/metro_ones_travails_offer_less.html" }
 			],
 			screenshots: [
-				{ "url" : "insights.png" }
+				{ "url" : "infone.png" }
 			]
 		},
 		{
@@ -95,6 +98,7 @@ var career = {
 			company : "Hewlett Packard",
 			jobTitle : "UI Designer",
 			date : "2002 - 2003",
+			shortdate : "2003",
 			city : "Corvallis, OR",
 			intro : "User interface designer on the software engineering team at HP.",
 			description : "I joined the engineering team at HP to help build an internal web application to track work requests in the mask fabrication facility.  The application allowed for team members to track work orders from beginning to end.",		
@@ -111,8 +115,7 @@ var career = {
 				{ "text" : "Hewlett Packard - Corporate website", "link" : "http://www.hp.com" }
 			],
 			screenshots: [
-				{ "url" : "hp.png" },
-				{ "url" : "hp-2.png" }
+				{ "url" : "hp.png" }
 			]				
 		},
 		{
@@ -120,6 +123,7 @@ var career = {
 			company : "Ralston Group",
 			jobTitle : "Web Designer",
 			date : "1998 - 2000",
+			shortdate : "2000",
 			city : "Bend, OR",
 			intro : "Web designer for a creative advertising agency in Bend, Oregon. ",
 			description : "I was the sole web designer for a creative advertising agency in Bend, Oregon. Our clients included: Sunriver Resort, Crosswater Golf Course, The Riverhouse, Wildhorse Resort & Casino and Bend Memorial Clinic.",		
