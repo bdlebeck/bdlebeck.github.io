@@ -16,7 +16,7 @@
 	}
 
 	.details-screenshots {
-		margin: 2rem;
+		/*margin: 2rem;*/
 		@include flex(1 1 auto);
 		
 		.career__screenshot {
@@ -58,6 +58,7 @@
 @media only screen and (max-width: 600px) {
 	.details-highlights {
 		@include flex-direction(column);
+		width: 90%;
 		.details-content {
 			max-width: 100%;
 		}
@@ -66,18 +67,25 @@
 
 
 .pagination-container {
-	background-color: #333333;
+	background-color: #ffffff;
 	@include flexbox();
 	@include flex-direction(row);	
 	@include justify-content(space-between);	
 	@include align-items(center);
+	margin: .5rem auto;
 	padding: .5rem;
+	width: 90%;
 
 	.home, .back, .next {
-		color: #ffffff;
 		cursor: pointer;
 		display: inline;
+	}	
+	.back, .next {
+		color: $primary;
 	}		
+	.home{
+		color: $danger;
+	}			
 }
 
 .pagination {
@@ -88,12 +96,11 @@
 	}
 
 	a:hover {
-		transform: scale(1.5);	
-		transition: all 200ms;		
+		color: darken($primary, 30%);
 	}		
 
 	.active {
-		color: #ffffff;
+		color: darken($primary, 30%);
 	}		
 }
 
