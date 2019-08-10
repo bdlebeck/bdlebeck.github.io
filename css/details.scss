@@ -24,25 +24,27 @@
 			max-width: 100%;
 		}	
 	}
+
+	.detail-header {
+		@include flexbox();
+		@include flex-direction(row);
+		@include justify-content(space-between);
+		font-weight: 700;
+		margin-bottom: 2rem;
+		h3 {
+			font-size: 1.4rem;
+			font-weight: 600;
+		}
+		.date {
+			font-size: 1.0rem;
+		}
+	}
+
 	.details-content {
 		/*max-width: 400px;*/
 		font-size: 1.0rem;
 		padding: 0 2rem;
 		@include flex(1);
-
-		.detail-header {
-			@include flexbox();
-			@include flex-direction(row);
-			@include justify-content(space-between);
-			font-weight: 700;
-			h3 {
-				font-size: 1.4rem;
-				font-weight: 600;
-			}
-			.date {
-				font-size: 1.0rem;
-			}
-		}
 
 		ul {
 			li {
@@ -59,7 +61,7 @@
 		@include flex-direction(column);
 		width: 90%;
 		.details-content {
-			margin: 2rem 1rem;
+			margin: 1rem 1rem;
 			padding: 0;
 		}
 	}
