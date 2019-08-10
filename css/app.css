@@ -343,7 +343,8 @@ nav {
     flex-direction: column;
     width: 90%; }
     .details-highlights .details-content {
-      max-width: 100%; } }
+      margin: 2rem 1rem;
+      padding: 0; } }
 .pagination-container {
   background-color: #ffffff;
   display: -webkit-box;
@@ -386,6 +387,11 @@ nav {
   .pagination .active {
     color: #024c76; }
 
+@media only screen and (max-width: 600px) {
+  .pagination-container {
+    margin: 2rem;
+    padding: 0;
+    width: auto; } }
 html,
 body {
   box-sizing: border-box;
