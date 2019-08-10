@@ -286,7 +286,7 @@ nav {
   -ms-flex-direction: row;
   flex-direction: row;
   line-height: 1.6rem;
-  width: 90%;
+  width: 80%;
   margin: 0 auto; }
   .details-highlights h3 {
     font-size: 1.2rem;
@@ -294,23 +294,23 @@ nav {
     margin: 0; }
   .details-highlights .details-screenshots {
     /*margin: 2rem;*/
-    -webkit-box-flex: 1 1 auto;
-    -moz-box-flex: 1 1 auto;
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto; }
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
     .details-highlights .details-screenshots .career__screenshot {
       /*min-width: 300px;*/
       max-width: 100%; }
   .details-highlights .details-content {
     /*max-width: 400px;*/
     font-size: 1.0rem;
-    margin: 2rem;
-    -webkit-box-flex: 1 1 auto;
-    -moz-box-flex: 1 1 auto;
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto; }
+    padding: 0 2rem;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
     .details-highlights .details-content .detail-header {
       display: -webkit-box;
       display: -moz-box;
@@ -332,10 +332,8 @@ nav {
         font-weight: 600; }
       .details-highlights .details-content .detail-header .date {
         font-size: 1.0rem; }
-    .details-highlights .details-content ul {
-      max-width: 400px; }
-      .details-highlights .details-content ul li {
-        margin-bottom: 1rem; }
+    .details-highlights .details-content ul li {
+      margin-bottom: 1rem; }
 
 @media only screen and (max-width: 600px) {
   .details-highlights {
@@ -367,9 +365,9 @@ nav {
   -ms-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: .5rem auto;
-  padding: .5rem;
-  width: 90%; }
+  margin: 0 auto 2rem auto;
+  padding: 1rem;
+  width: 80%; }
   .pagination-container .home, .pagination-container .back, .pagination-container .next {
     cursor: pointer;
     display: inline; }

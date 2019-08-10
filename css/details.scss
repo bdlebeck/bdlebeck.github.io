@@ -6,7 +6,7 @@
 	@include flexbox();
 	@include flex-direction(row);
 	line-height: 1.6rem;
-	width: 90%;
+	width: 80%;
 	margin: 0 auto;
 
 	h3 {
@@ -17,7 +17,7 @@
 
 	.details-screenshots {
 		/*margin: 2rem;*/
-		@include flex(1 1 auto);
+		@include flex(1);
 		
 		.career__screenshot {
 			/*min-width: 300px;*/
@@ -27,8 +27,8 @@
 	.details-content {
 		/*max-width: 400px;*/
 		font-size: 1.0rem;
-		margin: 2rem;
-		@include flex(1 1 auto);
+		padding: 0 2rem;
+		@include flex(1);
 
 		.detail-header {
 			@include flexbox();
@@ -45,7 +45,6 @@
 		}
 
 		ul {
-			max-width: 400px;
 			li {
 				margin-bottom: 1rem;
 			}
@@ -72,9 +71,9 @@
 	@include flex-direction(row);	
 	@include justify-content(space-between);	
 	@include align-items(center);
-	margin: .5rem auto;
-	padding: .5rem;
-	width: 90%;
+	margin: 0 auto 2rem auto;
+	padding: 1rem;
+	width: 80%;
 
 	.home, .back, .next {
 		cursor: pointer;
