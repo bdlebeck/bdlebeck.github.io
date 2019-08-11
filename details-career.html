@@ -36,13 +36,17 @@
 
 					<div class="detail-header">
 						<h3>
-							{{ company }}<br/><span>{{ jobTitle }} </span>
+							{{ company }} 
 						</h3>
+						<span>{{ jobTitle }} </span>
 						<span class="date">
 							{{ date }}
 						</span>
 					</div>
 					
+					<p>
+						{{ description }}
+					</p>
 
 					<div class="details-screenshots">
 						{{ #screenshots }}
@@ -51,10 +55,6 @@
 					</div>
 					
 					<div class="details-content"> 						
-						<p>
-							{{ description }}
-						</p>	
-						
 						<h3>Accomplishments</h3>
 						<ul>
 						{{#accomplishments}}
@@ -62,7 +62,6 @@
 						{{/accomplishments}}
 						</ul>	
 						
-
 						<ul class="hidden">
 						{{ #duties }}
 							<li>{{ duty }}</li>

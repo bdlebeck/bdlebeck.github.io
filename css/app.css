@@ -308,20 +308,21 @@ nav {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-justify-content: space-between;
     -moz-justify-content: space-between;
     -ms-justify-content: space-between;
     justify-content: space-between;
     -ms-flex-pack: space-between;
     font-weight: 700;
-    margin-bottom: 2rem; }
+    margin-bottom: .5rem; }
     .details-highlights .detail-header h3 {
       font-size: 1.4rem;
-      font-weight: 600; }
+      font-weight: 600;
+      margin: 0; }
     .details-highlights .detail-header .date {
       font-size: 1.0rem; }
   .details-highlights .details-content {
@@ -374,7 +375,8 @@ nav {
     cursor: pointer;
     display: inline; }
   .pagination-container .back, .pagination-container .next {
-    color: #14a8fc; }
+    color: #14a8fc;
+    margin: 0 .4rem; }
   .pagination-container .home {
     color: darkred; }
 
@@ -382,7 +384,7 @@ nav {
   display: inline; }
   .pagination a {
     cursor: pointer;
-    margin: 0 .3rem; }
+    margin: 0 .4rem; }
   .pagination a:hover {
     color: #024c76; }
   .pagination .active {
