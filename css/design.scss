@@ -56,9 +56,59 @@ nav {
 	width: 70%;
 	margin: .5rem auto;
 }
+@media only screen and (max-width: 600px) {
+	.container {
+		width: 90%;
+		margin: .5rem auto;
+	}
+}
 
-.area {
+
+.background {
 	margin-bottom: 4rem;
+}
+
+
+.about {
+	ul {
+		font-size: 1.8rem;
+		margin: 0;
+		padding: 0;
+		line-height: 3.0rem;
+		list-style: none;
+	}	
+}
+ 
+.skills {
+
+	h2 {
+		margin-bottom: .5rem;
+	}	
+
+	.content {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;	
+		padding: 0;
+
+		h4 {
+			font-weight: 600;
+		}
+		div {
+			margin-bottom: 2rem;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			line-height: 2.0rem;
+			list-style: none;
+		}
+	}	
+}
+
+.career-history {
 
 	h2 {
 		margin-bottom: .5rem;
@@ -89,36 +139,7 @@ nav {
 		background-color: royalblue;
 		color: #ffffff;
 	}	
-}
 
-@media only screen and (max-width: 600px) {
-	.container {
-		width: 90%;
-		margin: .5rem auto;
-	}
-}
-
-.about {
-	ul {
-		font-size: 1.8rem;
-		margin: 0;
-		padding: 0;
-		line-height: 3.0rem;
-		list-style: none;
-	}	
-	
-}
- 
-.skills {
-	ul {
-		margin: 0;
-		padding: 0;
-		line-height: 2.0rem;
-		list-style: none;
-	}
-}
-
-.career {
 	.content {
 		flex-direction: column;
 	}	
@@ -128,6 +149,37 @@ nav {
 }
 
 .projects {
+
+	h2 {
+		margin-bottom: .5rem;
+	}	
+
+	.content {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;	
+		padding: 0;
+
+		h4 {
+			font-weight: 600;
+		}
+		div {
+			margin-bottom: 2rem;
+		}
+	}	
+
+	article {
+		cursor: pointer;
+		display: block;
+		padding: .6rem .6rem;
+		border-radius: 6px;
+	}
+	article:hover {
+		background-color: royalblue;
+		color: #ffffff;
+	}	
+
 	.content {
 		flex-direction: column;
 	}	

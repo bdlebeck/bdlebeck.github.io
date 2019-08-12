@@ -153,9 +153,8 @@ var project = {
 	items: [
 		{
 			id : "1",
-			title : "Specialty Patient Enrollment",
+			project : "Specialty Patient Enrollment",
 			company : "Surescripts",
-			projectTitleLong : "Specialty Patient Enrollment",
 			date : "2017",
 			intro : "Making it easy for clinics to fill a specialty medication at the pharmacy.",
 			description : "I am currently on the agile team that is developing Surescript's <a href='http://surescripts.com/enhance-prescribing/' target='new'>Specialty Patient Enrollment</a>.  This web application makes it easy for clinics to fill a prescription from a specialty pharmacy.  Under 2% of prescriptions are specialty medications, but they are projected to approach half of U.S. drug spending by 2021",
@@ -175,16 +174,14 @@ var project = {
 		},
 		{
 			id : "2",
-			title : "Insights for Medication Adherence",
+			project : "Insights for Medication Adherence",
 			company : "Surescripts",
-			projectTitleLong : "Insights for Medication Adherence",
 			date : "2015",
 			intro : "Provides patient prescription adherence to the physician at the point-of-care.",
-			description : "While at Surescripts I was on an Agile Team that created <a href='https://surescripts.com/inform-care-decisions/insights-alerts/'>Insights for Medication Adherence</a>.  The purpose of the application was to put patient-specific prescription adherence summaries right in front of the physician at the point-of-care.",
+			description : "While at Surescripts I was on an Agile Team that created Insights for Medication Adherence.  The purpose of the application was to put patient-specific prescription adherence summaries right in front of the physician at the point-of-care.",
 
 			duties: [
-				{ "duty" : "UI design" },
-				{ "duty" : "HTML, CSS/LESS architecture" },
+				{ "duty" : "UI design, HTML, CSS/LESS architecture" },
 				{ "duty" : "Business requirement mockups and prototypes" },
 				{ "duty" : "Front-end design and development" },
 				{ "duty" : "Custom Bootstrap theme" }			
@@ -198,9 +195,8 @@ var project = {
 		},
 		{
 			id : "3",
-			title : "CareManager",
+			project : "CareManager",
 			company : "Enli Health Intelligence",
-			projectTitleLong : "CareManager",
 			date : "2014",
 			intro : "Provides a health summary of the entire patient populations based on evidence-based guidelines.",
 			description : "While working at Enli, I was the lead frontend designer for ENLI's <a href='http://www.enli.net/caremanager-point-of-care/'>CareManager Point-of-Care</a> and <a href='http://www.enli.net/caremanager-central-worklist/'>CareManager Central Worklist</a>.",
@@ -222,16 +218,14 @@ var project = {
 		},
 		{
 			id : "4",
-			title : "Patient Portal",
+			project : "Patient Portal",
 			company : "Enli Health Intelligence",
-			projectTitleLong : "Patient Portal",
 			date : "2013",
 			intro : "Giving patients access to their health records and a secure way to message their doctor.",
 			description : "UI design and front-end development for Enli's 'Patient Portal' enterprise software. The Patient Portal provides healthcare providers a secure online presence secure messaging, appointment, and online payments.",
 			
 			duties: [
-				{ "duty" : "UI design" },
-				{ "duty" : "HTML, CSS/LESS architecture" },
+				{ "duty" : "UI design, HTML, CSS/LESS architecture" },
 				{ "duty" : "Business mockups and prototypes" },
 				{ "duty" : "Lead frontend design and development for Enli's Patient Portal enterprise software." },
 				{ "duty" : "Responsive mobile interface" },
