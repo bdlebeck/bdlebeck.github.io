@@ -12,14 +12,14 @@
 
 		<div class="pagination-container">
 			<div>
-				<a class="home"><i class="fas fa-times fa-2x"></i></a>
+				<a class="home"><i class="fas fa-times"></i></a>
 			</div>
 			<div>
 				<div id="pages" class="pagination"></div>				
 			</div>
 			<div>
-				<a class="back"><i class="fas fa-arrow-alt-circle-left fa-2x"></i></a>
-				<a class="next"><i class="fas fa-arrow-alt-circle-right fa-2x"></i></a>
+				<a class="back"><i class="fas fa-arrow-alt-circle-left"></i></a>
+				<a class="next"><i class="fas fa-arrow-alt-circle-right"></i></a>
 			</div>			
 		</div>	
 
@@ -45,12 +45,14 @@
 						{{ description }}
 					</p>
 
-					<div class="details-screenshots">
+					<div class="details-screenshots hidden">
 						{{ #screenshots }}
 							<img src="images/screenshots/{{ url }}" class="career__screenshot"/>
 						{{ /screenshots }}
 					</div>
 					
+					<br/>
+
 					<div class="details-content"> 						
 						<h3>Accomplishments</h3>
 						<ul>
@@ -59,7 +61,9 @@
 						{{/accomplishments}}
 						</ul>	
 						
-						<ul class="hidden">
+						<br/>
+						<h3>Team Role</h3>
+						<ul>
 						{{ #duties }}
 							<li>{{ duty }}</li>
 						{{ /duties }}

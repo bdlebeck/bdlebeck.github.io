@@ -6,7 +6,7 @@
 	@include flexbox();
 	@include flex-direction(column);
 	line-height: 1.6rem;
-	width: 70%;
+	max-width: 40rem;
 	margin: 0 auto;
 
 	h3 {
@@ -60,7 +60,7 @@
 @media only screen and (max-width: 600px) {
 	.details-highlights {
 		@include flex-direction(column);
-		width: 90%;
+		max-width: 40rem;
 		.details-content {
 			margin: 1rem 1rem;
 			padding: 0;
@@ -76,31 +76,41 @@
 	@include justify-content(space-between);	
 	@include align-items(center);
 	margin: 0 auto 2rem auto;
+	max-width: 40rem;
 	padding: 1rem;
-	width: 70%;
 
 	.home, .back, .next {
 		cursor: pointer;
 		display: inline;
+		font-size: 1.8rem;
 	}	
 	.back, .next {
 		color: $primary;
 		margin: 0 .4rem;
-	}		
-	.home{
+	}	
+
+	.home {
 		color: $danger;
-	}			
+	}	
+	.next:hover, .back:hover, .home:hover {
+		font-size: 2.4rem;
+		transition: font-size .2s;
+	}	
+				
 }
 
 .pagination {
 	display: inline;
 	a {
 		cursor: pointer;
+		font-size: 1.0rem;
 		margin: 0 .4rem;
 	}
 
-	a:hover {
+	a:hover {	
 		color: darken($primary, 30%);
+		font-size: 1.6em;
+		transition: font-size .2s;
 	}		
 
 	.active {
@@ -119,5 +129,4 @@
 
 
 
-
-
+  

@@ -318,7 +318,7 @@ nav {
   -ms-flex-direction: column;
   flex-direction: column;
   line-height: 1.6rem;
-  width: 70%;
+  max-width: 40rem;
   margin: 0 auto; }
   .details-highlights h3 {
     font-size: 1.2rem;
@@ -375,7 +375,7 @@ nav {
     -moz-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 90%; }
+    max-width: 40rem; }
     .details-highlights .details-content {
       margin: 1rem 1rem;
       padding: 0; } }
@@ -401,24 +401,31 @@ nav {
   -ms-flex-align: center;
   align-items: center;
   margin: 0 auto 2rem auto;
-  padding: 1rem;
-  width: 70%; }
+  max-width: 40rem;
+  padding: 1rem; }
   .pagination-container .home, .pagination-container .back, .pagination-container .next {
     cursor: pointer;
-    display: inline; }
+    display: inline;
+    font-size: 1.8rem; }
   .pagination-container .back, .pagination-container .next {
     color: #14a8fc;
     margin: 0 .4rem; }
   .pagination-container .home {
     color: darkred; }
+  .pagination-container .next:hover, .pagination-container .back:hover, .pagination-container .home:hover {
+    font-size: 2.4rem;
+    transition: font-size .2s; }
 
 .pagination {
   display: inline; }
   .pagination a {
     cursor: pointer;
+    font-size: 1.0rem;
     margin: 0 .4rem; }
   .pagination a:hover {
-    color: #024c76; }
+    color: #024c76;
+    font-size: 1.6em;
+    transition: font-size .2s; }
   .pagination .active {
     color: #024c76; }
 

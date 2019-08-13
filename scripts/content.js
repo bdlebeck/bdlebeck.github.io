@@ -15,7 +15,6 @@ var career = {
 				{ "accomplishment" : "Member of the UI Architecture Team in charge of implementing consistent UI." },
 				{ "accomplishment" : "Worked between the product owner and development team to translate business requirements into mockups and prototypes." },
 				{ "accomplishment" : "Development of dynamic html/javascript prototypes demoed to national pharmacy chains and leading electronic health records (EHR) companies." },
-				{ "accomplishment" : "Overhauled and updated several products from Bootstrap 3.x to 4.x." },
 				{ "accomplishment" : "Implemented front-end to adhere to corporate styleguide for several Surescripts products." }
 			],
 			duties: [
