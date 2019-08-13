@@ -156,7 +156,7 @@ var project = {
 			company : "Surescripts",
 			date : "2017",
 			intro : "Making it easy for clinics to fill a specialty medication at the pharmacy.",
-			description : "I am currently on the agile team that is developing Surescript's <a href='http://surescripts.com/enhance-prescribing/' target='new'>Specialty Patient Enrollment</a>.  This web application makes it easy for clinics to fill a prescription from a specialty pharmacy.  Under 2% of prescriptions are specialty medications, but they are projected to approach half of U.S. drug spending by 2021",
+			description : "This web application makes it easy for doctors to prescribe a medication from a specialty pharmacy.  Under 2% of prescriptions are specialty medications, but they are projected to approach half of U.S. drug spending by 2021",
 
 			duties: [
 				{ "duty" : "Frontend Design" },

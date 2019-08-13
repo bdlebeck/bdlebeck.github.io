@@ -27,12 +27,13 @@ $( ".back" ).click(function() {
 	var back = current - 1;
 
 	if (current != 1) {
-		zenscroll.toY(0);
 		navigateBack();
+		zenscroll.toY(0);
 		localStorage.setItem('current', back);
 	}
 	else {
 		navigateBack();
+		zenscroll.toY(0);
 		localStorage.setItem('current', total);		
 	}
 
@@ -46,12 +47,13 @@ $( ".next" ).click(function() {
 	var next = current + 1;
 
 	if (current != total) {
-		zenscroll.toY(0);
 		navigateNext();
+		zenscroll.toY(0);
 		localStorage.setItem('current', next);
 	}
 	else {
 		navigateNext();
+		zenscroll.toY(0);
 		localStorage.setItem('current', 1);
 	} 
 });

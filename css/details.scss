@@ -7,7 +7,7 @@
 	@include flex-direction(column);
 	line-height: 1.6rem;
 	max-width: 40rem;
-	margin: 0 auto;
+	margin: 6rem auto 0 auto;
 
 	h3 {
 		font-size: 1.2rem;
@@ -28,7 +28,6 @@
 	.detail-header {
 		@include flexbox();
 		@include flex-direction(column);
-		@include justify-content(space-between);
 		font-weight: 700;
 		margin-bottom: .5rem;
 		h3 {
@@ -49,7 +48,7 @@
 
 		ul {
 			li {
-				margin-bottom: 1rem;
+				margin-bottom: .5rem;
 			}
 		}
 
@@ -71,18 +70,22 @@
 
 .pagination-container {
 	background-color: #ffffff;
+	height: 5rem;
 	@include flexbox();
 	@include flex-direction(row);	
 	@include justify-content(space-between);	
 	@include align-items(center);
-	margin: 0 auto 2rem auto;
+	margin: 0 auto;
 	max-width: 40rem;
-	padding: 1rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 
 	.home, .back, .next {
 		cursor: pointer;
 		display: inline;
-		font-size: 1.8rem;
+		font-size: .8rem;
 	}	
 	.back, .next {
 		color: $primary;
@@ -92,9 +95,13 @@
 	.home {
 		color: $danger;
 	}	
-	.next:hover, .back:hover, .home:hover {
-		font-size: 2.4rem;
-		transition: font-size .2s;
+	.home:hover {
+		/*font-size: 2.4rem;
+		transition: font-size .2s;*/
+		color: darken($danger, 10%);
+	}	
+	.next:hover, .back:hover {
+		color: darken($primary, 20%);
 	}	
 				
 }
@@ -108,9 +115,9 @@
 	}
 
 	a:hover {	
-		color: darken($primary, 30%);
-		font-size: 1.6em;
-		transition: font-size .2s;
+		color: darken($primary, 20%);
+		/*font-size: 1.6em;
+		transition: font-size .2s;*/
 	}		
 
 	.active {
