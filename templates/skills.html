@@ -1,29 +1,36 @@
-<div class="container">
+<div class="container csstransforms">
 	<h2>Strengths</h2>
-	<div class="content">	
+	<div class="content">
+		
 		<div>
-			<h4 class="">Business</h4>
-			<ul>
-				{{#business}}
-				<li>{{name}}</li>
-				{{/business}}
-			</ul>
+			<aside>
+				<h4>Business</h4>
+				<ul>
+					{{#business}}
+					<li>{{name}}</li>
+					{{/business}}
+				</ul>
+			</aside>
+		</div>
+		<div class="design">
+			<aside>
+				<h4>Design</h4>
+				<ul>
+					{{#design}}
+					<li>{{name}}</li>
+					{{/design}}
+				</ul>
+			</aside>
 		</div>
 		<div>
-			<h4 class="">Design</h4>
-			<ul>
-				{{#design}}
-				<li>{{name}}</li>
-				{{/design}}
-			</ul>
-		</div>
-		<div>
-			<h4 class="">Development</h4>
-			<ul>
-				{{#development}}
-				<li>{{name}}</li>
-				{{/development}}
-			</ul>
+			<aside>
+				<h4>Development</h4>
+				<ul>
+					{{#development}}
+					<li>{{name}}</li>
+					{{/development}}
+				</ul>
+			</aside>			
 		</div>
 
 	</div>

@@ -85,6 +85,10 @@ nav {
 		margin-bottom: .5rem;
 	}	
 
+	.design {
+		font-size: 1.4rem;
+	}
+
 	.content {
 		display: flex;
 		flex-direction: row;
@@ -106,6 +110,39 @@ nav {
 			list-style: none;
 		}
 	}	
+
+	aside {
+		display: block;
+		height: 200px;
+		position: relative;  
+		border-left: 34px solid #333333;
+		padding-left: 10px;
+	}
+	
+	aside h4 {
+		font: bold 1rem Sans-Serif;
+		letter-spacing: 2px; 
+		text-transform: uppercase;
+		background: #333333;
+		color: #fff;
+		padding: 5px 10px;
+		margin: 0;
+		line-height: 24px;
+	
+		position: absolute;
+		top: 0;
+		left: 0;
+		
+		-webkit-transform-origin: 0 0;
+		-moz-transform-origin:    0 0;
+		-ms-transform-origin:     0 0;
+		-o-transform-origin:      0 0;
+		
+		-webkit-transform: rotate(90deg); 
+		-moz-transform:    rotate(90deg); 
+		-ms-transform:     rotate(90deg); 
+		-o-transform:      rotate(90deg); 
+	}
 }
 
 .career-history {
@@ -251,5 +288,10 @@ nav {
 	
 	}
 }
+
+
+
+
+
 
 

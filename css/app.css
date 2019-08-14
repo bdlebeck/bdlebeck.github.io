@@ -191,6 +191,8 @@ nav {
 
 .skills h2 {
   margin-bottom: .5rem; }
+.skills .design {
+  font-size: 1.4rem; }
 .skills .content {
   display: flex;
   flex-direction: row;
@@ -206,6 +208,32 @@ nav {
     padding: 0;
     line-height: 2.0rem;
     list-style: none; }
+.skills aside {
+  display: block;
+  height: 200px;
+  position: relative;
+  border-left: 34px solid #333333;
+  padding-left: 10px; }
+.skills aside h4 {
+  font: bold 1rem Sans-Serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: #333333;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg); }
 
 .career-history h2 {
   margin-bottom: .5rem; }
@@ -405,7 +433,7 @@ nav {
   .pagination-container .home, .pagination-container .back, .pagination-container .next {
     cursor: pointer;
     display: inline;
-    font-size: .8rem; }
+    font-size: 1.4rem; }
   .pagination-container .back, .pagination-container .next {
     color: #14a8fc;
     margin: 0 .4rem; }
