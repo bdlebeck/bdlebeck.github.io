@@ -15,16 +15,6 @@
 		margin: 0;
 	}
 
-	.details-screenshots {
-		/*margin: 2rem;*/
-		@include flex(1);
-		
-		.career__screenshot {
-			/*min-width: 300px;*/
-			max-width: 100%;
-		}	
-	}
-
 	.detail-header {
 		@include flexbox();
 		@include flex-direction(column);
@@ -40,9 +30,17 @@
 		}
 	}
 
+	.details-screenshots {
+		@include flex(1);
+		
+		.career__screenshot {
+			max-width: 100%;
+		}	
+	}	
+
 	.details-content {
 		font-size: 1.0rem;
-		padding: 0 2rem;
+		margin: 2rem 0;
 		@include flex(1);
 
 		ul {
@@ -61,7 +59,6 @@
 		margin: 6rem 2rem 0 2rem;
 
 		.details-content {
-			/*margin: 2rem 2rem;*/
 			padding: 0;
 		}
 	}
@@ -96,8 +93,6 @@
 		color: $danger;
 	}	
 	.home:hover {
-		/*font-size: 2.4rem;
-		transition: font-size .2s;*/
 		color: darken($danger, 10%);
 	}	
 	.next:hover, .back:hover {
@@ -114,35 +109,39 @@
 }
 
 
-.pagination {
-	display: inline;
-	a {
-		cursor: pointer;
-		font-size: 1.0rem;
-		margin: 0 .4rem;
+
+
+/*Desktop*/
+@media only screen and (min-width: 600px) {
+
+	.pagination {
+		display: inline;
+		a {
+			cursor: pointer;
+			font-size: 1.0rem;
+			margin: 0 .4rem;
+		}
+	
+		a:hover {	
+			color: darken($primary, 20%);
+		}		
+	
+		.active {
+			color: darken($primary, 30%);
+		}		
 	}
 
-	a:hover {	
-		color: darken($primary, 20%);
-		/*font-size: 1.6em;
-		transition: font-size .2s;*/
-	}		
-
-	.active {
-		color: darken($primary, 30%);
-	}		
 }
+
+/*Mobile*/
 @media only screen and (max-width: 600px) {
-	display: inline;
 
-	a:hover {	
-		color: $primary;
-	}		
-
-	.active {
-		color: $primary;
+	.pagination {		
 	}
+
 }
+
+
 
 
 

@@ -143,7 +143,16 @@ nav {
 		-ms-transform:     rotate(90deg); 
 		-o-transform:      rotate(90deg); 
 	}
+
+
+	@media only screen and (max-width: 600px) {
+		aside h4 {
+			
+		}
+	}
+
 }
+
 
 .career-history {
 
