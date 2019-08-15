@@ -86,7 +86,7 @@ nav {
 	}	
 
 	.design {
-		font-size: 1.4rem;
+
 	}
 
 	.content {
@@ -166,13 +166,13 @@ nav {
 		}
 	}	
 
-	article {
+	li {
 		cursor: pointer;
 		display: block;
 		padding: .6rem .6rem;
 		border-radius: 6px;
 	}
-	article:hover {
+	li:hover {
 		background-color: royalblue;
 		color: #ffffff;
 	}	
@@ -180,7 +180,7 @@ nav {
 	.content {
 		flex-direction: column;
 	}	
-	article {
+	li {
 		font-size: 1.2rem;
 	}
 }
@@ -193,7 +193,7 @@ nav {
 
 	.content {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		flex-wrap: wrap;
 		justify-content: space-between;	
 		padding: 0;
@@ -206,26 +206,46 @@ nav {
 		}
 	}	
 
-	article {
+	li {
 		cursor: pointer;
 		display: block;
+		font-size: 1.2rem;
 		padding: .6rem .6rem;
 		border-radius: 6px;
+		list-style-type: none;
 	}
-	article:hover {
+	li:hover {
 		background-color: royalblue;
 		color: #ffffff;
 	}	
 
-	.content {
-		flex-direction: column;
-	}	
-	article {
-		font-size: 1.2rem;
-	}	
 }
 
 .education {
+	h2 {
+		margin-bottom: .5rem;
+	}	
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+
+		h4 {
+			font-weight: 600;
+		}
+		div {
+			margin-bottom: 2rem;
+		}
+	}	
+
+	li {
+		display: block;
+		font-size: 1.2rem;
+		padding: .6rem .6rem;
+		list-style-type: none;
+	}
+
 }
 
 

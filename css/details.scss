@@ -41,7 +41,6 @@
 	}
 
 	.details-content {
-		/*max-width: 400px;*/
 		font-size: 1.0rem;
 		padding: 0 2rem;
 		@include flex(1);
@@ -59,9 +58,10 @@
 @media only screen and (max-width: 600px) {
 	.details-highlights {
 		@include flex-direction(column);
-		max-width: 40rem;
+		margin: 6rem 2rem 0 2rem;
+
 		.details-content {
-			margin: 1rem 1rem;
+			/*margin: 2rem 2rem;*/
 			padding: 0;
 		}
 	}
@@ -127,7 +127,7 @@
 
 @media only screen and (max-width: 600px) {
 	.pagination-container {
-		margin: 2rem;
+		margin: 0 2rem;
 		padding: 0;
 		width:  auto;
 	}

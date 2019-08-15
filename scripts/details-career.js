@@ -17,7 +17,7 @@ getCircles();
 // Home click
 $( ".home" ).click(function() {
 	localStorage.clear();
-	window.location.href = "index.html#career";
+	window.location.href = "index.html";
 });
 
 // Back click

@@ -18,7 +18,7 @@ getCircles();
 // Home click
 $( ".home" ).click(function() {
 	localStorage.clear();
-	window.location.href = "index.html#projects";
+	window.location.href = "index.html";
 });
 
 // Back click

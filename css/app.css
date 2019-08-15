@@ -191,8 +191,6 @@ nav {
 
 .skills h2 {
   margin-bottom: .5rem; }
-.skills .design {
-  font-size: 1.4rem; }
 .skills .content {
   display: flex;
   flex-direction: row;
@@ -247,24 +245,24 @@ nav {
     font-weight: 600; }
   .career-history .content div {
     margin-bottom: 2rem; }
-.career-history article {
+.career-history li {
   cursor: pointer;
   display: block;
   padding: .6rem .6rem;
   border-radius: 6px; }
-.career-history article:hover {
+.career-history li:hover {
   background-color: royalblue;
   color: #ffffff; }
 .career-history .content {
   flex-direction: column; }
-.career-history article {
+.career-history li {
   font-size: 1.2rem; }
 
 .projects h2 {
   margin-bottom: .5rem; }
 .projects .content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0; }
@@ -272,18 +270,32 @@ nav {
     font-weight: 600; }
   .projects .content div {
     margin-bottom: 2rem; }
-.projects article {
+.projects li {
   cursor: pointer;
   display: block;
+  font-size: 1.2rem;
   padding: .6rem .6rem;
-  border-radius: 6px; }
-.projects article:hover {
+  border-radius: 6px;
+  list-style-type: none; }
+.projects li:hover {
   background-color: royalblue;
   color: #ffffff; }
-.projects .content {
-  flex-direction: column; }
-.projects article {
-  font-size: 1.2rem; }
+
+.education h2 {
+  margin-bottom: .5rem; }
+.education .content {
+  display: flex;
+  flex-direction: column;
+  padding: 0; }
+  .education .content h4 {
+    font-weight: 600; }
+  .education .content div {
+    margin-bottom: 2rem; }
+.education li {
+  display: block;
+  font-size: 1.2rem;
+  padding: .6rem .6rem;
+  list-style-type: none; }
 
 .quote1,
 .quote2 {
@@ -381,7 +393,6 @@ nav {
     .details-highlights .detail-header span {
       font-size: 1.0rem; }
   .details-highlights .details-content {
-    /*max-width: 400px;*/
     font-size: 1.0rem;
     padding: 0 2rem;
     -webkit-box-flex: 1;
@@ -398,9 +409,9 @@ nav {
     -moz-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    max-width: 40rem; }
+    margin: 6rem 2rem 0 2rem; }
     .details-highlights .details-content {
-      margin: 1rem 1rem;
+      /*margin: 2rem 2rem;*/
       padding: 0; } }
 .pagination-container {
   background-color: #ffffff;
@@ -461,7 +472,7 @@ nav {
 
 @media only screen and (max-width: 600px) {
   .pagination-container {
-    margin: 2rem;
+    margin: 0 2rem;
     padding: 0;
     width: auto; } }
 html,
