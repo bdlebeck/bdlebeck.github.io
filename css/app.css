@@ -457,6 +457,11 @@ nav {
   .pagination-container .next:hover, .pagination-container .back:hover {
     color: #026ca8; }
 
+@media only screen and (max-width: 600px) {
+  .pagination-container {
+    margin: 0 2rem;
+    padding: 0;
+    width: auto; } }
 .pagination {
   display: inline; }
   .pagination a {
@@ -471,10 +476,12 @@ nav {
     color: #024c76; }
 
 @media only screen and (max-width: 600px) {
-  .pagination-container {
-    margin: 0 2rem;
-    padding: 0;
-    width: auto; } }
+  display: inline;
+  a:hover {
+    color: #14a8fc; }
+
+  .active {
+    color: #14a8fc; } }
 html,
 body {
   box-sizing: border-box;

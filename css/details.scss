@@ -105,6 +105,14 @@
 	}	
 				
 }
+@media only screen and (max-width: 600px) {
+	.pagination-container {
+		margin: 0 2rem;
+		padding: 0;
+		width:  auto;
+	}
+}
+
 
 .pagination {
 	display: inline;
@@ -124,14 +132,19 @@
 		color: darken($primary, 30%);
 	}		
 }
-
 @media only screen and (max-width: 600px) {
-	.pagination-container {
-		margin: 0 2rem;
-		padding: 0;
-		width:  auto;
+	display: inline;
+
+	a:hover {	
+		color: $primary;
+	}		
+
+	.active {
+		color: $primary;
 	}
 }
+
+
 
 
 
