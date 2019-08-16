@@ -93,7 +93,6 @@ nav {
 	.content {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;	
 
 		h4 {
 			font-weight: 600;
@@ -110,18 +109,18 @@ nav {
 			list-style: none;
 		}
 		aside {
-
-			width: 80%;
+			width: 72%;
 		}
 	}	
 
 	@media only screen and (max-width: 600px) {
 		.content {
 			flex-direction: column;
+			aside  {
+				width: auto;
+			}		
 		}
-		aside  {
-			width: 100%;
-		}
+
 	}
 
 }
@@ -223,8 +222,9 @@ aside h4 {
 	@media only screen and (max-width: 600px) {
 		.content {
 			width: 100%;
-			.date {
+			li .date {
 				float: none;
+				display: block;
 			}
 		}
 
@@ -282,10 +282,12 @@ aside h4 {
 	@media only screen and (max-width: 600px) {
 		.content {
 			width: 100%;
+			li .company {
+				float: none;
+				display: block;
+			}			
 		}
-		.company {
-			float: none;
-		}
+
 	}	
 
 }

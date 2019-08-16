@@ -196,8 +196,7 @@ nav {
   margin-bottom: .5rem; }
 .strengths .content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
+  flex-direction: row; }
   .strengths .content h4 {
     font-weight: 600; }
   .strengths .content div {
@@ -213,12 +212,12 @@ nav {
     line-height: 2.0rem;
     list-style: none; }
   .strengths .content aside {
-    width: 80%; }
+    width: 72%; }
 @media only screen and (max-width: 600px) {
   .strengths .content {
     flex-direction: column; }
-  .strengths aside {
-    width: 100%; } }
+    .strengths .content aside {
+      width: auto; } }
 
 aside {
   display: block;
@@ -304,8 +303,9 @@ aside h4 {
   @media only screen and (max-width: 600px) {
     .career .content {
       width: 100%; }
-      .career .content .date {
-        float: none; } }
+      .career .content li .date {
+        float: none;
+        display: block; } }
 
 .projects {
   -webkit-box-flex: 1;
@@ -341,8 +341,9 @@ aside h4 {
   @media only screen and (max-width: 600px) {
     .projects .content {
       width: 100%; }
-    .projects .company {
-      float: none; } }
+      .projects .content li .company {
+        float: none;
+        display: block; } }
 
 .education h2 {
   margin-bottom: .5rem;
