@@ -50,7 +50,7 @@ nav {
 	transition:.5s;
   }
   .navigation a:hover { 
-	background-color: gold;
+	background-color: lighten($primary, 30%);
 	color: black;
   }
 }
@@ -84,6 +84,7 @@ nav {
 }
  
 .strengths {
+	
 
 	h2 {
 		margin-bottom: .5rem;
@@ -92,14 +93,13 @@ nav {
 	.content {
 		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
 		justify-content: space-between;	
-		padding: 0;
 
 		h4 {
 			font-weight: 600;
 		}
 		div {
+			@include flex(1);
 			margin-bottom: 2rem;
 		}
 
@@ -109,54 +109,67 @@ nav {
 			line-height: 2.0rem;
 			list-style: none;
 		}
+		aside {
+
+			width: 80%;
+		}
 	}	
 
-	aside {
-		display: block;
-		height: 200px;
-		position: relative;  
-		border-left: 34px solid #333333;
-		padding-left: 10px;
-	}
-	
-	aside h4 {
-		font: bold 1rem Sans-Serif;
-		letter-spacing: 2px; 
-		text-transform: uppercase;
-		background: #333333;
-		color: #fff;
-		padding: 5px 10px;
-		margin: 0;
-		line-height: 24px;
-	
-		position: absolute;
-		top: 0;
-		left: 0;
-		
-		-webkit-transform-origin: 0 0;
-		-moz-transform-origin:    0 0;
-		-ms-transform-origin:     0 0;
-		-o-transform-origin:      0 0;
-		
-		-webkit-transform: rotate(90deg); 
-		-moz-transform:    rotate(90deg); 
-		-ms-transform:     rotate(90deg); 
-		-o-transform:      rotate(90deg); 
-	}
-
-
 	@media only screen and (max-width: 600px) {
-		aside h4 {
-			
+		.content {
+			flex-direction: column;
+		}
+		aside  {
+			width: 100%;
 		}
 	}
 
 }
 
 
+
+aside {
+	display: block;
+	min-height: 240px;
+	position: relative;  
+	border: 1px solid #cccccc;
+	border-left: 34px solid $primary;
+	padding: 1rem;
+}
+
+aside h4 {
+	font: bold 1rem Sans-Serif;
+	letter-spacing: 2px; 
+	text-transform: uppercase;
+	background: $primary;
+	color: #fff;
+	padding: 5px 10px;
+	margin: 0;
+	line-height: 24px;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin:    0 0;
+	-ms-transform-origin:     0 0;
+	-o-transform-origin:      0 0;
+	
+	-webkit-transform: rotate(90deg); 
+	-moz-transform:    rotate(90deg); 
+	-ms-transform:     rotate(90deg); 
+	-o-transform:      rotate(90deg); 
+}
+
+
+
+
+
 .flex {
 	@include flexbox();
 	@include flex-direction(row);
+	@include justify-content(space-between)
 }
 @media only screen and (max-width: 600px) {
 	.flex {
@@ -166,33 +179,54 @@ nav {
 
 .career {
 	@include flex(1);
-	min-width: 200px;
+	margin-bottom: 2rem;
 
 	h2 {
 		margin-bottom: .5rem;
 		padding: .4rem;
 	}	
 
-	ul.content {
-		display: flex;
-		flex-direction: column;
+	.content {
 		padding: 0;
+		width: 90%;
 
 		h4 {
 			font-weight: 600;
 		}
 
+		ul {
+			padding: 0;
+			margin: 0;
+		}
+
 		li {
+			border-radius: 6px;
 			cursor: pointer;
 			display: block;
 			font-size: 1.0rem;
-			padding: .4rem;
-			border-radius: 6px;
+			padding: .3rem .6rem;
+			margin: .5rem 0;
+			.date {
+				float: right;
+			}
 		}
 		li:hover {
-			background-color: royalblue;
+			background-color: darken($primary, 20%);
 			color: #ffffff;
 		}	
+
+		aside {
+
+		}
+
+	}	
+	@media only screen and (max-width: 600px) {
+		.content {
+			width: 100%;
+			.date {
+				float: none;
+			}
+		}
 
 	}	
 
@@ -202,7 +236,7 @@ nav {
 
 .projects {
 	@include flex(1);
-	min-width: 300px;
+	margin-bottom: 2rem;
 
 	h2 {
 		margin-bottom: .5rem;
@@ -210,29 +244,49 @@ nav {
 	}	
 
 	.content {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		justify-content: space-between;	
 		padding: 0;
+		width: 90%;
 
+		h4 {
+			font-weight: 600;
+		}
+
+		ul {
+			padding: 0;
+			margin: 0;
+		}
 
 		li {
+			border-radius: 6px;
 			cursor: pointer;
 			display: block;
-			font-size: 1.0rem;
-			padding: .4rem;
-			border-radius: 6px;
+			font-size: 1rem;
+			padding: .3rem .6rem;
+			margin: .5rem 0;
 			list-style-type: none;
+			.company {
+				float: right;
+			}			
 		}
 		li:hover {
-			background-color: royalblue;
+			background-color: darken($primary, 20%);
 			color: #ffffff;
 		}	
 
+		aside {
+			
+		}
+
 	}	
 
-
+	@media only screen and (max-width: 600px) {
+		.content {
+			width: 100%;
+		}
+		.company {
+			float: none;
+		}
+	}	
 
 }
 
@@ -257,7 +311,7 @@ nav {
 
 	li {
 		display: block;
-		font-size: 1.2rem;
+		font-size: 1.0rem;
 		padding: .4rem;
 		list-style-type: none;
 	}
@@ -267,7 +321,7 @@ nav {
 
 .quote1,
 .quote2  {
-	background-color: #333333;
+	background-color: darken($primary, 20%);
 	color: #ffffff;
 	padding: .5rem;
 	margin-bottom: 4rem;

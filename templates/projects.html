@@ -1,14 +1,17 @@
-<div class="">
-	<h2>Favorite Projects</h2> 
-	<ul class="content">
-		{{ #items }}
-		<li page="{{id}}" id="{{ id }}">
-				<span class="title">{{ project }}</span>
-				<span class="company">{{ company }}</span> 
-				<span class="date hidden"> {{ date }}</span>
-		</li>	
-		{{ /items }}
-	</div>
+<div class="content">
+	
+	<aside>
+		<h4>Recent Projects</h4>
+		<ul>
+			{{ #items }}
+			<li page="{{id}}" id="{{ id }}">
+					<span class="title">{{ project }}</span>
+					<span class="company">{{ company }}</span> 
+			</li>	
+			{{ /items }}
+		</ul>		
+	</aside>
+
 </div>
 
 <script>

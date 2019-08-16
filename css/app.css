@@ -171,7 +171,7 @@ nav {
     text-decoration: none;
     transition: .5s; }
   nav .navigation a:hover {
-    background-color: gold;
+    background-color: #abe0fe;
     color: black; }
 
 .container {
@@ -197,29 +197,42 @@ nav {
 .strengths .content {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0; }
+  justify-content: space-between; }
   .strengths .content h4 {
     font-weight: 600; }
   .strengths .content div {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     margin-bottom: 2rem; }
   .strengths .content ul {
     margin: 0;
     padding: 0;
     line-height: 2.0rem;
     list-style: none; }
-.strengths aside {
+  .strengths .content aside {
+    width: 80%; }
+@media only screen and (max-width: 600px) {
+  .strengths .content {
+    flex-direction: column; }
+  .strengths aside {
+    width: 100%; } }
+
+aside {
   display: block;
-  height: 200px;
+  min-height: 240px;
   position: relative;
-  border-left: 34px solid #333333;
-  padding-left: 10px; }
-.strengths aside h4 {
+  border: 1px solid #cccccc;
+  border-left: 34px solid #14a8fc;
+  padding: 1rem; }
+
+aside h4 {
   font: bold 1rem Sans-Serif;
   letter-spacing: 2px;
   text-transform: uppercase;
-  background: #333333;
+  background: #14a8fc;
   color: #fff;
   padding: 5px 10px;
   margin: 0;
@@ -245,7 +258,12 @@ nav {
   -webkit-flex-direction: row;
   -moz-flex-direction: row;
   -ms-flex-direction: row;
-  flex-direction: row; }
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between; }
 
 @media only screen and (max-width: 600px) {
   .flex {
@@ -259,25 +277,35 @@ nav {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  min-width: 200px; }
+  margin-bottom: 2rem; }
   .career h2 {
     margin-bottom: .5rem;
     padding: .4rem; }
-  .career ul.content {
-    display: flex;
-    flex-direction: column;
-    padding: 0; }
-    .career ul.content h4 {
+  .career .content {
+    padding: 0;
+    width: 90%; }
+    .career .content h4 {
       font-weight: 600; }
-    .career ul.content li {
+    .career .content ul {
+      padding: 0;
+      margin: 0; }
+    .career .content li {
+      border-radius: 6px;
       cursor: pointer;
       display: block;
       font-size: 1.0rem;
-      padding: .4rem;
-      border-radius: 6px; }
-    .career ul.content li:hover {
-      background-color: royalblue;
+      padding: .3rem .6rem;
+      margin: .5rem 0; }
+      .career .content li .date {
+        float: right; }
+    .career .content li:hover {
+      background-color: #026ca8;
       color: #ffffff; }
+  @media only screen and (max-width: 600px) {
+    .career .content {
+      width: 100%; }
+      .career .content .date {
+        float: none; } }
 
 .projects {
   -webkit-box-flex: 1;
@@ -285,26 +313,36 @@ nav {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  min-width: 300px; }
+  margin-bottom: 2rem; }
   .projects h2 {
     margin-bottom: .5rem;
     padding: .4rem; }
   .projects .content {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0; }
+    padding: 0;
+    width: 90%; }
+    .projects .content h4 {
+      font-weight: 600; }
+    .projects .content ul {
+      padding: 0;
+      margin: 0; }
     .projects .content li {
+      border-radius: 6px;
       cursor: pointer;
       display: block;
-      font-size: 1.0rem;
-      padding: .4rem;
-      border-radius: 6px;
+      font-size: 1rem;
+      padding: .3rem .6rem;
+      margin: .5rem 0;
       list-style-type: none; }
+      .projects .content li .company {
+        float: right; }
     .projects .content li:hover {
-      background-color: royalblue;
+      background-color: #026ca8;
       color: #ffffff; }
+  @media only screen and (max-width: 600px) {
+    .projects .content {
+      width: 100%; }
+    .projects .company {
+      float: none; } }
 
 .education h2 {
   margin-bottom: .5rem;
@@ -319,13 +357,13 @@ nav {
     margin-bottom: 2rem; }
 .education li {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   padding: .4rem;
   list-style-type: none; }
 
 .quote1,
 .quote2 {
-  background-color: #333333;
+  background-color: #026ca8;
   color: #ffffff;
   padding: .5rem;
   margin-bottom: 4rem; }

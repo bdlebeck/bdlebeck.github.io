@@ -270,16 +270,19 @@ var strength = {
 		{ name : "Agile story writing" }
 	],	
 	design: [
-		{ name : "Workflow mockups" },
+		{ name : "User interface design" },
+		{ name : "User workflow mockup" },
 		{ name : "Product prototype" },
-		{ name : "Corporate styleguides" },
+		{ name : "Corporate styleguide" },
 		{ name : "UX User Experience" },
 		{ name : "Adobe XD" }
 	],	
 	development: [
 		{ name : "HTML5, CSS3, SCSS" },
 		{ name : "Javascript/DOM" },
-		{ name : "Responsive Layout" },
+		{ name : "UI component library" },
+		{ name : "Responsive Design" },
+		{ name : "Cross browser/device" },
 		{ name : "UI Frameworks, Bootstrap" },
 		{ name : "Accessibility / MU2 WCAG" },
 	]
