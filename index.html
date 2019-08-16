@@ -35,7 +35,7 @@
 				</div>
 			</div>
 
-			<div id="skills" class="background skills"></div>
+			<div id="strengths" class="background strengths"></div>
 			
 			<div id="quote2" class="background quote1">
 				<div class="container">
@@ -46,8 +46,13 @@
 				</div>
 			</div>	
 
-			<div id="career" class="background career"></div>
-			<div id="projects" class="background projects"></div>
+			<div class=" background">
+				<div class="flex container">
+					<div id="career" class="career"></div>
+					<div id="projects" class="projects"></div>
+				</div>
+			</div>
+
 			<div id="quote2" class="background quote2">
 				<div class="container">
 					<blockquote class="content">
@@ -86,7 +91,7 @@
 		}
 
 		section2Btn.onclick = function() {
-			TweenLite.to(window, .3, {scrollTo:{y:"#skills", offsetY:0, totalDuration: .3, autoKill:false}});
+			TweenLite.to(window, .3, {scrollTo:{y:"#strengths", offsetY:0, totalDuration: .3, autoKill:false}});
 		}
 
 		section3Btn.onclick = function() {

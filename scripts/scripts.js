@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-	$.get('templates/skills.html', function(skillTemplate) {
-		var skillOutput = Mustache.render(skillTemplate, skill);
-		$('#skills').html(skillOutput);
+	$.get('templates/skills.html', function(strengthTemplate) {
+		var strengthOutput = Mustache.render(strengthTemplate, strength);
+		$('#strengths').html(strengthOutput);
 	});	
 
 	$.get('templates/careers.html', function(careerTemplate) {
@@ -19,7 +19,5 @@ $(document).ready(function() {
 		var educationOutput = Mustache.render(educationTemplate, education);
 		$('#education').html(educationOutput);
 	});		
-
-
 
 });

@@ -1,11 +1,11 @@
-<div class="container">
+<div class="">
 	<h2>Favorite Projects</h2> 
 	<ul class="content">
 		{{ #items }}
 		<li page="{{id}}" id="{{ id }}">
-				<span class="title">{{ project }}</span> 
+				<span class="title">{{ project }}</span>
 				<span class="company">{{ company }}</span> 
-				<span class="date"> {{ date }}</span>
+				<span class="date hidden"> {{ date }}</span>
 		</li>	
 		{{ /items }}
 	</div>

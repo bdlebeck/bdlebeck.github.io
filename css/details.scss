@@ -86,7 +86,7 @@
 	}	
 	.back, .next {
 		color: $primary;
-		margin: 0 .4rem;
+		margin: 0 .2rem;
 	}	
 
 	.home {
@@ -114,33 +114,29 @@
 /*Desktop*/
 @media only screen and (min-width: 600px) {
 
-	.pagination {
-		display: inline;
-		a {
-			cursor: pointer;
-			font-size: 1.0rem;
-			margin: 0 .4rem;
-		}
-	
-		a:hover {	
-			color: darken($primary, 20%);
-		}		
-	
-		.active {
-			color: darken($primary, 30%);
-		}		
-	}
-
 }
 
 /*Mobile*/
 @media only screen and (max-width: 600px) {
 
-	.pagination {		
-	}
-
 }
 
+.pagination {
+	display: inline;
+	a {
+		cursor: pointer;
+		font-size: 1.0rem;
+		margin: 0 .4rem;
+	}
+
+	a:hover {	
+		color: darken($primary, 20%);
+	}		
+
+	.active {
+		color: darken($primary, 30%);
+	}		
+}
 
 
 

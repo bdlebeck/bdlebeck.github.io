@@ -62,7 +62,7 @@ var career = {
 		},
 		{
 			id : "3",
-			company : "Metro One Telecommuications",
+			company : "Metro One",
 			jobTitle : "Web Designer",
 			date : "2003 - 2007",
 			shortdate : "2007",
@@ -159,10 +159,11 @@ var project = {
 			description : "This web application makes it easy for doctors to prescribe a medication from a specialty pharmacy.  Under 2% of prescriptions are specialty medications, but they are projected to approach half of U.S. drug spending by 2021",
 
 			duties: [
-				{ "duty" : "Frontend Design" },
 				{ "duty" : "HTML, CSS/LESS architecture" },
 				{ "duty" : "Business requirement mockups and prototypes" },
-				{ "duty" : "Responsive design" }
+				{ "duty" : "Responsive design" },
+				{ "duty" : "Browser testing" },
+				{ "duty" : "Selenium test debugging" }
 			],
 			links: [
 				{ "text" : "Specialty Patient Enrollment", "link" : "http://surescripts.com/enhance-prescribing/" },
@@ -244,15 +245,15 @@ var project = {
 var education = {
 	degrees: [
 		{
-			title : "Oregon State University",
-			subtitle : "Cascades Campus",
+			school : "Oregon State University",
+			city : "Bend, Oregon",
 			degree : "Advanced Interactive Web Design Certification",
 			date : "2000 - 2004",
 			description : "The program covered such topics as website design, building a business on the web, graphic design principles and advanced web programming languages including Active Server Pages."
 		},		
 		{
-			title : "Oregon State University",
-			subtitle : "Corvallis, Oregon",
+			school : "Oregon State University",
+			city : "Corvallis, Oregon",
 			degree : "College of Liberal Arts and Sciences, Multimedia Concentration",
 			date : "1995 - 1999",
 			description : "The Departments of Computer Science, Art, and Speech Communication administer an undergraduate in Interactive Multimedia, a program that incorporates work from computer science, art, speech communication and psychology."
@@ -260,22 +261,24 @@ var education = {
 	],
 };
 
-var skill = {
+var strength = {
 	business: [
 		{ name : "Business requirement mockups" },
-		{ name : "Wireframe user workflow" },
+		{ name : "Worrkflow wireframes" },
 		{ name : "Dynamic prototypes" },
-		{ name : "UX discussion" },
+		{ name : "UX user experience" },
 		{ name : "Agile story writing" }
 	],	
 	design: [
-		{ name : "Page/workflow mockups" },
-		{ name : "Styleguides" },
-		{ name : "User Experience" }
+		{ name : "Workflow mockups" },
+		{ name : "Product prototype" },
+		{ name : "Corporate styleguides" },
+		{ name : "UX User Experience" },
+		{ name : "Adobe XD" }
 	],	
 	development: [
-		{ name : "HTML5, CSS3, LESS, SCSS, BEM" },
-		{ name : "Basic Javascript/DOM" },
+		{ name : "HTML5, CSS3, SCSS" },
+		{ name : "Javascript/DOM" },
 		{ name : "Responsive Layout" },
 		{ name : "UI Frameworks, Bootstrap" },
 		{ name : "Accessibility / MU2 WCAG" },

@@ -10,6 +10,10 @@ a, a.visited {
 	color: blue;
 }
 
+.hidden {
+	display: none;
+}
+
 main {
 	background-color: transparent; 
 	margin: 0 auto;
@@ -79,15 +83,11 @@ nav {
 	}	
 }
  
-.skills {
+.strengths {
 
 	h2 {
 		margin-bottom: .5rem;
 	}	
-
-	.design {
-
-	}
 
 	.content {
 		display: flex;
@@ -154,50 +154,59 @@ nav {
 }
 
 
-.career-history {
-
-	h2 {
-		margin-bottom: .5rem;
-	}	
-
-	.content {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-between;	
-		padding: 0;
-
-		h4 {
-			font-weight: 600;
-		}
-		div {
-			margin-bottom: 2rem;
-		}
-	}	
-
-	li {
-		cursor: pointer;
-		display: block;
-		padding: .6rem .6rem;
-		border-radius: 6px;
-	}
-	li:hover {
-		background-color: royalblue;
-		color: #ffffff;
-	}	
-
-	.content {
-		flex-direction: column;
-	}	
-	li {
-		font-size: 1.2rem;
+.flex {
+	@include flexbox();
+	@include flex-direction(row);
+}
+@media only screen and (max-width: 600px) {
+	.flex {
+		@include flex-direction(column);
 	}
 }
 
-.projects {
+.career {
+	@include flex(1);
+	min-width: 200px;
 
 	h2 {
 		margin-bottom: .5rem;
+		padding: .4rem;
+	}	
+
+	ul.content {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+
+		h4 {
+			font-weight: 600;
+		}
+
+		li {
+			cursor: pointer;
+			display: block;
+			font-size: 1.0rem;
+			padding: .4rem;
+			border-radius: 6px;
+		}
+		li:hover {
+			background-color: royalblue;
+			color: #ffffff;
+		}	
+
+	}	
+
+
+
+}
+
+.projects {
+	@include flex(1);
+	min-width: 300px;
+
+	h2 {
+		margin-bottom: .5rem;
+		padding: .4rem;
 	}	
 
 	.content {
@@ -207,32 +216,30 @@ nav {
 		justify-content: space-between;	
 		padding: 0;
 
-		h4 {
-			font-weight: 600;
+
+		li {
+			cursor: pointer;
+			display: block;
+			font-size: 1.0rem;
+			padding: .4rem;
+			border-radius: 6px;
+			list-style-type: none;
 		}
-		div {
-			margin-bottom: 2rem;
-		}
+		li:hover {
+			background-color: royalblue;
+			color: #ffffff;
+		}	
+
 	}	
 
-	li {
-		cursor: pointer;
-		display: block;
-		font-size: 1.2rem;
-		padding: .6rem .6rem;
-		border-radius: 6px;
-		list-style-type: none;
-	}
-	li:hover {
-		background-color: royalblue;
-		color: #ffffff;
-	}	
+
 
 }
 
 .education {
 	h2 {
 		margin-bottom: .5rem;
+		padding: .4rem;
 	}	
 
 	.content {
@@ -251,7 +258,7 @@ nav {
 	li {
 		display: block;
 		font-size: 1.2rem;
-		padding: .6rem .6rem;
+		padding: .4rem;
 		list-style-type: none;
 	}
 
