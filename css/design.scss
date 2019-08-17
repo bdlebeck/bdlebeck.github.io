@@ -6,6 +6,49 @@ body {
 	font-weight: 300;
 }
 
+body {
+	height: 240px;
+	background: url(../images/wave-top.svg) top center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 100vh;
+  }
+
+header {
+	color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	height: 80px;
+
+	h1 {
+		margin: 0 0 0 2rem;
+		padding: 0;
+	}
+}
+
+footer.footer {
+	height: 240px;
+	background: url(../images/wave-bottom.svg) bottom center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+  /*
+html::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 240px;
+	background: url(../images/wave-top.svg) top center;
+	background-size: 100%;
+	z-index: -1;
+  }
+*/
+
 a, a.visited {
 	color: blue;
 }
@@ -22,7 +65,7 @@ main {
 
 nav {
 	display: block;
-
+	margin-right: 2rem;
 	.navigation {
 		justify-items: right;
 		display: flex;
@@ -31,28 +74,28 @@ nav {
 		margin: 0; 
 		padding: 0;
 	}
-  .navigation li { 
-	color: transparent;
-	display: block;
-	text-align: center;
-  }
-  .navigation .logo {
-	margin-right: auto;
-	margin-left: auto;
-  }
-  .navigation a {  
-	color: #333333;
-	cursor: pointer;
-	display: block;
-	font-weight: 400;
-	padding: 16px 20px;
-	text-decoration: none;
-	transition:.5s;
-  }
-  .navigation a:hover { 
-	background-color: lighten($primary, 30%);
-	color: black;
-  }
+	.navigation li { 
+		color: transparent;
+		display: block;
+		text-align: center;
+	}
+	.navigation .logo {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.navigation a {  
+		color: #ffffff;
+		cursor: pointer;
+		display: block;
+		font-weight: 400;
+		padding: 16px 20px;
+		text-decoration: none;
+		transition:.5s;
+	}
+	.navigation a:hover { 
+		background-color: lighten($primary, 30%);
+		color: black;
+	}
 }
 
 
@@ -102,6 +145,8 @@ nav {
 			margin-bottom: 2rem;
 		}
 
+
+
 		ul {
 			margin: 0;
 			padding: 0;
@@ -128,11 +173,12 @@ nav {
 
 
 aside {
+	background-color: #ffffff;
 	display: block;
 	min-height: 240px;
 	position: relative;  
 	border: 1px solid #cccccc;
-	border-left: 34px solid $primary;
+	border-left: 34px solid darken($primary, 20%);
 	padding: 1rem;
 }
 
@@ -140,7 +186,7 @@ aside h4 {
 	font: bold 1rem Sans-Serif;
 	letter-spacing: 2px; 
 	text-transform: uppercase;
-	background: $primary;
+	background: darken($primary, 20%);
 	color: #fff;
 	padding: 5px 10px;
 	margin: 0;
@@ -160,8 +206,6 @@ aside h4 {
 	-ms-transform:     rotate(90deg); 
 	-o-transform:      rotate(90deg); 
 }
-
-
 
 
 

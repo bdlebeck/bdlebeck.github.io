@@ -135,6 +135,43 @@ body {
   font-size: 1rem;
   font-weight: 300; }
 
+body {
+  height: 240px;
+  background: url(../images/wave-top.svg) top center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100vh; }
+
+header {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  height: 80px; }
+  header h1 {
+    margin: 0 0 0 2rem;
+    padding: 0; }
+
+footer.footer {
+  height: 240px;
+  background: url(../images/wave-bottom.svg) bottom center;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+  /*
+html::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 240px;
+	background: url(../images/wave-top.svg) top center;
+	background-size: 100%;
+	z-index: -1;
+  }
+*/
 a, a.visited {
   color: blue; }
 
@@ -147,7 +184,8 @@ main {
   padding-bottom: 10rem; }
 
 nav {
-  display: block; }
+  display: block;
+  margin-right: 2rem; }
   nav .navigation {
     justify-items: right;
     display: flex;
@@ -163,7 +201,7 @@ nav {
     margin-right: auto;
     margin-left: auto; }
   nav .navigation a {
-    color: #333333;
+    color: #ffffff;
     cursor: pointer;
     display: block;
     font-weight: 400;
@@ -220,18 +258,19 @@ nav {
       width: auto; } }
 
 aside {
+  background-color: #ffffff;
   display: block;
   min-height: 240px;
   position: relative;
   border: 1px solid #cccccc;
-  border-left: 34px solid #14a8fc;
+  border-left: 34px solid #026ca8;
   padding: 1rem; }
 
 aside h4 {
   font: bold 1rem Sans-Serif;
   letter-spacing: 2px;
   text-transform: uppercase;
-  background: #14a8fc;
+  background: #026ca8;
   color: #fff;
   padding: 5px 10px;
   margin: 0;
