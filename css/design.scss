@@ -31,6 +31,11 @@ header {
 		margin: 0 0 0 2rem;
 		padding: 0;
 	}
+	@media only screen and (max-width: 600px) {
+		h1 {
+			font-size: 1.8rem;
+		}
+	}	
 }
 
 footer.footer {
@@ -397,7 +402,7 @@ aside h4 {
 			height: 0;
 			line-height: 0;
 			position: relative;
-			color: rgb(126, 126, 126);
+			color: #ffffff;
 			font-size: 4rem;
 		}
 		.quotation:before {
