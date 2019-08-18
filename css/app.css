@@ -136,11 +136,14 @@ body {
   font-weight: 300; }
 
 body {
-  height: 240px;
+  height: 200px;
   background: url(../images/wave-top.svg) top center;
   background-size: cover;
   background-repeat: no-repeat; }
 
+@media only screen and (max-width: 600px) {
+  body {
+    background-size: contain; } }
 header {
   color: #ffffff;
   display: flex;
@@ -192,6 +195,9 @@ nav {
     list-style-type: none;
     margin: 0;
     padding: 0; }
+  @media only screen and (max-width: 600px) {
+    nav .navigation {
+      display: none; } }
   nav .navigation li {
     color: transparent;
     display: block;

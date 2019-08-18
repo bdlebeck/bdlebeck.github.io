@@ -7,11 +7,17 @@ body {
 }
 
 body {
-	height: 240px;
+	height: 200px;
 	background: url(../images/wave-top.svg) top center;
 	background-size: cover;
 	background-repeat: no-repeat;
   }
+ 
+@media only screen and (max-width: 600px) {
+	body {
+		background-size: contain;
+	}
+}
 
 header {
 	color: #ffffff;
@@ -73,6 +79,11 @@ nav {
 		margin: 0; 
 		padding: 0;
 	}
+	@media only screen and (max-width: 600px) {
+		.navigation {
+			display: none;
+		}
+	}
 	.navigation li { 
 		color: transparent;
 		display: block;
@@ -96,6 +107,7 @@ nav {
 		color: black;
 	}
 }
+
 
 
 .container {
