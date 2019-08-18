@@ -138,9 +138,8 @@ body {
 body {
   height: 240px;
   background: url(../images/wave-top.svg) top center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 100vh; }
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 header {
   color: #ffffff;
@@ -515,7 +514,6 @@ aside h4 {
     .details-highlights .details-content {
       padding: 0; } }
 .pagination-container {
-  background-color: #ffffff;
   height: 5rem;
   display: -webkit-box;
   display: -moz-box;
@@ -545,7 +543,7 @@ aside h4 {
   .pagination-container .home, .pagination-container .back, .pagination-container .next {
     cursor: pointer;
     display: inline;
-    font-size: 1.4rem; }
+    font-size: 2.0rem; }
   .pagination-container .back, .pagination-container .next {
     color: #14a8fc;
     margin: 0 .2rem; }
@@ -566,13 +564,14 @@ aside h4 {
 .pagination {
   display: inline; }
   .pagination a {
+    color: #ffffff;
     cursor: pointer;
     font-size: 1.0rem;
     margin: 0 .4rem; }
   .pagination a:hover {
     color: #026ca8; }
   .pagination .active {
-    color: #024c76; }
+    color: #ffffff; }
 
 html,
 body {
