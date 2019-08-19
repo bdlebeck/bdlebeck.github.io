@@ -137,6 +137,8 @@ body {
 
 body {
   height: 200px;
+  background-color: #ffffff;
+  /*background-color: #14a8fc;*/
   background: url(../images/wave-top.svg) top center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -145,7 +147,7 @@ body {
   body {
     background-size: contain; } }
 header {
-  color: #ffffff;
+  color: #333333;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -159,7 +161,7 @@ header {
       font-size: 1.8rem; } }
 
 footer.footer {
-  height: 240px;
+  height: 290px;
   background: url(../images/wave-bottom.svg) bottom center;
   background-size: 100%;
   background-repeat: no-repeat; }
@@ -209,7 +211,7 @@ nav {
     margin-right: auto;
     margin-left: auto; }
   nav .navigation a {
-    color: #ffffff;
+    color: #333333;
     cursor: pointer;
     display: block;
     font-weight: 400;
@@ -272,7 +274,9 @@ aside {
   position: relative;
   border: 1px solid #cccccc;
   border-left: 34px solid #026ca8;
-  padding: 1rem; }
+  padding: 1rem;
+  -webkit-box-shadow: 0 0 12px 6px rgba(60, 60, 60, 0.1);
+  box-shadow: 0 0 12px 6px rgba(160, 160, 160, 0.5); }
 
 aside h4 {
   font: bold 1rem Sans-Serif;

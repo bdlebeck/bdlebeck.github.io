@@ -1,12 +1,17 @@
 <div class="container">
-	<h2>Education</h2>
-	<ul class="content">
-		{{#degrees}}
-			<li>
-				<span>{{ school }}</span><br/>
-				<!--<span>{{ city }}</span>-->
-				<span>{{ degree }}</span>
-			</article>
-		{{/degrees}}
+	<div class="content">
+
+		<aside>
+			<h4>Education</h4>
+			<ul>
+				{{#degrees}}
+					<li>
+						<span>{{ school }}</span><br/>
+						<span>{{ degree }}</span>
+					</li>
+				{{/degrees}}
+			</ul>
+		</aside>
+	
 	</div>
 </div>
