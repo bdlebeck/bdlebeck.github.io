@@ -1,13 +1,14 @@
 $background-color:	#ffffff;
-$primary: 			#14a8fc;
-$danger:			darkred;
+$primary: 			#009BFF;
+$secondary:			#FF8E00;
+$alternative:		#FF4100;
+$danger:			#FF4100;
 $font: 				14px;
 $font-color: 		#555555;
 
 @import url('normalize.css');
 @import 'mixins';
 @import 'design';
-@import 'details';
 
 
 html,

@@ -19,12 +19,12 @@ body {
  
 @media only screen and (max-width: 600px) {
 	body {
-		background-size: contain;
+		background-size: cover;
 	}
 }
 
 header {
-	color: #333333;
+	color: #ffffff;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
@@ -35,12 +35,18 @@ header {
 		margin: 0 0 0 2rem;
 		padding: 0;
 	}
-	@media only screen and (max-width: 600px) {
+}
+@media only screen and (max-width: 600px) {
+	header { 
+		height: 60px;
+	
 		h1 {
 			font-size: 1.8rem;
+			margin: 0 0 0 1rem;
 		}
-	}	
+	}
 }
+
 
 footer.footer {
 	height: 290px;
@@ -98,12 +104,8 @@ nav {
 		display: block;
 		text-align: center;
 	}
-	.navigation .logo {
-		margin-right: auto;
-		margin-left: auto;
-	}
 	.navigation a {  
-		color: #333333;
+		color: #ffffff;
 		cursor: pointer;
 		display: block;
 		font-weight: 400;
@@ -116,7 +118,6 @@ nav {
 		color: black;
 	}
 }
-
 
 
 .container {
@@ -133,6 +134,18 @@ nav {
 
 .background {
 	margin-bottom: 4rem;
+}
+
+
+.flex {
+	@include flexbox();
+	@include flex-direction(row);
+	@include justify-content(space-between)
+}
+@media only screen and (max-width: 600px) {
+	.flex {
+		@include flex-direction(column);
+	}
 }
 
 
@@ -191,57 +204,6 @@ nav {
 }
 
 
-
-aside {
-	background-color: #ffffff;
-	display: block;
-	min-height: 240px;
-	position: relative;  
-	border: 1px solid #cccccc;
-	border-left: 34px solid darken($primary, 20%);
-	padding: 1rem;
-
-	-webkit-box-shadow: 0 0 12px 6px rgba(60,60,60,.1);
-	box-shadow: 0 0 12px 6px darken(rgba(185, 185, 185, 0.5), 10%);	
-}
-
-aside h4 {
-	font: bold 1rem Sans-Serif;
-	letter-spacing: 2px; 
-	text-transform: uppercase;
-	background: darken($primary, 20%);
-	color: #fff;
-	padding: 5px 10px;
-	margin: 0;
-	line-height: 24px;
-
-	position: absolute;
-	top: 0;
-	left: 0;
-	
-	-webkit-transform-origin: 0 0;
-	-moz-transform-origin:    0 0;
-	-ms-transform-origin:     0 0;
-	-o-transform-origin:      0 0;
-	
-	-webkit-transform: rotate(90deg); 
-	-moz-transform:    rotate(90deg); 
-	-ms-transform:     rotate(90deg); 
-	-o-transform:      rotate(90deg); 
-}
-
-
-
-.flex {
-	@include flexbox();
-	@include flex-direction(row);
-	@include justify-content(space-between)
-}
-@media only screen and (max-width: 600px) {
-	.flex {
-		@include flex-direction(column);
-	}
-}
 
 .career {
 	@include flex(1);
@@ -390,7 +352,7 @@ aside h4 {
 
 .quote1,
 .quote2  {
-	background-color: darken($primary, 20%);
+	background-color: darken($primary, 30%);
 	color: #ffffff;
 	padding: .5rem;
 	margin-bottom: 4rem;
@@ -448,6 +410,58 @@ aside h4 {
 	}
 }
 
+
+aside {
+	background-color: #ffffff;
+	display: block;
+	min-height: 240px;
+	position: relative;  
+	border: 1px solid #cccccc;
+	border-left: $secondary;
+	padding: 1rem;
+
+	-webkit-box-shadow: 0 0 12px 6px rgba(60,60,60,.1);
+	box-shadow: 0 0 12px 6px rgba(60,60,60,.1);	
+}
+
+aside h4 {
+	font: bold 1rem Sans-Serif;
+	letter-spacing: 2px; 
+	text-transform: uppercase;
+	background: $secondary;
+	color: #fff;
+	padding: 5px 10px;
+	margin: 0;
+	line-height: 24px;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin:    0 0;
+	-ms-transform-origin:     0 0;
+	-o-transform-origin:      0 0;
+	
+	-webkit-transform: rotate(90deg); 
+	-moz-transform:    rotate(90deg); 
+	-ms-transform:     rotate(90deg); 
+	-o-transform:      rotate(90deg); 
+}
+
+@media only screen and (max-width: 600px) {
+	aside h4 {
+		position: initial;
+		display: block;
+		margin-bottom: 1rem;
+
+		-webkit-transform: rotate(0deg); 
+		-moz-transform:    rotate(0deg); 
+		-ms-transform:     rotate(0deg); 
+		-o-transform:      rotate(0deg); 
+	}
+
+}
 
 
 

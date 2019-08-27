@@ -1,4 +1,54 @@
 
+$background-color:	#ffffff;
+$primary: 			#009BFF;
+$secondary:			#FF8E00;
+$alternative:		#FF4100;
+$danger:			#FF4100;
+$font: 				14px;
+$font-color: 		#555555;
+
+
+@import url('normalize.css');
+@import 'mixins';
+
+/*Shared classes from design.scss*/
+html,
+body {
+	color: $font-color;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+}
+
+body {
+	height: 200px;
+	background-color: #ffffff;
+	/*background-color: #14a8fc;*/
+  }
+
+
+ 
+@media only screen and (max-width: 600px) {
+
+}
+
+.container {
+	width: 70%;
+	margin: .5rem auto;
+}
+@media only screen and (max-width: 600px) {
+	.container {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
 
 .details-highlights {
 	webkit-animation: fadeIn .6s;
@@ -7,7 +57,7 @@
 	@include flex-direction(column);
 	line-height: 1.6rem;
 	max-width: 40rem;
-	margin: 6rem auto 0 auto;
+	margin: 7rem auto 0 auto;
 
 	h3 {
 		font-size: 1.2rem;
@@ -55,7 +105,6 @@
 
 @media only screen and (max-width: 600px) {
 	.details-highlights {
-		@include flex-direction(column);
 		margin: 6rem 2rem 0 2rem;
 
 		.details-content {
@@ -66,19 +115,21 @@
 
 
 .pagination-container {
-	height: 5rem;
-	@include flexbox();
-	@include flex-direction(row);	
-	@include justify-content(space-between);	
-	@include align-items(center);
-	margin: 0 auto;
-	max-width: 40rem;
-
+	background-color: #005d99;
 	position: fixed;
 	top: 0;
 	left: 0;
-	right: 0;
+	right: 0;	
 
+	.pagination-fixed {
+		@include flexbox();
+		@include flex-direction(row);	
+		@include justify-content(space-between);	
+		@include align-items(center);
+		height: 4rem;
+		margin: 0 auto;
+		max-width: 40rem;
+	}
 
 	.home, .back, .next {
 		cursor: pointer;
@@ -86,30 +137,27 @@
 		font-size: 2.0rem;
 	}	
 	.back, .next {
-		color: $primary;
+		color: #ffffff;
 		margin: 0 .2rem;
 	}	
 
 	.home {
-		color: $danger;
+		color: #ffffff;
 	}	
 	.home:hover {
-		color: darken($danger, 10%);
+		color: lighten($primary, 20%);
 	}	
 	.next:hover, .back:hover {
-		color: darken($primary, 20%);
+		color: lighten($primary, 20%);
 	}	
 				
 }
 @media only screen and (max-width: 600px) {
 	.pagination-container {
-		margin: 0 2rem;
-		padding: 0;
+		padding: 0 2rem;
 		width:  auto;
 	}
 }
-
-
 
 
 /*Desktop*/
@@ -117,10 +165,7 @@
 
 }
 
-/*Mobile*/
-@media only screen and (max-width: 600px) {
 
-}
 
 .pagination {
 	display: inline;
@@ -132,11 +177,11 @@
 	}
 
 	a:hover {	
-		color: darken($primary, 20%);
+		color: lighten($primary, 20%);
 	}		
 
 	.active {
-		color: #ffffff;
+		
 	}		
 }
 
@@ -144,6 +189,8 @@
 
 
 
-
+.hidden {
+	display: none;
+}
 
   
