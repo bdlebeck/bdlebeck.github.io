@@ -17,7 +17,6 @@
 
 				<nav>
 					<ul class="navigation" role="navigation">
-						<li><a id="home-btn">Home</a></li>
 						<li><a id="strength-btn">Strengths</a></li>
 						<li><a id="career-btn">Career</a></li>
 						<li><a id="projects-btn">Projects</a></li>
@@ -28,9 +27,6 @@
 
 
 		<main>
-
-			<div id="home" class="background about">
-			</div>
 
 			<div id="strengths" class="background strengths"></div>
 			
@@ -80,15 +76,11 @@
 		
 	
 	<script>
-		var section1Btn = document.getElementById("home-btn"),
-				section2Btn = document.getElementById("strength-btn"),
-				section3Btn = document.getElementById("career-btn"),
-				section4Btn = document.getElementById("projects-btn");
-				section5Btn = document.getElementById("education-btn");
+		var section2Btn = document.getElementById("strength-btn"),
+		section3Btn = document.getElementById("career-btn"),
+		section4Btn = document.getElementById("projects-btn"),
+		section5Btn = document.getElementById("education-btn")
 
-		section1Btn.onclick = function() {
-			TweenLite.to(window, .3, {scrollTo:{y:"#home", offsetY:0, totalDuration: .3, autoKill:false}});
-		}
 
 		section2Btn.onclick = function() {
 			TweenLite.to(window, .3, {scrollTo:{y:"#strengths", offsetY:0, totalDuration: .3, autoKill:false}});

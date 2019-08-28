@@ -3,7 +3,7 @@ var career = {
 		{
 			id : "1",
 			company : "Surescripts",
-			jobTitle : "Web Developer",
+			jobTitle : "Front-end UI Designer",
 			date : "2015 - Current",
 			shortdate : "2019",
 			city : "Beaverton, OR",
@@ -62,7 +62,7 @@ var career = {
 		},
 		{
 			id : "3",
-			company : "Metro One",
+			company : "Metro One Telecommunications",
 			jobTitle : "Web Designer",
 			date : "2003 - 2007",
 			shortdate : "2007",
@@ -153,6 +153,7 @@ var project = {
 		{
 			id : "1",
 			project : "Specialty Patient Enrollment",
+			type : "Healthcare Software",
 			company : "Surescripts",
 			date : "2017",
 			intro : "Making it easy for clinics to fill a specialty medication at the pharmacy.",
@@ -175,6 +176,7 @@ var project = {
 		{
 			id : "2",
 			project : "Insights for Medication Adherence",
+			type : "Healthcare Software",
 			company : "Surescripts",
 			date : "2015",
 			intro : "Provides patient prescription adherence to the physician at the point-of-care.",
@@ -246,17 +248,17 @@ var education = {
 	degrees: [
 		{
 			school : "Oregon State University",
-			city : "Bend, Oregon",
-			degree : "Advanced Interactive Web Design Certification",
-			date : "2000 - 2004",
-			description : "The program covered such topics as website design, building a business on the web, graphic design principles and advanced web programming languages including Active Server Pages."
-		},		
-		{
-			school : "Oregon State University",
 			city : "Corvallis, Oregon",
 			degree : "College of Liberal Arts and Sciences, Multimedia Concentration",
 			date : "1995 - 1999",
 			description : "The Departments of Computer Science, Art, and Speech Communication administer an undergraduate in Interactive Multimedia, a program that incorporates work from computer science, art, speech communication and psychology."
+		},		
+		{
+			school : "Oregon State University",
+			city : "Bend, Oregon",
+			degree : "Advanced Interactive Web Design Certification",
+			date : "2000 - 2004",
+			description : "The program covered such topics as website design, building a business on the web, graphic design principles and advanced web programming languages including Active Server Pages."
 		}
 	],
 };

@@ -67,17 +67,43 @@ body {
 
 	.detail-header {
 		@include flexbox();
-		@include flex-direction(column);
+		@include flex-direction(row);
+		@include justify-content(space-between);
 		font-weight: 700;
 		margin-bottom: .5rem;
-		h3 {
+
+		span { display: block; }
+
+		.title {
 			font-size: 1.4rem;
 			font-weight: 600;
-			margin: 0;
 		}
-		span {
+		.subtitle {
+			color: #999999;;
 			font-size: 1.0rem;
+			font-weight: 300;
+		}			
+		.date {
+			color: lighten($secondary, 20%);
+			font-size: 1.8em;
+			font-weight: 300;
+			margin: 0;
+		}			
+	}
+	@media only screen and (max-width: 600px) {
+		.detail-header {
+			@include flex-direction(column);
+			.title {
+				font-size: 1.1rem;
+			}
+			.subtitle {
+				font-size: 1.0rem;
+			}			
+			.date {
+				font-size: 1.0rem;
+			}				
 		}
+		
 	}
 
 	.details-screenshots {
