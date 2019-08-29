@@ -62,7 +62,7 @@ var career = {
 		},
 		{
 			id : "3",
-			company : "Metro One Telecommunications",
+			company : "Metro One Telecom",
 			jobTitle : "Web Designer",
 			date : "2003 - 2007",
 			shortdate : "2007",
@@ -240,7 +240,26 @@ var project = {
 			screenshots: [
 				{ "url" : "caremanager.png" }
 			]				
-		}		
+		},
+		{
+			id : "5",
+			project : "Medical Icons",
+			company : "Surescripts",
+			date : "2017",
+			intro : "Logo optioons presented in organized options.",
+			description : "Logo optioons presented in organized options.",
+			
+			duties: [
+				{ "duty" : "Font Awesome icon collection for medical application use." },
+				{ "duty" : "Icon options presented to Business Team." }		
+			],
+			links: [
+				{  },
+			],
+			screenshots: [
+				{ "url" : "medical-icons.png" }
+			]				
+		}			
 	]
 };
 

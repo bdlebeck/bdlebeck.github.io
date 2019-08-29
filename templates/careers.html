@@ -1,20 +1,15 @@
-<div class="content">
-
-	<aside>
-		<h4>Career History</h4>
-		<ul>
-			{{#items}}
-			<li class="" page="{{id}}" id="career{{ id }}">
-				<span class="company">{{ company }}</span>
-				<span class="title">{{ jobTitle }}</span> 
-				<span class="date hidden">{{ shortdate }}</span> 
-			</li>
-			{{/items}}
-		</ul>
-	</aside>
-
-</div>
-
+<aside>
+	<h4>Career History</h4>
+	<ul>
+		{{#items}}
+		<li class="" page="{{id}}" id="career{{ id }}">
+			<span class="company">{{ company }}</span>
+			<span class="title">{{ jobTitle }}</span> 
+			<span class="date hidden">{{ shortdate }}</span> 
+		</li>
+		{{/items}}
+	</ul>
+</aside>
 
 <script>
 	$( ".career li" ).click(function() {

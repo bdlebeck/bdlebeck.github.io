@@ -7,9 +7,9 @@ $font: 				14px;
 $font-color: 		#555555;
 
 @import url('normalize.css');
+@import url('../node_modules/flexboxgrid/css/flexboxgrid.min.css');
 @import 'mixins';
 @import 'design';
-
 
 html,
 body {
@@ -69,7 +69,15 @@ a:hover {
     animation: fadeIn .1s;	
 }
 
-
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
 
 
 .responsive {

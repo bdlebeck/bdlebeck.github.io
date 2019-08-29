@@ -1,38 +1,45 @@
-<div class="container">
-	<div class="content">
 
-		<div>
-			<aside>
-				<h4>Development</h4>
-				<ul>
-					{{#development}}
-					<li>{{name}}</li>
-					{{/development}}
-				</ul>
-			</aside>			
+
+<div class="container strengths">		
+	<div class="row around-xs">
+
+		<div class="col-xs-12 col-sm">
+			<div class="box">
+					<aside>
+						<h4>Development</h4>
+						<ul>
+							{{#development}}
+							<li>{{name}}</li>
+							{{/development}}
+						</ul>
+					</aside>
+			</div>
 		</div>
-
-		<div class="design">
-			<aside>
-				<h4>Design</h4>
-				<ul>
-					{{#design}}
-					<li>{{name}}</li>
-					{{/design}}
-				</ul>
-			</aside>
+		<div class="col-xs-12 col-sm">
+			<div class="box">
+					<aside>
+						<h4>Design</h4>
+						<ul>
+							{{#design}}
+							<li>{{name}}</li>
+							{{/design}}
+						</ul>
+					</aside>
+			</div>
 		</div>
-
-		<div>
-			<aside>
-				<h4>Business</h4>
-				<ul>
-					{{#business}}
-					<li>{{name}}</li>
-					{{/business}}
-				</ul>
-			</aside>
-		</div>		
+		<div class="col-xs-12 col-sm">
+			<div class="box">
+					<aside>
+						<h4>Business</h4>
+						<ul>
+							{{#business}}
+							<li>{{name}}</li>
+							{{/business}}
+						</ul>
+					</aside>
+			</div>
+		</div>	
 
 	</div>
+
 </div>
