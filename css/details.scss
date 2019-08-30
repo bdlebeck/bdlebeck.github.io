@@ -158,6 +158,8 @@ body {
 	}
 
 	.home, .back, .next {
+		border: none;
+		background-color: transparent;
 		cursor: pointer;
 		display: inline;
 		font-size: 2.0rem;
