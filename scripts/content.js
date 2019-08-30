@@ -153,7 +153,7 @@ var project = {
 		{
 			id : "1",
 			project : "Specialty Patient Enrollment",
-			type : "Healthcare Software",
+			type : "Web Application",
 			company : "Surescripts",
 			date : "2017",
 			intro : "Making it easy for clinics to fill a specialty medication at the pharmacy.",
@@ -176,7 +176,7 @@ var project = {
 		{
 			id : "2",
 			project : "Insights for Medication Adherence",
-			type : "Healthcare Software",
+			type : "Web Application",
 			company : "Surescripts",
 			date : "2015",
 			intro : "Provides patient prescription adherence to the physician at the point-of-care.",
@@ -198,6 +198,7 @@ var project = {
 		{
 			id : "3",
 			project : "CareManager",
+			type : "Web Application",
 			company : "Enli Health Intelligence",
 			date : "2014",
 			intro : "Provides a health summary of the entire patient populations based on evidence-based guidelines.",
@@ -221,6 +222,7 @@ var project = {
 		{
 			id : "4",
 			project : "Patient Portal",
+			type : "Web Application",
 			company : "Enli Health Intelligence",
 			date : "2013",
 			intro : "Giving patients access to their health records and a secure way to message their doctor.",
@@ -244,6 +246,7 @@ var project = {
 		{
 			id : "5",
 			project : "Medical Icons",
+			type : "Mockup",
 			company : "Surescripts",
 			date : "2017",
 			intro : "Logo optioons presented in organized options.",
@@ -304,8 +307,7 @@ var strength = {
 		{ name : "UI component library" },
 		{ name : "Responsive Design" },
 		{ name : "Cross browser/device" },
-		{ name : "UI Frameworks, Bootstrap" },
-		{ name : "Accessibility / MU2 WCAG" },
+		{ name : "Accessibility / WCAG" },
 	]
 };
 

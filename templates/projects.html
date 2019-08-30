@@ -4,10 +4,9 @@
 		<h4>Recent Projects</h4>
 		<ul>
 			{{ #items }}
-			<li page="{{id}}" id="{{ id }}">
+			<li class="link-hover" page="{{id}}" id="{{ id }}">
 					<span class="title">{{ project }}</span>
-					<span class="type hidden">{{ type }}</span>
-					<span class="company hidden">{{ company }}</span> 
+					<span class="type">{{ type }}</span>
 			</li>	
 			{{ /items }}
 		</ul>		
