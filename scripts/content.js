@@ -175,7 +175,7 @@ var project = {
 		},
 		{
 			id : "2",
-			project : "Insights for Medication Adherence",
+			project : "Insights  Med. Adherence",
 			type : "Web Application",
 			company : "Surescripts",
 			date : "2015",

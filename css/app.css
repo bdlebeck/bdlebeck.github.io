@@ -218,14 +218,6 @@ main {
   .container {
     width: 90%;
     margin: .5rem auto; } }
-.career .title {
-  color: #B3782D;
-  float: right; }
-
-.projects .type {
-  color: #B3782D;
-  float: right; }
-
 .strengths, .career, .projects, .education {
   margin-bottom: 2rem; }
   .strengths .box, .career .box, .projects .box, .education .box {
@@ -305,6 +297,9 @@ aside ul li {
   display: block;
   font-size: 1.0rem;
   padding: .1rem .6rem; }
+  aside ul li .type, aside ul li .title {
+    color: #B3782D;
+    float: right; }
 
 aside ul li.link-hover {
   cursor: pointer; }
@@ -312,9 +307,12 @@ aside ul li.link-hover {
 aside ul li.link-hover:hover {
   background-color: #005d99;
   color: #ffffff; }
+  aside ul li.link-hover:hover .type, aside ul li.link-hover:hover .title {
+    color: #ffffff; }
 
 aside h4 {
   background: #B3782D;
+  border-radius: 0 0 4px 4px;
   color: #fff;
   font-size: 1.0rem;
   font-weight: bold;

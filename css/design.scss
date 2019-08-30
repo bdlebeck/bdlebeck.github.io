@@ -125,16 +125,10 @@ main {
 
 
 .career  {
-	.title {
-		color: $secondary;
-		float: right;
-	}	
+
 }
 .projects  {
-	.type {
-		color: $secondary;
-		float: right;
-	}	
+
 }
 
 .strengths, .career, .projects, .education   {
@@ -241,6 +235,10 @@ aside ul li {
 	display: block;
 	font-size: 1.0rem;
 	padding: .1rem .6rem;
+	.type, .title {
+		color: $secondary;
+		float: right;
+	}	
 }
 
 aside ul li.link-hover {
@@ -250,10 +248,14 @@ aside ul li.link-hover {
 aside ul li.link-hover:hover {
 	background-color: darken($primary, 20%);
 	color: #ffffff;
+	.type, .title {
+		color: #ffffff;
+	}	
 }
 
 aside h4 {
 	background: $secondary;
+	border-radius: 0 0 4px 4px;
 	color: #fff;
 	font-size: 1.0rem;
 	font-weight: bold;
