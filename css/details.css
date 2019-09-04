@@ -293,6 +293,9 @@ body {
   .pagination a:hover {
     color: #66c3ff; }
 
+@media only screen and (max-width: 600px) {
+  .pagination {
+    display: none; } }
 .hidden {
   display: none; }
 
