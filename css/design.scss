@@ -122,7 +122,10 @@ main {
 	}
 }
 
-
+.about {
+	font-size: 1.6rem;
+	line-height: 2.0rem
+}
 
 .career  {
 
@@ -136,7 +139,7 @@ main {
 
 	.box {
 		padding: 0;
-		width: 90%;
+		width: 96%;
 	}	
 }
 @media only screen and (max-width: 600px) {
@@ -212,19 +215,22 @@ main {
 
 aside {
 	background-color: #ffffff;
+	/*
 	border: 1px solid #cccccc;
 	border-left: 1px solid #cccccc;
+	*/
 	display: block;
 	margin-bottom: 2rem;
-	min-height: 280px;
+	/*min-height: 280px;*/
 	position: relative; 
-
+/*
 	-webkit-box-shadow: 0 0 12px 6px rgba(60,60,60,.1);
 	box-shadow: 0 0 12px 6px rgba(60,60,60,.1);	
+*/
 }
 
 aside ul {
-	margin: 1rem;
+	margin: 0 1rem 0;
 	padding: 0;
 	line-height: 2.0rem;
 	list-style: none;
@@ -236,7 +242,7 @@ aside ul li {
 	font-size: 1.0rem;
 	padding: .1rem .6rem;
 	.type, .title {
-		color: $secondary;
+		color: complement($primary);
 		float: right;
 	}	
 }

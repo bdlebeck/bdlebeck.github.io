@@ -170,7 +170,7 @@ var project = {
 				{ "text" : "Specialty Patient Enrollment", "link" : "http://surescripts.com/enhance-prescribing/" },
 			],			
 			screenshots: [
-				{ "url" : "caremanager.png" }
+				{ "url" : "projects/specialty@2x.png" }
 			]				
 		},
 		{
@@ -192,17 +192,39 @@ var project = {
 				{ "text" : "Insights for Medication Adherence", "link" : "https://surescripts.com/inform-care-decisions/insights-alerts/" },
 			],					
 			screenshots: [
-				{ "url" : "mma-01.png" }
+				{ "url" : "projects/insights@2x.png" }
 			]		
 		},
 		{
 			id : "3",
+			project : "Patient Alerts",
+			type : "Web Application",
+			company : "Surescripts",
+			date : "2018",
+			intro : "Lorum Ipsum.",
+			description : "Lorum Ipsum.",
+
+			duties: [
+				{ "duty" : "Lorum Ipsum." },
+				{ "duty" : "Lorum Ipsum." },
+				{ "duty" : "Lorum Ipsum." },
+				{ "duty" : "Lorum Ipsum." }			
+			],
+			links: [
+				{ "text" : "Lorum Ipsum.", "link" : "https://surescripts.com/inform-care-decisions/insights-alerts/" },
+			],					
+			screenshots: [
+				{ "url" : "projects/alerts@2x.png" }
+			]		
+		},		
+		{
+			id : "4",
 			project : "CareManager",
 			type : "Web Application",
 			company : "Enli Health Intelligence",
 			date : "2014",
 			intro : "Provides a health summary of the entire patient populations based on evidence-based guidelines.",
-			description : "While working at Enli, I was the lead frontend designer for ENLI's <a href='http://www.enli.net/caremanager-point-of-care/'>CareManager Point-of-Care</a> and <a href='http://www.enli.net/caremanager-central-worklist/'>CareManager Central Worklist</a>.",
+			description : "While working at Enli, I was the frontend designer for ENLI's CareManager Point-of-Care and CareManager Central Worklist.  This application allows clinics insight into it's patient population to monitor high risk patients.",
 
 			duties: [
 				{ "duty" : "UI design" },
@@ -220,7 +242,7 @@ var project = {
 			]			
 		},
 		{
-			id : "4",
+			id : "5",
 			project : "Patient Portal",
 			type : "Web Application",
 			company : "Enli Health Intelligence",
@@ -244,7 +266,7 @@ var project = {
 			]				
 		},
 		{
-			id : "5",
+			id : "6",
 			project : "Medical Icons",
 			type : "Mockup",
 			company : "Surescripts",
@@ -261,6 +283,26 @@ var project = {
 			],
 			screenshots: [
 				{ "url" : "medical-icons.png" }
+			]				
+		},
+		{
+			id : "7",
+			project : "Component Styleguide",
+			type : "Styleguide",
+			company : "Surescripts",
+			date : "2019",
+			intro : "Built a component library for Angular applications.",
+			description : "Built a component library for Angular applications.",
+			
+			duties: [
+				{ "duty" : "Built a component library for Angular applications." },
+				{ "duty" : "Built a component library for Angular applications." }		
+			],
+			links: [
+				{  },
+			],
+			screenshots: [
+				{ "url" : "screenshots/styleguide.png" }
 			]				
 		}			
 	]
@@ -286,20 +328,13 @@ var education = {
 };
 
 var strength = {
-	business: [
-		{ name : "Business requirement mockups" },
-		{ name : "Worrkflow wireframes" },
-		{ name : "Dynamic prototypes" },
-		{ name : "UX user experience" },
-		{ name : "Agile story writing" }
-	],	
 	design: [
+		{ name : "Business requirement mockups" },
+		{ name : "User workflow mockups" },
+		{ name : "Software prototypes" },
 		{ name : "User interface design" },
-		{ name : "User workflow mockup" },
-		{ name : "Product prototype" },
 		{ name : "Corporate styleguide" },
-		{ name : "UX User Experience" },
-		{ name : "Adobe XD" }
+		{ name : "UX User Experience" }
 	],	
 	development: [
 		{ name : "HTML5, CSS3, SCSS" },
@@ -307,7 +342,7 @@ var strength = {
 		{ name : "UI component library" },
 		{ name : "Responsive Design" },
 		{ name : "Cross browser/device" },
-		{ name : "Accessibility / WCAG" },
+		{ name : "Accessibility / WCAG" }
 	]
 };
 

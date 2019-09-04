@@ -218,11 +218,15 @@ main {
   .container {
     width: 90%;
     margin: .5rem auto; } }
+.about {
+  font-size: 1.6rem;
+  line-height: 2rem; }
+
 .strengths, .career, .projects, .education {
   margin-bottom: 2rem; }
   .strengths .box, .career .box, .projects .box, .education .box {
     padding: 0;
-    width: 90%; }
+    width: 96%; }
 
 @media only screen and (max-width: 600px) {
   .strengths .box, .career .box, .projects .box, .education .box {
@@ -277,17 +281,21 @@ main {
     width: 90%; } }
 aside {
   background-color: #ffffff;
+  /*
   border: 1px solid #cccccc;
   border-left: 1px solid #cccccc;
+  */
   display: block;
   margin-bottom: 2rem;
-  min-height: 280px;
+  /*min-height: 280px;*/
   position: relative;
-  -webkit-box-shadow: 0 0 12px 6px rgba(60, 60, 60, 0.1);
-  box-shadow: 0 0 12px 6px rgba(60, 60, 60, 0.1); }
+  /*
+  	-webkit-box-shadow: 0 0 12px 6px rgba(60,60,60,.1);
+  	box-shadow: 0 0 12px 6px rgba(60,60,60,.1);	
+  */ }
 
 aside ul {
-  margin: 1rem;
+  margin: 0 1rem 0;
   padding: 0;
   line-height: 2.0rem;
   list-style: none; }
@@ -298,7 +306,7 @@ aside ul li {
   font-size: 1.0rem;
   padding: .1rem .6rem; }
   aside ul li .type, aside ul li .title {
-    color: #B3782D;
+    color: #ff6400;
     float: right; }
 
 aside ul li.link-hover {
@@ -311,7 +319,7 @@ aside ul li.link-hover:hover {
     color: #ffffff; }
 
 aside h4 {
-  background: #B3782D;
+  background: #8db600;
   border-radius: 0 0 4px 4px;
   color: #fff;
   font-size: 1.0rem;
