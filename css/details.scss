@@ -32,7 +32,7 @@ body {
 }
 
 .container {
-	width: 70%;
+	width: 80%;
 	margin: .5rem auto;
 }
 @media only screen and (max-width: 600px) {
@@ -55,7 +55,7 @@ body {
 	@include flexbox();
 	@include flex-direction(column);
 	line-height: 1.6rem;
-	max-width: 40rem;
+	max-width: 50rem;
 	margin: 7rem auto 0 auto;
 
 	h3 {
@@ -109,6 +109,7 @@ body {
 		@include flex(1);
 		
 		.career__screenshot {
+			border: 1px solid #cccccc;
 			max-width: 100%;
 		}	
 	}	
@@ -153,7 +154,7 @@ body {
 		@include align-items(center);
 		height: 4rem;
 		margin: 0 auto;
-		max-width: 40rem;
+		max-width: 50rem;
 	}
 
 	.home, .back, .next {

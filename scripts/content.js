@@ -157,14 +157,16 @@ var project = {
 			company : "Surescripts",
 			date : "2017",
 			intro : "Making it easy for clinics to fill a specialty medication at the pharmacy.",
-			description : "This web application makes it easy for doctors to prescribe a medication from a specialty pharmacy.  Under 2% of prescriptions are specialty medications, but they are projected to approach half of U.S. drug spending by 2021",
+			description : "At Surescripts I was part of the team who created Specialty Patient Enrollment.  This application was intended to makes it easy for medical clinics perscribe medications from pharmacies with specialty medications and replace the fax-based workflow.  Under 2% of prescriptions are specialty medications, but they are projected to approach half of U.S. drug spending by 2021",
 
 			duties: [
-				{ "duty" : "HTML, CSS/LESS architecture" },
 				{ "duty" : "Business requirement mockups and prototypes" },
+				{ "duty" : "HTML, CSS/LESS architecture" },
+				{ "duty" : "Styled shared UI components" },
 				{ "duty" : "Responsive design" },
-				{ "duty" : "Browser testing" },
-				{ "duty" : "Selenium test debugging" }
+				{ "duty" : "Cross browser testing" },
+				{ "duty" : "Selenium test debugging" },
+				{ "duty" : "Bootstrap library" }
 			],
 			links: [
 				{ "text" : "Specialty Patient Enrollment", "link" : "http://surescripts.com/enhance-prescribing/" },
@@ -186,7 +188,7 @@ var project = {
 				{ "duty" : "UI design, HTML, CSS/LESS architecture" },
 				{ "duty" : "Business requirement mockups and prototypes" },
 				{ "duty" : "Front-end design and development" },
-				{ "duty" : "Custom Bootstrap theme" }			
+				{ "duty" : "Custom Bootstrap theme" }		
 			],
 			links: [
 				{ "text" : "Insights for Medication Adherence", "link" : "https://surescripts.com/inform-care-decisions/insights-alerts/" },
@@ -237,46 +239,22 @@ var project = {
 				{ "text" : "CareManager Point of Care", "link" : "http://www.enli.net/caremanager-point-of-care/" },
 			],				
 			screenshots: [
-				{ "url" : "caremanager.png" },
-				{ "url" : "caremanager-poc.png" }
+				{ "url" : "projects/poc@2x.png" }
 			]			
 		},
 		{
 			id : "5",
-			project : "Patient Portal",
-			type : "Web Application",
-			company : "Enli Health Intelligence",
-			date : "2013",
-			intro : "Giving patients access to their health records and a secure way to message their doctor.",
-			description : "UI design and front-end development for Enli's 'Patient Portal' enterprise software. The Patient Portal provides healthcare providers a secure online presence secure messaging, appointment, and online payments.",
-			
-			duties: [
-				{ "duty" : "UI design, HTML, CSS/LESS architecture" },
-				{ "duty" : "Business mockups and prototypes" },
-				{ "duty" : "Lead frontend design and development for Enli's Patient Portal enterprise software." },
-				{ "duty" : "Responsive mobile interface" },
-				{ "duty" : "Largest customer: GE Healthcare" },
-				{ "duty" : "Drummond EHR Certification for MU2 accessibility compliance" }				
-			],
-			links: [
-				{ "text" : "Patient Portal with Secure Messaging", "link" : "http://surescripts.com/products-and-services/patient-portal-with-secure-messaging" },
-			],
-			screenshots: [
-				{ "url" : "caremanager.png" }
-			]				
-		},
-		{
-			id : "6",
 			project : "Medical Icons",
 			type : "Mockup",
 			company : "Surescripts",
 			date : "2017",
 			intro : "Logo optioons presented in organized options.",
-			description : "Logo optioons presented in organized options.",
+			description : "Here is a example of different icon options I presented to the Surescripts Business Team to review.",
 			
 			duties: [
-				{ "duty" : "Font Awesome icon collection for medical application use." },
-				{ "duty" : "Icon options presented to Business Team." }		
+				{ "duty" : "Used the Font Awesome icon library" },
+				{ "duty" : "Gathered a collection of medical related icons." },
+				{ "duty" : "Presented to Business Team for review." }		
 			],
 			links: [
 				{  },
@@ -286,13 +264,13 @@ var project = {
 			]				
 		},
 		{
-			id : "7",
+			id : "6",
 			project : "Component Styleguide",
 			type : "Styleguide",
 			company : "Surescripts",
 			date : "2019",
-			intro : "Built a component library for Angular applications.",
-			description : "Built a component library for Angular applications.",
+			intro : "At Surescripts, I worked on on several agile teams across several products.  urescripts I built and maintained a library of styled components to support a corporate styleguide.",
+			description : "At Surescripts, I had the oppertunity to work on several agile teams across multiple products.  To ensure consistency between products, I built and maintained a library of styled components to support a corporate styleguide.",
 			
 			duties: [
 				{ "duty" : "Built a component library for Angular applications." },

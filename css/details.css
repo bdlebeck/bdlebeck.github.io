@@ -141,7 +141,7 @@ body {
   /*background-color: #14a8fc;*/ }
 
 .container {
-  width: 70%;
+  width: 80%;
   margin: .5rem auto; }
 
 @media only screen and (max-width: 600px) {
@@ -160,7 +160,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   line-height: 1.6rem;
-  max-width: 40rem;
+  max-width: 50rem;
   margin: 7rem auto 0 auto; }
   .details-highlights h3 {
     font-size: 1.2rem;
@@ -216,6 +216,7 @@ body {
     -ms-flex: 1;
     flex: 1; }
     .details-highlights .details-screenshots .career__screenshot {
+      border: 1px solid #cccccc;
       max-width: 100%; }
   .details-highlights .details-content {
     font-size: 1.0rem;
@@ -261,7 +262,7 @@ body {
     align-items: center;
     height: 4rem;
     margin: 0 auto;
-    max-width: 40rem; }
+    max-width: 50rem; }
   .pagination-container .home, .pagination-container .back, .pagination-container .next {
     border: none;
     background-color: transparent;
