@@ -120,12 +120,11 @@ body {
 		@include flex(1);
 
 		ul {
+			padding-left: 1.2rem;
 			li {
 				margin-bottom: .5rem;
 			}
 		}
-
-
 	}
 }
 
@@ -134,7 +133,7 @@ body {
 		margin: 6rem 2rem 0 2rem;
 
 		.details-content {
-			padding: 0;
+			padding: 0;		
 		}
 	}
 }

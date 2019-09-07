@@ -226,8 +226,10 @@ body {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1; }
-    .details-highlights .details-content ul li {
-      margin-bottom: .5rem; }
+    .details-highlights .details-content ul {
+      padding-left: 1.2rem; }
+      .details-highlights .details-content ul li {
+        margin-bottom: .5rem; }
 
 @media only screen and (max-width: 600px) {
   .details-highlights {

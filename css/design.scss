@@ -230,7 +230,7 @@ aside {
 }
 
 aside ul {
-	margin: 0 1rem 0;
+	margin: 0 0 0 .5rem;
 	padding: 0;
 	line-height: 2.0rem;
 	list-style: none;
@@ -301,6 +301,13 @@ aside h4 {
 		-moz-transform:    rotate(0deg); 
 		-ms-transform:     rotate(0deg); 
 		-o-transform:      rotate(0deg); 
+	}
+	aside ul li {
+		margin-bottom: .5rem;
+		.type, .title {
+			display: block;
+			float: none;
+		}	
 	}
 
 }

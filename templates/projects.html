@@ -1,17 +1,14 @@
-
-	
-	<aside style="flex: 1 1 auto">
-		<h4>Examples</h4>
-		<ul>
-			{{ #items }}
-			<li class="link-hover" page="{{id}}" id="{{ id }}">
-					<span class="project">{{ project }}</span>
-					<span class="type">{{ type }}</span>
-			</li>	
-			{{ /items }}
-		</ul>		
-	</aside>
-
+<aside style="flex: 1 1 auto">
+	<h4>Examples</h4>
+	<ul>
+		{{ #items }}
+		<li class="link-hover" page="{{id}}" id="{{ id }}">
+				<span class="project">{{ project }}</span>
+				<span class="type">{{ type }}</span>
+		</li>
+		{{ /items }}
+	</ul>
+</aside>
 
 <script>
 	$( ".projects li" ).click(function() {

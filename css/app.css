@@ -295,7 +295,7 @@ aside {
   */ }
 
 aside ul {
-  margin: 0 1rem 0;
+  margin: 0 0 0 .5rem;
   padding: 0;
   line-height: 2.0rem;
   list-style: none; }
@@ -350,7 +350,13 @@ aside h4 {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg); } }
+    -o-transform: rotate(0deg); }
+
+  aside ul li {
+    margin-bottom: .5rem; }
+    aside ul li .type, aside ul li .title {
+      display: block;
+      float: none; } }
 footer.footer {
   background: url(../images/wave-bottom.svg) bottom center;
   background-size: cover;

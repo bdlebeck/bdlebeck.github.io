@@ -8,14 +8,15 @@ var career = {
 			shortdate : "2019",
 			city : "Beaverton, OR",
 			intro : "Frontend designer on the software engineering team at Surescripts.",
-			description : "I am currently working at Surescripts as a web/frontend developer on Agile Team 12.  Since starting, I have completed three projects creating software from concept to production.  From mocking up business requirements to working on the front-end code in development.  Surescripts delivers nearly two billion e-prescriptions annually.",			
+			description : "Frontend design and development on Agile Team 12.   From mocking up business requirements to working on the front-end code in development.  Surescripts delivers nearly two billion e-prescriptions annually.",			
 
 			accomplishments: [
 				{ "accomplishment" : "Built shared SCSS/CSS package to style themable components across multiple products." },
 				{ "accomplishment" : "Member of the UI Architecture Team in charge of implementing consistent UI." },
 				{ "accomplishment" : "Worked between the product owner and development team to translate business requirements into mockups and prototypes." },
 				{ "accomplishment" : "Development of dynamic html/javascript prototypes demoed to national pharmacy chains and leading electronic health records (EHR) companies." },
-				{ "accomplishment" : "Implemented front-end to adhere to corporate styleguide for several Surescripts products." }
+				{ "accomplishment" : "Implemented front-end to adhere to corporate styleguide for several Surescripts products." },
+				{ "accomplishment" : "Completed three projects creating software from concept to production. "}
 			],
 			duties: [
 				{ "duty" : "HTML, CSS3 architecture" },
@@ -40,7 +41,7 @@ var career = {
 			shortdate : "2015",
 			city : "Beaverton, OR",
 			intro : "Frontend designer on the software engineering team at Enli.",
-			description : "While at ENLI (formerly Kryptiq Corporation) I was the frontend/UI designer on the software engineering team. Delivering population health management software to healthcare providers.",
+			description : "At ENLI, I was the frontend/UI designer on the software engineering team. Delivering population health management software to healthcare providers.",
 
 			accomplishments: [
 				{ "accomplishment" : "Lead frontend designer for Enli’s <a href='http://www.enli.net/caremanager-central-worklist/' target='new'>CareManager Manager</a> platform.  Worked with product owners and business team to design the original user interface.  Worked on the engineering team building the frontend layout and design." },
@@ -71,9 +72,10 @@ var career = {
 			description : "Before the debut of the iPhone, I worked at Metro One, a nationwide telecommuications company.  The company provided operator-based telcom services, address and phone data scrubbing and Infone, an operator-based concierge service.  ",
 
 			accomplishments: [
-				{ "accomplishment" : "I was the lead web designer on the engineering team that created <a href='http://www.melissadata.com/m1data/index.htm' target='new'>M1 Data & Analytics</a>, a web-based phone and address data service." },
-				{ "accomplishment" : "Our team also created the website for <a href='https://www.youtube.com/watch?v=VD_92iUHa8A' target='new'>Infone</a>, a (411) retail phone service providing personal concierge services via operator." },
-				{ "accomplishment" : "I was also the web designer for the <a href='http://www.oregonlive.com/business/index.ssf/2005/11/metro_ones_travails_offer_less.html' target='new'>Metro One Telecommunications</a> corporate website." },
+				{ "accomplishment" : "Lead web designer on the Metro One's software engineering team." },
+				{ "accomplishment" : "Front-end deisgn and development for M1 Data & Analytics, a web-based phone and address data service (aquired by <a href='http://www.melissadata.com/m1data/index.htm' target='new'>Melissa data</a>)." },
+				{ "accomplishment" : "Lead web designer for for <a href='https://www.youtube.com/watch?v=VD_92iUHa8A' target='new'>Infone</a>, Metro One's retail phone service providing personal concierge services via operator." },
+				{ "accomplishment" : "Lead web designer for <a href='http://www.oregonlive.com/business/index.ssf/2005/11/metro_ones_travails_offer_less.html' target='new'>Metro One Telecommunications</a> corporate website." },
 				{ "accomplishment" : "Additional projects including, landing pages, banner ad campaigns (GIF, Flash), product flyer design, trade show booth design, and logo design."} 
 			],
 			duties: [
@@ -100,10 +102,11 @@ var career = {
 			shortdate : "2003",
 			city : "Corvallis, OR",
 			intro : "User interface designer on the software engineering team at HP.",
-			description : "I joined the engineering team at HP to help build an internal web application to track work requests in the mask fabrication facility.  The application allowed for team members to track work orders from beginning to end.",		
+			description : "Back in the early 2000 I joined an engineering team at HP to help build an internal web application.  This applictaion was to track work requests in the mask fabrication facility at HP.  I was the front-end designer for the internal application working with the business owner and engineering team.",		
 
 			accomplishments: [
-				{ "accomplishment" : "Collaborated with product owner to mockup the typical user workflow.  Worked with the engineering team to develop a clickable XHTML/CSS prototype." }
+				{ "accomplishment" : "Collaborated with product owner to mockup the typical user workflow." },
+				{ "accomplishment" : "Worked with the engineering team to develop a clickable XHTML/CSS prototype."}
 			],
 			duties: [
 				{ "duty" : "Dynamic XHTML/CSS/JS prototype" },
@@ -125,11 +128,11 @@ var career = {
 			shortdate : "2000",
 			city : "Bend, OR",
 			intro : "Web designer for a creative advertising agency in Bend, Oregon. ",
-			description : "I was the sole web designer for a creative advertising agency in Bend, Oregon. Our clients included: Sunriver Resort, Crosswater Golf Course, The Riverhouse, Wildhorse Resort & Casino and Bend Memorial Clinic.",		
+			description : "Sole web designer for a creative advertising agency in Bend, Oregon. Our clients included: Sunriver Resort, Crosswater Golf Course, The Riverhouse, Wildhorse Resort & Casino and Bend Memorial Clinic.",		
 
 			accomplishments: [
 				{ "accomplishment" : "Met with Agency clients to discuss business needs of the website and online ad campaigns" },
-				{ "accomplishment" : "Worked closely with <a href='http://www.sunriver-resort.com' target='new'>Sunriver Resort</a> and <a href='http://www.wildhorseresort.com' target='new'>Wildhorse Casino Resort</a> to build online presence." },
+				{ "accomplishment" : "Worked closely with clients to build online presence." },
 				{ "accomplishment" : "Website design, landing pages, banner ad campaigns, animated GIF and Flash" },
 				{ "accomplishment" : "Developed basic CRUD application for Sunriver rental homes and St. Charles Medical Center jobs board." }
 
@@ -157,7 +160,7 @@ var project = {
 			company : "Surescripts",
 			date : "2017",
 			intro : "Making it easy for clinics to fill a specialty medication at the pharmacy.",
-			description : "At Surescripts I was part of the team who created Specialty Patient Enrollment.  This application was intended to makes it easy for medical clinics perscribe medications from pharmacies with specialty medications and replace the fax-based workflow.  Under 2% of prescriptions are specialty medications, but they are projected to approach half of U.S. drug spending by 2021",
+			description : "At Surescripts I was part of the team who created Specialty Patient Enrollment.  This application was intended to makes it easy for medical clinics to perscribe specialty medications and replace the pervious fax-based workflow.  Under 2% of prescriptions are specialty medications, but they are projected to approach half of U.S. drug spending by 2021",
 
 			duties: [
 				{ "duty" : "Business requirement mockups and prototypes" },
