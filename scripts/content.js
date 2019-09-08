@@ -11,20 +11,19 @@ var career = {
 			description : "Frontend design and development on Agile Team 12.   From mocking up business requirements to working on the front-end code in development.  Surescripts delivers nearly two billion e-prescriptions annually.",			
 
 			accomplishments: [
-				{ "accomplishment" : "Built shared SCSS/CSS package to style themable components across multiple products." },
-				{ "accomplishment" : "Member of the UI Architecture Team in charge of implementing consistent UI." },
+				{ "accomplishment" : "Designed and developed prototypes demoed to national pharmacy chains." },
+				{ "accomplishment" : "Member of the UI Architecture Team in charge of implementing consistent UI across products." },
+				{ "accomplishment" : "Built shared SCSS/CSS package to style shared themable components." },
 				{ "accomplishment" : "Worked between the product owner and development team to translate business requirements into mockups and prototypes." },
-				{ "accomplishment" : "Development of dynamic html/javascript prototypes demoed to national pharmacy chains and leading electronic health records (EHR) companies." },
-				{ "accomplishment" : "Implemented front-end to adhere to corporate styleguide for several Surescripts products." },
-				{ "accomplishment" : "Completed three projects creating software from concept to production. "}
+				{ "accomplishment" : "Implemented front-end to adhere to corporate styleguide for several Surescripts products." }
 			],
 			duties: [
 				{ "duty" : "HTML, CSS3 architecture" },
 				{ "duty" : "Business requirement mockups" },
 				{ "duty" : "High and low fidelity prototypes"},
-				{ "duty" : "Responsive/Accessible design" },
+				{ "duty" : "Responsive / Accessible design" },
 				{ "duty" : "Bootstrap Library" },
-				{ "duty" : "General Angular/ReactJS component design" }
+				{ "duty" : "Angular environment" }
 			],
 			links: [
 			],
@@ -48,11 +47,12 @@ var career = {
 				{ "accomplishment" : "Lead frontend designer on the development team that created <a href='http://www.enli.net/caremanager-point-of-care/' target='new'>Enli's CareManager Point of Care software</a> from the ground up." }
 			],
 			duties: [
+				{ "duty" : "HTML, CSS3 architecture" },
 				{ "duty" : "Business requirement mockups and prototypes" },
-				{ "duty" : "Product UX design" },
-				{ "duty" : "HTML, CSS architecture" },
-				{ "duty" : "DOM javascript/jQuery" },
-				{ "duty" : "Responsive design" }
+				{ "duty" : "Javascript DOM/jQuery" },
+				{ "duty" : "Responsive design" },
+				{ "duty" : "Web mobile design" },
+				{ "duty" : "Boorstrap Library" }
 			],
 			links: [
 				{ "text" : "Enli Health Solutions website", "link" : "http://www.enli.net" }
@@ -224,12 +224,13 @@ var project = {
 		},		
 		{
 			id : "4",
-			project : "CareManager",
+			project : "CareManager - Point of Care",
 			type : "Web Application",
 			company : "Enli Health Intelligence",
 			date : "2014",
 			intro : "Provides a health summary of the entire patient populations based on evidence-based guidelines.",
 			description : "While working at Enli, I was the frontend designer for ENLI's CareManager Point-of-Care and CareManager Central Worklist.  This application allows clinics insight into it's patient population to monitor high risk patients.",
+			ux : "UX Challenge: The goal of Caremanager was to provide the doctor or clinic a quick look into the patients health records during the patient's appointment.  Colors were used to alert the doctor about disease category health scores.",
 
 			duties: [
 				{ "duty" : "UI design" },

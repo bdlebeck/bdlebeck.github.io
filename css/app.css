@@ -220,8 +220,23 @@ main {
     margin: .5rem auto; } }
 .about {
   font-size: 1.6rem;
-  line-height: 2rem; }
+  line-height: 2.0rem;
+  margin-top: -8rem;
+  text-align: center; }
+  .about .image-cropper {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%; }
+  .about img {
+    height: 100%;
+    width: auto; }
 
+@media only screen and (max-width: 600px) {
+  .about {
+    font-size: 1.4rem;
+    margin-top: -2rem; } }
 .strengths, .career, .projects, .education {
   margin-bottom: 2rem; }
   .strengths .box, .career .box, .projects .box, .education .box {
