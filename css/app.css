@@ -230,6 +230,7 @@ main {
     overflow: hidden;
     border-radius: 50%; }
   .about img {
+    border-radius: 50%;
     height: 100%;
     width: auto; }
 
