@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <clipPath id="clip-lg-box-background">
+      <rect width="600" height="600"/>
+    </clipPath>
+  </defs>
+  <g id="lg-box-background" clip-path="url(#clip-lg-box-background)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="396" height="396" transform="translate(48.875 195.496) rotate(-23)" fill="#fff" opacity="0.099"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="182" height="182" transform="translate(30.96 348.184) rotate(-23)" fill="#fff" opacity="0.099"/>
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="107" height="107" transform="translate(379.721 92.702) rotate(-23)" fill="#fff" opacity="0.099"/>
+    <rect id="Rectangle_4" data-name="Rectangle 4" width="180" height="180" transform="translate(363.721 325.702) rotate(-23)" fill="#fff" opacity="0.099"/>
+  </g>
+</svg>

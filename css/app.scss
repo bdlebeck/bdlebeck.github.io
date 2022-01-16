@@ -1,7 +1,11 @@
 $background-color:	#ffffff;
-$primary: 			#009BFF;
-$secondary:			#8db600;
-$alternative:		#FF4100;
+
+$color1: 			#28A2FF;
+$color2: 			#052F5F;
+$color3: 			#D9E5D6;
+$color4: 			#29B2A4;
+$color5: 			#BDFFFD;
+
 $danger:			#FF4100;
 $font: 				14px;
 $font-color: 		#555555;
@@ -48,12 +52,12 @@ h6 {
 }
 
 a, a:visited, a:active {
-	color: $primary;
+	color: $color1;
 	text-decoration: none;
 }
 
 a:hover {
-	color: darken($primary, 15%);
+	color: darken($color1, 15%);
 	text-decoration: none;
 }
 

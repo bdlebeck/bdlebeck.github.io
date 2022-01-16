@@ -193,7 +193,7 @@ body {
       font-size: 1.0rem;
       font-weight: 300; }
     .details-highlights .detail-header .date {
-      color: #8db600;
+      color: #F0F0C9;
       font-size: 1.8em;
       font-weight: 300;
       margin: 0; }
@@ -277,9 +277,9 @@ body {
   .pagination-container .home {
     color: #ffffff; }
   .pagination-container .home:hover {
-    color: #66c3ff; }
+    color: #1f88d1; }
   .pagination-container .next:hover, .pagination-container .back:hover {
-    color: #66c3ff; }
+    color: #1f88d1; }
 
 @media only screen and (max-width: 600px) {
   .pagination-container {
@@ -294,7 +294,7 @@ body {
     font-size: 1.0rem;
     margin: 0 .4rem; }
   .pagination a:hover {
-    color: #66c3ff; }
+    color: #1f88d1; }
 
 @media only screen and (max-width: 600px) {
   .pagination {

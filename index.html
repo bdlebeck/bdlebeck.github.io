@@ -8,45 +8,29 @@
 	    <link rel="stylesheet" href="css/app.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet"> 
 		<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:700&display=swap" rel="stylesheet">
 		<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 	</head>
 	<body id="body" class="home">
-
-		<header class="row middle-xs between-xs">
-			<div class="col-xs-12 col-sm-6">
-				<h1>Brian Lebeck</h1>
-			</div>
-			<div class="col-xs-12 col-sm-6 text-right">
-				<nav>
-					<ul class="" role="navigation">
-						<li><a id="strength-btn">Strengths</a></li>
-						<li><a id="career-btn">Career</a></li>
-						<li><a id="projects-btn">Projects</a></li>
-					</ul>
-				</nav>	
-			</div>
-		</header>
 
 		<main>
 
 			<div class="about background">
 				<div class="container">
-					<div class="row center-xs">
+					<div class="row middle-xs">
 						<div class="col-xs-12">
 							<div class="box">
-								<div class="image-cropper">
-									<img src="images/familyguy.png" />
-								</div>
-								<p>Hello, I am a Web Designer from Porland, Oregon.</p>
+								<h1>Brian Lebeck</h1>
+								<span class="description">Front-end UI Designer, Enterprise software specialist</span>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div id="strengths" class="background"></div>
+			<div id="strengths" class="strengths background"></div>
 			
-			<div id="quote2" class="background quote1">
+			<div id="quote2" class="background quote1 hidden">
 				<div class="container">
 					<blockquote class="content">
 						<p class="quotation">To create the HTML, CSS, and presentational JavaScript code that powers web products’ user interfaces.</p>
@@ -55,38 +39,49 @@
 				</div>
 			</div>	
 
-			<div class="background">
+			<div class="career-projects background">
 				<div class="container">
-					<div class="row around-xs">
+					<div class="row middle-xs">
 						<div class="col-xs-12 col-sm career">
 							<div class="box">
-								<div id="career" style="display: flex; align-items: stretch;"></div>
+								<div id="career"></div>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm projects">
 							<div class="box">
-								<div id="projects" style="display: flex; align-items: stretch;"></div>
+								<div id="projects"></div>
 							</div>
 						</div>						
 					</div>					
 				</div>
 			</div>
 
-			<div id="quote2" class="background quote2">
+			<div id="quote2" class="background quote2 hidden">
 				<div class="container">
 					<blockquote class="content">
 						<p class="quotation">To architect resilient CSS code with a focus on modularity, flexibility, compatibility, and extensibility.</p>
 						<footer>Brad Frost</footer>
 					</blockquote>
 				</div>
-			</div>			
-			<div id="education" class="background education"></div>
+			</div>	
+			
+			
+			
+
+			<div class="education background">
+				<div class="container">
+					<div class="row middle-xs">
+						<div class="col-xs-12">
+							<div class="box">
+								<div id="education"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 
 		</main>
-
-		<footer class="footer">
-		</footer>
 
 	</body> 
 
@@ -102,6 +97,7 @@
 		
 	
 	<script>
+		/*
 		var section2Btn = document.getElementById("strength-btn"),
 		section3Btn = document.getElementById("career-btn"),
 		section4Btn = document.getElementById("projects-btn"),
@@ -119,6 +115,7 @@
 		section4Btn.onclick = function() {
 			TweenLite.to(window, .3, {scrollTo:{y:"#projects", offsetY:0, totalDuration: .3, autoKill:false}});
 		}	
+		*/
 	
 	</script>	
 

@@ -7,180 +7,163 @@ body {
 }
 
 body {
-	height: 200px;
 	background-color: #ffffff;
-	/*background-color: #14a8fc;*/
-
-	background: url(../images/wave-top.svg) top center;
-	background-size: cover;
-	background-repeat: no-repeat;
-
-  }
- 
-@media only screen and (max-width: 600px) {
-	body {
-		background-size: cover;
-		height: 200px;
-	}
-}
-
-header {
-	color: #ffffff;
-	height: 80px;
-
-	h1 {
-		margin: 0 0 0 2rem;
-		padding: 0;
-	}
-
-	nav {
-		display: block;
-		margin-right: 2rem;
-		ul {
-			list-style-type: none;
-			margin: 0; 
-			padding: 0;
-		}
-		ul li { 
-			color: transparent;
-			display: inline-block;
-			text-align: center;
-		}
-		ul a {  
-			color: #ffffff;
-			cursor: pointer;
-			display: inline-block;
-			font-weight: 400;
-			padding: 16px 20px;
-			text-decoration: none;
-			transition:.5s;
-		}
-		ul a:hover { 
-			background-color: lighten($primary, 30%);
-			color: black;
-		}
-	}
-	@media only screen and (max-width: 600px) {
-		nav {
-			display: none;
-		}
-	}
-
-
-}
-@media only screen and (max-width: 600px) {
-	header { 
-		height: 60px;
-	
-		h1 {
-			font-size: 1.8rem;
-			margin: 0 0 0 1rem;
-		}
-	}
-}
-
-
-  /*
-html::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	height: 240px;
-	background: url(../images/wave-top.svg) top center;
-	background-size: 100%;
-	z-index: -1;
-  }
-*/
-
-
-
-.background {
-	margin-bottom: 4rem;
 }
 
 main {
 	background-color: transparent; 
 	margin: 0 auto;
-	padding: 8rem 0 4rem 0;
+	padding: 0;
 }
 @media only screen and (max-width: 600px) {
 	main {
-		padding: 3rem 0 0rem 0;
+		padding: 0;
 	}
 }
 
 .container {
-	width: 70%;
+	width: 80%;
 	margin: 0 auto;
 }
 @media only screen and (max-width: 600px) {
 	.container {
 		width: 90%;
-		margin: .5rem auto;
 	}
 }
 
 .about {
-	font-size: 1.6rem;
-	line-height: 2.0rem;
-	margin-top: -8rem;
-	text-align: center;
+	background-image: url('../images/lg-box-background.svg');
+	background-color: $color1;
+	height: 100vh;/* You must set a specified height */
+	background-position: 100% 100%; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: auto;
 
-	.image-cropper {
-		width: 250px;
-		height: 250px;
-		margin: 0 auto;
-		overflow: hidden;
-		border-radius: 50%;
+	h4 {
+		background-color: lighten($color1, 20%);
+		color: $color1;
 	}
-	
-	img {
-		border-radius: 50%;
-		height: 100%;
-		width: auto;
+	.row {
+		height: 80vh;
+	}
+	h1 {
+		color: $color2;
+		font-family: 'Exo 2', sans-serif;
+		font-size: 5.0rem;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+
+	.description {
+		background-color: rgba(255, 255, 255, .4);
+		border: 1px solid $color4;
+		border-radius: 4px;
+		color: darken($color4, 30%);
+		font-size: 1.1rem;
+		padding: 1rem;
 	}
 
 }
 @media only screen and (max-width: 600px) {
 	.about {
-		font-size: 1.4rem;
 		margin-top: -2rem;
 	}
 }
 
 
+.strengths {
+	background-image: url('../images/lg-box-background.svg');
+	background-color: $color3;
+	height: 100vh;/* You must set a specified height */
+	background-position: 90% 90%; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: auto;	
 
-.career  {
+	.row {
+		height: 80vh;
+	}
 
-}
-.projects  {
-
-}
-
-.strengths, .career, .projects, .education   {
-	margin-bottom: 2rem;
+	h4 {
+		background-color: darken($color3, 40%);
+		color: $color3;
+	}
 
 	.box {
 		padding: 0;
-		width: 96%;
+	}
+
+	ul li {
+		font-size: 1.4rem;
+		line-height: 2.0rem;
+	}	
+	
+}
+
+
+.career-projects  {
+	background-image: url('../images/lg-box-background.svg');
+	background-color: $color4;
+	height: 100vh;/* You must set a specified height */
+	background-position: 90% 90%; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: auto;	
+	
+	.row {
+		height: 80vh;
+	}
+
+	h4 {
+		background-color: darken($color4, 20%);
+		color: $color4;
+	}
+
+	.box {
+		padding: 0;
+	}
+
+	ul li {
+		font-size: 1.4rem;
+		line-height: 2.0rem;
 	}	
 }
-@media only screen and (max-width: 600px) {
-	.strengths, .career, .projects, .education{
-		.box  {
-			width: 100%;
-		}	
+
+
+.education {
+	background-image: url('../images/lg-box-background.svg');
+	background-color: $color5;
+	height: 100vh;/* You must set a specified height */
+	background-position: 90% 90%; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: auto;	
+
+	.row {
+		height: 80vh;
 	}
+
+	h4 {
+		background-color: darken($color5, 40%);
+		color: $color5;
+	}
+
+	.box {
+		padding: 0;
+	}
+
+	ul li {
+		font-size: 1.4rem;
+		line-height: 2.0rem;
+	}	
+	
 }
+
+
 
 
 
 .quote1,
 .quote2  {
-	background-color: darken($primary, 30%);
-	color: #ffffff;
+	background-color: $color2;;
+	color: darken($color1, 30%);
 	padding: .5rem;
 	margin-bottom: 4rem;
 
@@ -213,14 +196,7 @@ main {
 			left: 10px;
 			top: 35px;
 		}		  
-		footer{
-			display: block;
-			margin:0;
-			text-align: right;
-			font-family: 'Lora', serif;
-			font-size: 1.0rem;
-			font-style: italic;
-		}
+
 	}
 
 }
@@ -240,23 +216,23 @@ main {
 
 aside {
 	background-color: #ffffff;
-	/*
-	border: 1px solid #cccccc;
-	border-left: 1px solid #cccccc;
-	*/
 	display: block;
-	margin-bottom: 2rem;
-	/*min-height: 280px;*/
-	position: relative; 
-/*
-	-webkit-box-shadow: 0 0 12px 6px rgba(60,60,60,.1);
-	box-shadow: 0 0 12px 6px rgba(60,60,60,.1);	
-*/
+}
+
+aside h4 {
+	border-radius: .2rem;
+	font-size: 1.6rem;
+	font-weight: bold;
+	letter-spacing: 2px; 
+	line-height: 1.8rem;
+	padding: 1rem;
+	margin: 0;
+	text-transform: uppercase;
 }
 
 aside ul {
-	margin: 0 0 0 .5rem;
-	padding: 0;
+	display: block;
+	padding: 1rem 2rem 2rem 1rem;
 	line-height: 2.0rem;
 	list-style: none;
 }
@@ -264,10 +240,10 @@ aside ul {
 aside ul li {
 	border-radius: 6px;
 	display: block;
-	font-size: 1.0rem;
+	font-size: 2.4rem;
 	padding: .1rem .6rem;
 	.type, .title {
-		color: complement($primary);
+		color: complement($color1);
 		float: right;
 	}	
 }
@@ -277,81 +253,20 @@ aside ul li.link-hover {
 }
 
 aside ul li.link-hover:hover {
-	background-color: darken($primary, 20%);
+	background-color: darken($color1, 20%);
 	color: #ffffff;
 	.type, .title {
 		color: #ffffff;
 	}	
 }
 
-aside h4 {
-	background: $secondary;
-	border-radius: 0 0 4px 4px;
-	color: #fff;
-	font-size: 1.0rem;
-	font-weight: bold;
-	letter-spacing: 2px; 
-	line-height: 1.8rem;
-	padding: 0px 15px;
-	margin: 0;
-	text-transform: uppercase;
-	
-	position: absolute;
-	top: 0;
-	left: 0;
-	
-	
-	-webkit-transform-origin: 0 0;
-	-moz-transform-origin:    0 0;
-	-ms-transform-origin:     0 0;
-	-o-transform-origin:      0 0;
-	
-	-webkit-transform: rotate(90deg); 
-	-moz-transform:    rotate(90deg); 
-	-ms-transform:     rotate(90deg); 
-	-o-transform:      rotate(90deg); 
-}
+
 
 
 @media only screen and (max-width: 600px) {
 	aside {
 	}
-	aside h4 {
-		position: initial;
-		display: block;
-		margin-bottom: 1rem;
-		padding: 10px 20px;
-
-		-webkit-transform: rotate(0deg); 
-		-moz-transform:    rotate(0deg); 
-		-ms-transform:     rotate(0deg); 
-		-o-transform:      rotate(0deg); 
-	}
-	aside ul li {
-		margin-bottom: .5rem;
-		.type, .title {
-			display: block;
-			float: none;
-		}	
-	}
-
 }
-
-
-footer.footer {
-	background: url(../images/wave-bottom.svg) bottom center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 280px;
-}
-@media only screen and (max-width: 600px) {
-	footer.footer{
-		background-size: contain;
-		height: 180px;
-	}
-}
-
-
 
 
 

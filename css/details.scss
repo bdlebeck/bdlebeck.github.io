@@ -1,7 +1,11 @@
 $background-color:	#ffffff;
-$primary: 			#009BFF;
-$secondary:			#8db600;
-$alternative:		#FF4100;
+
+$color1: 			#124E78;
+$color2: 			#F0F0C9;
+$color3: 			#F2BB05;
+$color4: 			#6B9080;
+$color5: 			#A4C3B2;
+
 $danger:			#FF4100;
 $font: 				14px;
 $font-color: 		#555555;
@@ -83,7 +87,7 @@ body {
 			font-weight: 300;
 		}			
 		.date {
-			color: $secondary;
+			color: $color2;
 			font-size: 1.8em;
 			font-weight: 300;
 			margin: 0;
@@ -172,10 +176,10 @@ body {
 		color: #ffffff;
 	}	
 	.home:hover {
-		color: lighten($primary, 20%);
+		color: lighten($color1, 20%);
 	}	
 	.next:hover, .back:hover {
-		color: lighten($primary, 20%);
+		color: lighten($color1, 20%);
 	}	
 				
 }
@@ -204,7 +208,7 @@ body {
 	}
 
 	a:hover {	
-		color: lighten($primary, 20%);
+		color: lighten($color1, 20%);
 	}		
 
 	.active {
