@@ -25,7 +25,7 @@ var career = {
 				{ "duty" : "Bootstrap Library" },
 				{ "duty" : "Angular environment" }
 			],
-			links: [
+			links: [	
 			],
 			screenshots: [
 				{ "url" : "caremanager.png" }
@@ -288,25 +288,6 @@ var project = {
 			]				
 		}			
 	]
-};
-
-var education = {
-	degrees: [
-		{
-			school : "Oregon State University",
-			city : "Corvallis, Oregon",
-			degree : "College of Liberal Arts and Sciences, Multimedia Concentration",
-			date : "1995 - 1999",
-			description : "The Departments of Computer Science, Art, and Speech Communication administer an undergraduate in Interactive Multimedia, a program that incorporates work from computer science, art, speech communication and psychology."
-		},		
-		{
-			school : "Oregon State University",
-			city : "Bend, Oregon",
-			degree : "Advanced Interactive Web Design Certification",
-			date : "2000 - 2004",
-			description : "The program covered such topics as website design, building a business on the web, graphic design principles and advanced web programming languages including Active Server Pages."
-		}
-	],
 };
 
 var strength = {

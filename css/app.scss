@@ -1,25 +1,33 @@
-$background-color:	#ffffff;
+@import url('../node_modules/bulma/css/bulma.min.css');
 
+$background-color:	#ffffff;
 $color1: 			#28A2FF;
 $color2: 			#052F5F;
 $color3: 			#D9E5D6;
 $color4: 			#29B2A4;
 $color5: 			#BDFFFD;
-
 $danger:			#FF4100;
 $font: 				14px;
 $font-color: 		#555555;
 
-@import url('normalize.css');
-@import url('../node_modules/flexboxgrid/css/flexboxgrid.min.css');
-@import 'mixins';
-@import 'design';
 
 html,
 body {
 	box-sizing: border-box;
 	font-size: 16px;
 	scroll-behavior: smooth;
+}
+
+html,
+body {
+	color: $font-color;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+}
+
+
+body {
+	background-color: #ffffff;
 }
 
 
@@ -101,6 +109,183 @@ a:hover {
 }
 
 
+
+.about {
+	background-image: url('../images/lg-box-background.svg');
+	background-color: $color1;
+	height: 100vh;/* You must set a specified height */
+	background-position: 100% 100%; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: auto;
+
+	h4 {
+		background-color: lighten($color1, 20%);
+		color: $color1;
+	}
+	.columns {
+		height: 80vh;
+	}
+	h1 {
+		color: $color2;
+		font-family: 'Exo 2', sans-serif;
+		font-size: 5.0rem;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+
+	.description {
+		background-color: rgba(255, 255, 255, .4);
+		border: 1px solid $color4;
+		border-radius: 4px;
+		color: darken($color4, 30%);
+		font-size: 1.1rem;
+		padding: 1rem;
+	}
+
+}
+@media only screen and (max-width: 600px) {
+	.about {
+		margin-top: -2rem;
+	}
+}
+
+
+.strengths {
+	background-image: url('../images/lg-box-background.svg');
+	background-color: $color3;
+	height: 100vh;/* You must set a specified height */
+	background-position: 90% 90%; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: auto;	
+
+	.columns {
+		height: 80vh;
+	}
+
+	h4 {
+		background-color: darken($color3, 40%);
+		color: $color3;
+	}
+
+	.box {
+		padding: 0;
+	}
+
+	ul li {
+		font-size: 1.4rem;
+		line-height: 2.0rem;
+	}	
+	
+}
+
+
+
+.career-projects  {
+	background-image: url('../images/lg-box-background.svg');
+	background-color: $color4;
+	height: 100vh;/* You must set a specified height */
+	background-position: 90% 90%; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: auto;	
+	
+	.columns {
+		height: 80vh;
+	}
+
+	h4 {
+		background-color: darken($color4, 20%);
+		color: $color4;
+	}
+
+	.box {
+		padding: 0;
+	}
+
+	ul li {
+		font-size: 1.4rem;
+		line-height: 2.0rem;
+	}	
+}
+
+
+.education {
+	background-image: url('../images/lg-box-background.svg');
+	background-color: $color5;
+	height: 100vh;/* You must set a specified height */
+	background-position: 90% 90%; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: auto;	
+
+	.row {
+		height: 80vh;
+	}
+
+	h4 {
+		background-color: darken($color5, 40%);
+		color: $color5;
+	}
+
+	.box {
+		padding: 0;
+	}
+
+	ul li {
+		font-size: 1.4rem;
+		line-height: 2.0rem;
+	}	
+	
+}
+
+
+@media only screen and (max-width: 600px) {
+}
+
+
+aside {
+	background-color: #ffffff;
+	display: block;
+}
+
+aside h4 {
+	border-radius: .2rem;
+	font-size: 1.6rem;
+	font-weight: bold;
+	letter-spacing: 2px; 
+	line-height: 1.8rem;
+	padding: 1rem;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+aside ul {
+	display: block;
+	padding: 1rem 2rem 2rem 1rem;
+	line-height: 2.0rem;
+	list-style: none;
+}
+
+aside ul li {
+	border-radius: 6px;
+	display: block;
+	font-size: 2.4rem;
+	padding: .1rem .6rem;
+	.type, .title {
+		color: complement($color1);
+		float: right;
+	}	
+}
+
+aside ul li.link-hover {
+	cursor: pointer;
+}
+
+aside ul li.link-hover:hover {
+	background-color: darken($color1, 20%);
+	color: #ffffff;
+	.type, .title {
+		color: #ffffff;
+	}	
+}
 
 
 

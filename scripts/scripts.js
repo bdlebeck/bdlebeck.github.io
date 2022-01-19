@@ -13,11 +13,6 @@ $(document).ready(function() {
 	$.get('templates/projects.html', function(projectTemplate) {
 		var projectOutput = Mustache.render(projectTemplate, project);
 		$('#projects').html(projectOutput);
-	});	
-
-	$.get('templates/education.html', function(educationTemplate) {
-		var educationOutput = Mustache.render(educationTemplate, education);
-		$('#education').html(educationOutput);
 	});		
 
 });
