@@ -1,14 +1,12 @@
-<aside>
-	<h4>Examples</h4>
-	<ul>
-		{{ #items }}
-		<li class="link-hover" page="{{id}}" id="{{ id }}">
-				<span class="project">{{ project }}</span>
-				<span class="type">{{ type }}</span>
-		</li>
-		{{ /items }}
-	</ul>
-</aside>
+
+<ul>
+	{{ #items }}
+	<li class="link-hover" page="{{id}}" id="{{ id }}">
+			<span class="project">{{ project }}</span>
+			<span class="type">{{ type }}</span>
+	</li>
+	{{ /items }}
+</ul>
 
 <script>
 	$( ".projects li" ).click(function() {

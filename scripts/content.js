@@ -17,13 +17,13 @@ var career = {
 				{ "accomplishment" : "Worked between the product owner and development team to translate business requirements into mockups and prototypes." },
 				{ "accomplishment" : "Implemented front-end to adhere to corporate styleguide for several Surescripts products." }
 			],
-			duties: [
-				{ "duty" : "HTML, CSS3 architecture" },
-				{ "duty" : "Business requirement mockups" },
-				{ "duty" : "High and low fidelity prototypes"},
-				{ "duty" : "Responsive / Accessible design" },
-				{ "duty" : "Bootstrap Library" },
-				{ "duty" : "Angular environment" }
+			roles: [
+				{ "role" : "HTML, CSS3 architecture" },
+				{ "role" : "Business requirement mockups" },
+				{ "role" : "High and low fidelity prototypes"},
+				{ "role" : "Responsive / Accessible design" },
+				{ "role" : "Bootstrap Library" },
+				{ "role" : "Angular environment" }
 			],
 			links: [	
 			],
@@ -93,7 +93,10 @@ var career = {
 			screenshots: [
 				{ "url" : "infone.png" }
 			]
-		},
+		}
+		
+		/*
+		,
 		{
 			id : "4",
 			company : "Hewlett Packard",
@@ -119,7 +122,9 @@ var career = {
 			screenshots: [
 				{ "url" : "hp.png" }
 			]				
-		},
+		}
+		
+		,
 		{
 			id : "5",
 			company : "Ralston Group",
@@ -146,7 +151,7 @@ var career = {
 			screenshots: [
 				{ "url" : "caremanager.png" }
 			]			
-		}
+		}*/
 
 	]
 };
@@ -290,24 +295,7 @@ var project = {
 	]
 };
 
-var strength = {
-	design: [
-		{ name : "Business requirement mockups" },
-		{ name : "User workflow mockups" },
-		{ name : "Software prototypes" },
-		{ name : "User interface design" },
-		{ name : "Corporate styleguide" },
-		{ name : "UX User Experience" }
-	],	
-	development: [
-		{ name : "HTML5, CSS3, SCSS" },
-		{ name : "Javascript/DOM" },
-		{ name : "UI component library" },
-		{ name : "Responsive Design" },
-		{ name : "Cross browser/device" },
-		{ name : "Accessibility / WCAG" }
-	]
-};
+
 
 
 

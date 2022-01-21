@@ -1,17 +1,33 @@
-<aside style="flex: 1 1 auto">
-	<h4>Career History</h4>
-	<ul>
-		{{#items}}
-		<li class="link-hover" page="{{id}}" id="career{{ id }}">
-			<span class="company">{{ company }}</span>
-			<span class="">{{ jobTitle }}</span> 
-		</li>
-		{{/items}}
-	</ul>
-</aside>
+{{#items}}
+<div class="block link-hover" page="{{id}}" id="career{{ id }}">
+	<h3 class="company has-text-weight-semibold m-0">{{ jobTitle }}</h3>
+	<span class="is-block">{{ company }}</span> 
+	<span class="is-block">{{ date }}</span> 
+
+	<p class="block">{{ description }}</p>
+
+	<div class="details-content mb-6"> 						
+		<h6>Accomplishments</h6>
+		<ul>
+		{{#accomplishments}}
+			<li>{{{ accomplishment }}}</li>
+		{{/accomplishments}}
+		</ul>	
+		
+		<br/>
+		<h6>Team Role</h6>
+		<ul>
+		{{ #roles }}
+			<li>{{ role }}</li>
+		{{ /roles }}
+		</ul>	
+
+	</div>
+</div>
+{{/items}}
 
 <script>
-	$( ".career li" ).click(function() {
+	$( ".career .link-hover").click(function() {
 		var item = this.getAttribute("page");
 		localStorage.setItem('current', item); 
 		window.location='details-career.html'

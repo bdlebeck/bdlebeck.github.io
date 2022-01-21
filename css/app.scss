@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
 	font-size: 2.2rem;
-	margin: 0 0 2.0rem 0;
+	margin: 0 0 0 0;
 }
 h2 {
 	font-size: 1.8rem;
@@ -111,69 +111,28 @@ a:hover {
 
 
 .about {
-	background-image: url('../images/lg-box-background.svg');
-	background-color: $color1;
-	height: 100vh;/* You must set a specified height */
-	background-position: 100% 100%; /* Center the image */
-	background-repeat: no-repeat; /* Do not repeat the image */
-	background-size: auto;
-
-	h4 {
-		background-color: lighten($color1, 20%);
-		color: $color1;
-	}
-	.columns {
-		height: 80vh;
-	}
 	h1 {
 		color: $color2;
 		font-family: 'Exo 2', sans-serif;
-		font-size: 5.0rem;
-		font-weight: 300;
-		text-transform: uppercase;
 	}
 
 	.description {
-		background-color: rgba(255, 255, 255, .4);
-		border: 1px solid $color4;
-		border-radius: 4px;
-		color: darken($color4, 30%);
-		font-size: 1.1rem;
-		padding: 1rem;
 	}
 
 }
 @media only screen and (max-width: 600px) {
-	.about {
-		margin-top: -2rem;
-	}
+
 }
 
 
 .strengths {
-	background-image: url('../images/lg-box-background.svg');
-	background-color: $color3;
-	height: 100vh;/* You must set a specified height */
-	background-position: 90% 90%; /* Center the image */
-	background-repeat: no-repeat; /* Do not repeat the image */
-	background-size: auto;	
-
-	.columns {
-		height: 80vh;
-	}
 
 	h4 {
-		background-color: darken($color3, 40%);
-		color: $color3;
-	}
 
-	.box {
-		padding: 0;
 	}
 
 	ul li {
-		font-size: 1.4rem;
-		line-height: 2.0rem;
+
 	}	
 	
 }
@@ -181,57 +140,26 @@ a:hover {
 
 
 .career-projects  {
-	background-image: url('../images/lg-box-background.svg');
-	background-color: $color4;
-	height: 100vh;/* You must set a specified height */
-	background-position: 90% 90%; /* Center the image */
-	background-repeat: no-repeat; /* Do not repeat the image */
-	background-size: auto;	
-	
-	.columns {
-		height: 80vh;
-	}
 
 	h4 {
-		background-color: darken($color4, 20%);
-		color: $color4;
+
 	}
 
-	.box {
-		padding: 0;
-	}
-
-	ul li {
-		font-size: 1.4rem;
-		line-height: 2.0rem;
+	ul {
+		margin-left: 1.2rem;
+		list-style-type: disc;
 	}	
 }
 
 
 .education {
-	background-image: url('../images/lg-box-background.svg');
-	background-color: $color5;
-	height: 100vh;/* You must set a specified height */
-	background-position: 90% 90%; /* Center the image */
-	background-repeat: no-repeat; /* Do not repeat the image */
-	background-size: auto;	
-
-	.row {
-		height: 80vh;
-	}
 
 	h4 {
-		background-color: darken($color5, 40%);
 		color: $color5;
 	}
 
-	.box {
-		padding: 0;
-	}
-
 	ul li {
-		font-size: 1.4rem;
-		line-height: 2.0rem;
+
 	}	
 	
 }
@@ -241,51 +169,7 @@ a:hover {
 }
 
 
-aside {
-	background-color: #ffffff;
-	display: block;
-}
 
-aside h4 {
-	border-radius: .2rem;
-	font-size: 1.6rem;
-	font-weight: bold;
-	letter-spacing: 2px; 
-	line-height: 1.8rem;
-	padding: 1rem;
-	margin: 0;
-	text-transform: uppercase;
-}
-
-aside ul {
-	display: block;
-	padding: 1rem 2rem 2rem 1rem;
-	line-height: 2.0rem;
-	list-style: none;
-}
-
-aside ul li {
-	border-radius: 6px;
-	display: block;
-	font-size: 2.4rem;
-	padding: .1rem .6rem;
-	.type, .title {
-		color: complement($color1);
-		float: right;
-	}	
-}
-
-aside ul li.link-hover {
-	cursor: pointer;
-}
-
-aside ul li.link-hover:hover {
-	background-color: darken($color1, 20%);
-	color: #ffffff;
-	.type, .title {
-		color: #ffffff;
-	}	
-}
 
 
 
