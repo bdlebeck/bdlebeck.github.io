@@ -1,5 +1,5 @@
 {{#items}}
-<div class="block link-hover" page="{{id}}" id="career{{ id }}">
+<div class="block link-hover mb-6" page="{{id}}" id="career{{ id }}">
 	<h3 class="company has-text-weight-semibold m-0">{{ jobTitle }}</h3>
 	<span class="is-block">{{ company }}</span> 
 	<span class="is-block">{{ date }}</span> 
@@ -7,7 +7,7 @@
 	<p class="block">{{ description }}</p>
 
 	<div class="details-content mb-6"> 						
-		<h6>Accomplishments</h6>
+		<h5>Accomplishments</h5>
 		<ul>
 		{{#accomplishments}}
 			<li>{{{ accomplishment }}}</li>
@@ -15,7 +15,7 @@
 		</ul>	
 		
 		<br/>
-		<h6>Team Role</h6>
+		<h5>Role Summary</h5>
 		<ul>
 		{{ #roles }}
 			<li>{{ role }}</li>
@@ -30,6 +30,6 @@
 	$( ".career .link-hover").click(function() {
 		var item = this.getAttribute("page");
 		localStorage.setItem('current', item); 
-		window.location='details-career.html'
+		//window.location='details-career.html'
 	});	
 </script>

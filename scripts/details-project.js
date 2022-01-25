@@ -60,7 +60,7 @@ $( ".next" ).click(function() {
 
 // Page click
 $( ".page" ).click(function() {
-	zenscroll.toY(0);
+
 	//Update Page
 	var current = getCurrent();
 	var gotopage = this.getAttribute("page");
@@ -73,13 +73,8 @@ $( ".page" ).click(function() {
 	var currentPage = document.getElementById('page'+current);
 	var gotoPage = document.getElementById('page'+gotopage);
 
-	currentPage.classList.remove("fa-dot-circle");
-	currentPage.classList.remove("active");
-	currentPage.classList.add("fa-circle");
-
-	gotoPage.classList.remove("fa-circle");
-	gotoPage.classList.add("fa-dot-circle");
-	gotoPage.classList.add("active");	
+	currentPage.classList.remove("is-current");
+	gotoPage.classList.add("is-current");	
 
 	localStorage.setItem('current', gotopage);
 });
@@ -104,8 +99,10 @@ function getCircles() {
 	var current = getCurrent();
 	var total = getTotal() +1;
 	for (i=1;i<total;i++) {  
-		var page = $("<a class='page' page='"+i+"'><i id='page"+i+"' class='fas fa-circle'></i></a>");
-		var activepage = $("<a class='page' page='"+i+"'><i id='page"+i+"' class='fas fa-dot-circle active'></i></a>");
+		//var page = $("<a class='page' page='"+i+"'><i id='page"+i+"' class='fas fa-circle'></i></a>");
+		var page = $("<li><a id='page"+i+"' class='page pagination-link' page='"+i+"'>"+i+"</a></li>");
+		var activepage = $("<a id='page"+i+"' class='page pagination-link is-current' page='"+i+"'>"+i+"</a>");
+		//var activepage = $("<a id='page"+i+"' class='page' page='"+i+"'><i class='fas fa-dot-circle active'></i></a>");
 
 		if(i === current){
 			$('#pages').append(activepage);
@@ -172,24 +169,24 @@ function updatePagination(e) {
 
 	if (direction == 'next') {
 		currentPage.remove("fa-dot-circle");
-		currentPage.remove("active");
+		currentPage.remove("is-current");
 		currentPage.add("fa-circle");
 	
 		nextPage.remove("fa-circle");
 		nextPage.add("fa-dot-circle");
-		nextPage.add("active");		
+		nextPage.add("is-current");		
 	}
 	else if (direction == 'back') {
 		currentPage.remove("fa-dot-circle");
-		currentPage.remove("active");
+		currentPage.remove("is-current");
 		currentPage.add("fa-circle");
 	
 		previousPage.remove("fa-circle");
 		previousPage.add("fa-dot-circle");
-		previousPage.add("active");		
+		previousPage.add("is-current");		
 	}
 	else {
-		currentPage.add("active");
+		currentPage.add("is-current");
 	}
 	
 }

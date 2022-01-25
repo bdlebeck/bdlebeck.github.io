@@ -10,6 +10,35 @@
 	</head>
 	<body class="details">
 
+		<nav class="navbar is-info is-fixed-top" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+			  <a class="navbar-item" href="https://bulma.io">
+				<img src="images/BDLogo.png">
+			  </a>
+		  
+			  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			  </a>
+			</div>
+		  
+			<div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-start">
+	
+				</div>
+		  
+				<div class="navbar-end">
+					<a id="resume" class="navbar-item is-active">
+						Resume
+					</a>
+					<a id="portfolio" page="1" class="navbar-item">
+						Portfolio
+					</a>
+				</div>
+			</div>
+		</nav>
+
 		<div class="pagination-container">
 			<div class="pagination-fixed">
 				<div>
@@ -48,7 +77,7 @@
 					</div>
 					
 					<p>
-						{{ description }}
+						{{ overview }}
 					</p>					
 
 					<div class="details-screenshots hidden">

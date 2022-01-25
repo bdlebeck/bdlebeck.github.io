@@ -13,97 +13,139 @@
 	</head>
 	<body id="body" class="home has-navbar-fixed-top">
 
+	
+
 		
+						<nav class="navbar is-fixed-top is-light" role="navigation" aria-label="main navigation">
 
+							<div class="navbar-brand">
+							<a class="navbar-item" href="index.html">
+								<img src="images/BDLogo.png">
+							</a>
+						
+							<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+								<span aria-hidden="true"></span>
+								<span aria-hidden="true"></span>
+								<span aria-hidden="true"></span>
+							</a>
+							</div>
+						
+							<div id="navbarBasicExample" class="navbar-menu">
+								<div class="navbar-start">
+					
+								</div>
+						
+								<div class="navbar-end">
+									<a href="index.html" id="resume" class="navbar-item is-active">
+										Resume
+									</a>
+									<a href="details-project.html" id="portfolio" page="1" class="navbar-item">
+										Portfolio
+									</a>
+								</div>
+							</div>
 
-
-	<nav class="navbar is-info is-fixed-top" role="navigation" aria-label="main navigation">
-		<div class="navbar-brand">
-		  <a class="navbar-item" href="https://bulma.io">
-			<img src="images/BDLogo.png">
-		  </a>
-	  
-		  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-			<span aria-hidden="true"></span>
-			<span aria-hidden="true"></span>
-			<span aria-hidden="true"></span>
-		  </a>
-		</div>
-	  
-		<div id="navbarBasicExample" class="navbar-menu">
-			<div class="navbar-start">
+						</nav>
+	
 
 			</div>
-	  
-			<div class="navbar-end">
-				<a class="navbar-item is-active">
-					Resume
-				</a>
-				<a class="navbar-item">
-					Portfolio
-				</a>
-			</div>
-		</div>
-	</nav>
+		</div>		
 
 
+		<main class="container is-fluid pb-6">
 
+			<div class="about my-6">
 
-		<main class="container is-fluid mb-5">
-
-			<div class="about background my-5">
-				<div class="columns is-mobile">
-					<div class="column is-one-third has-text-right">
+				<div class="columns is-desktop">
+					<div class="column is-4 has-text-right">
 						<img src="images/headshot.png" style="height:120px"/>
 						<h5 class="m-0 has-text-weight-semibold mr-5"></h5>
 					</div>					
-					<div class="column">
-						<h3 class="m-0">Brian D. Lebeck</h3>
-						<span class="description is-block">UX Designer</span>
-						<span class="description is-block">Portland, OR.</span>
+					<div class="column is-5 is-flex is-justify-content-space-between">
+						<div>
+							<h3 class="m-0">Brian D. Lebeck</h3>
+							<span class="description is-block">UX Designer</span>
+							<span class="description is-block">Portland, OR.</span>
+							<a href="https://www.linkedin.com/in/bdlebeck/" target="_blank"><i class="fab fa-linkedin-in has-text-primary-dark"></i></a>
+						</div>
+						<button class="button has-text-primary-dark is-inverted">
+							<span class="icon">
+							  <i class="fas fa-cloud-download-alt"></i>
+							</span>
+							<span> Resume PDF</span>
+						  </button>
+					</div>
+					<div class="column is-3">
+
 					</div>
 				</div>
 			</div>
 
+			<div class="columns is-desktop mb-6">
+				<div class="column is-4 has-text-right">
+					<h3 class="m-0 has-text-weight-semibold mr-5">About Me</h3>	
+				</div>
+				<div class="column is-5">
+					<div class="block">
+						<p>
+							I have over 17 years of hands-on work experience in UX design, rapid prototyping, and front-end development for rich Internet applications and mobile devices. I practice user centered design principles basing design decisions on user needs and business goals.
+						</p>
+
+					</div>
+				</div>	
+				<div class="column is-3">
+
+				</div>				
+			</div>	
+
+			<div class="columns is-desktop mb-6">
+				<div class="column is-4 has-text-right">
+					<h3 class="m-0 has-text-weight-semibold mr-5">Skill Summary</h3>	
+				</div>
+				<div class="column is-5">
+					<div class="columns">
+						<div class="column is-4">
+							<div class="block">
+								<h5 class="has-text-weight-semibold">Product Design</h5>
+								<div id="strength2" class="strengths background"></div>
+							</div>
+						</div>					
+						<div class="column is-4">
+							<div class="block">
+								<h5 class="has-text-weight-semibold">Languages</h5>
+								<div id="strength" class="strengths background"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3">
+
+				</div>
+			</div>	
 
 			<div class="career-projects background">
 				<div class="columns is-tablet">
-					<div class="column is-one-third has-text-left-mobile has-text-right-tablet">
-						<h5 class="m-0 has-text-weight-semibold mr-5">Experience</h5>	
+					<div class="column is-4 has-text-left-mobile has-text-right-tablet">
+						<h3 class="m-0 has-text-weight-semibold mr-5">Experience</h3>	
 					</div>					
-					<div class="column career is-two-fifths">
+					<div class="column career is-5">
 						<div id="career"></div>
 					</div>
+					<div class="column is-3"></div>
 				</div>
 			</div>
 
 
-			<div class="columns is-desktop">
-				<div class="column is-one-third has-text-right">
-					<h5 class="m-0 has-text-weight-semibold mr-5">Skill Summary</h5>	
-				</div>
-				<div class="column is-one-quarter">
-					<div class="block">
-						<h5 class="has-text-weight-semibold">Languages</h5>
-						<div id="strength" class="strengths background"></div>
-					</div>
-				</div>
-				<div class="column is-one-quarter">
-					<div class="block">
-						<h5 class="has-text-weight-semibold">Product Design</h5>
-						<div id="strength2" class="strengths background"></div>
-					</div>
-				</div>					
-			</div>			
+		
 			
 
 			<div class="education background">
 
 				<div class="columns is-desktop"">
-					<div class="column is-one-third has-text-right">
+					<div class="column is-4 has-text-right">
 						<h5 class="has-text-weight-semibold mr-5">Education</h5>
 					</div>
-					<div class="column">
+					<div class="column is-5">
 
 						<div class="block">
 							<span class="is-block">Oregon State University - Corvallis, Oregon</span> - <span>1995 - 1999 College of Liberal Arts and Sciences, Multimedia Concentration</span><br/>
@@ -115,7 +157,7 @@
 							<p class="is-hidden">The program covered such topics as website design, building a business on the web, graphic design principles and advanced web programming languages including Active Server Pages.</p>
 						</div>
 					</div>
-					<div class="column"></div>
+					<div class="column is-3"></div>
 				</div>
 
 			</div>
@@ -147,7 +189,14 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js"></script>
 		
-	
+	<script>
+		$( "#portfolio" ).click(function() {
+			var item = this.getAttribute("page");
+			localStorage.setItem('current', item); 
+			window.location='details-project.html'
+		});	
+	</script>
+
 	<script>
 		/*
 		var section2Btn = document.getElementById("strength-btn"),

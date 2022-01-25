@@ -1,305 +1,72 @@
 @import url("normalize.css");
-.edge--bottom {
-  position: relative;
-  z-index: 1; }
-  .edge--bottom:after {
-    background: inherit;
-    content: '';
-    display: block;
-    height: 50%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    -webkit-backface-visibility: hidden; }
-  .edge--bottom:after {
-    bottom: 0;
-    transform: skewY(-1.5deg);
-    transform-origin: 100%; }
-
-.edge--bottom--reverse {
-  position: relative;
-  z-index: 1; }
-  .edge--bottom--reverse:after {
-    background: inherit;
-    content: '';
-    display: block;
-    height: 50%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    -webkit-backface-visibility: hidden; }
-  .edge--bottom--reverse:after {
-    bottom: 0;
-    transform: skewY(1.5deg);
-    transform-origin: 0 100%; }
-
-.edge--top {
-  position: relative;
-  z-index: 1; }
-  .edge--top:before {
-    background: inherit;
-    content: '';
-    display: block;
-    height: 50%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    -webkit-backface-visibility: hidden; }
-  .edge--top:before {
-    top: 0;
-    transform: skewY(1.5deg);
-    transform-origin: 100% 0; }
-
-.edge--top--reverse {
-  position: relative;
-  z-index: 1; }
-  .edge--top--reverse:before {
-    background: inherit;
-    content: '';
-    display: block;
-    height: 50%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    -webkit-backface-visibility: hidden; }
-  .edge--top--reverse:before {
-    top: 0;
-    transform: skewY(-1.5deg);
-    transform-origin: 0 0; }
-
-.edge--both {
-  position: relative;
-  z-index: 1; }
-  .edge--both:before, .edge--both:after {
-    background: inherit;
-    content: '';
-    display: block;
-    height: 50%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    -webkit-backface-visibility: hidden; }
-  .edge--both:before {
-    top: 0;
-    transform: skewY(1.5deg);
-    transform-origin: 100% 0; }
-  .edge--both:after {
-    bottom: 0;
-    transform: skewY(-1.5deg);
-    transform-origin: 100%; }
-
-.edge--both--reverse {
-  position: relative;
-  z-index: 1; }
-  .edge--both--reverse:before, .edge--both--reverse:after {
-    background: inherit;
-    content: '';
-    display: block;
-    height: 50%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    -webkit-backface-visibility: hidden; }
-  .edge--both--reverse:before {
-    top: 0;
-    transform: skewY(-1.5deg);
-    transform-origin: 0 0; }
-  .edge--both--reverse:after {
-    bottom: 0;
-    transform: skewY(1.5deg);
-    transform-origin: 0 0; }
-
-.-berry {
-  background: #b52b4a; }
-
-.-blue {
-  background: #41ade5; }
-
-.-orange {
-  background: #de6628; }
-
-.-green {
-  background: #5e9b42; }
-
 /*Shared classes from design.scss*/
 html,
 body {
   color: #555555;
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
-  font-weight: 300; }
+  font-weight: 300;
+}
 
 body {
   height: 200px;
   background-color: #ffffff;
-  /*background-color: #14a8fc;*/ }
+  /*background-color: #14a8fc;*/
+}
 
-.container {
-  width: 80%;
-  margin: .5rem auto; }
-
-@media only screen and (max-width: 600px) {
-  .container {
-    width: 100%; } }
 .details-highlights {
   webkit-animation: fadeIn .6s;
   animation: fadeIn .6s;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  line-height: 1.6rem;
-  max-width: 50rem;
-  margin: 7rem auto 0 auto; }
-  .details-highlights h3 {
-    font-size: 1.2rem;
-    font-weight: 600px;
-    margin: 0; }
-  .details-highlights .detail-header {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-justify-content: space-between;
-    -moz-justify-content: space-between;
-    -ms-justify-content: space-between;
-    justify-content: space-between;
-    -ms-flex-pack: space-between;
-    font-weight: 700;
-    margin-bottom: .5rem; }
-    .details-highlights .detail-header span {
-      display: block; }
-    .details-highlights .detail-header .title {
-      font-size: 1.4rem;
-      font-weight: 600; }
-    .details-highlights .detail-header .subtitle {
-      color: #999999;
-      font-size: 1.0rem;
-      font-weight: 300; }
-    .details-highlights .detail-header .date {
-      color: #F0F0C9;
-      font-size: 1.8em;
-      font-weight: 300;
-      margin: 0; }
-  @media only screen and (max-width: 600px) {
-    .details-highlights .detail-header {
-      -webkit-flex-direction: column;
-      -moz-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column; }
-      .details-highlights .detail-header .title {
-        font-size: 1.1rem; }
-      .details-highlights .detail-header .subtitle {
-        font-size: 1.0rem; }
-      .details-highlights .detail-header .date {
-        font-size: 1.0rem; } }
-  .details-highlights .details-screenshots {
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1; }
-    .details-highlights .details-screenshots .career__screenshot {
-      border: 1px solid #cccccc;
-      max-width: 100%; }
-  .details-highlights .details-content {
-    font-size: 1.0rem;
-    margin: 2rem 0;
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1; }
-    .details-highlights .details-content ul {
-      padding-left: 1.2rem; }
-      .details-highlights .details-content ul li {
-        margin-bottom: .5rem; }
+}
 
-@media only screen and (max-width: 600px) {
-  .details-highlights {
-    margin: 6rem 2rem 0 2rem; }
-    .details-highlights .details-content {
-      padding: 0; } }
-.pagination-container {
-  background-color: #005d99;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0; }
-  .pagination-container .pagination-fixed {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-justify-content: space-between;
-    -moz-justify-content: space-between;
-    -ms-justify-content: space-between;
-    justify-content: space-between;
-    -ms-flex-pack: space-between;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 4rem;
-    margin: 0 auto;
-    max-width: 50rem; }
-  .pagination-container .home, .pagination-container .back, .pagination-container .next {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    display: inline;
-    font-size: 2.0rem; }
-  .pagination-container .back, .pagination-container .next {
-    color: #ffffff;
-    margin: 0 .2rem; }
-  .pagination-container .home {
-    color: #ffffff; }
-  .pagination-container .home:hover {
-    color: #1f88d1; }
-  .pagination-container .next:hover, .pagination-container .back:hover {
-    color: #1f88d1; }
+.details-highlights .details-screenshots .career__screenshot {
+  border: 1px solid #dcdcdc;
+  max-width: 100%;
+}
 
-@media only screen and (max-width: 600px) {
-  .pagination-container {
-    padding: 0 2rem;
-    width: auto; } }
+.pagination-container .home, .pagination-container .back, .pagination-container .next {
+  cursor: pointer;
+  font-size: 1.0rem;
+}
+
+.pagination-container .back, .pagination-container .next {
+  margin: 0 .2rem;
+}
+
+.pagination-container .home {
+  display: inline;
+}
+
+.pagination-container .home:hover {
+  color: #1f88d1;
+}
+
+.pagination-container .next:hover, .pagination-container .back:hover {
+  color: #1f88d1;
+}
+
 /*Desktop*/
-.pagination {
-  display: inline; }
-  .pagination a {
-    color: #ffffff;
-    cursor: pointer;
-    font-size: 1.0rem;
-    margin: 0 .4rem; }
-  .pagination a:hover {
-    color: #1f88d1; }
+.pagination2 {
+  display: inline;
+}
+
+.pagination2 a {
+  color: #124E78;
+  cursor: pointer;
+  font-size: 1.0rem;
+  margin: 0 .4rem;
+}
+
+.pagination2 a:hover {
+  color: #1f88d1;
+}
 
 @media only screen and (max-width: 600px) {
   .pagination {
-    display: none; } }
-.hidden {
-  display: none; }
+    display: none;
+  }
+}
 
-/*# sourceMappingURL=details.css.map */
+.hidden {
+  display: none;
+}

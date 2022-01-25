@@ -161,20 +161,20 @@ var project = {
 		{
 			id : "1",
 			project : "Specialty Patient Enrollment",
-			type : "Web Application",
+			type : "Enterprise Web Application",
 			company : "Surescripts",
 			date : "2017",
 			intro : "Making it easy for clinics to fill a specialty medication at the pharmacy.",
-			description : "At Surescripts I was part of the team who created Specialty Patient Enrollment.  This application was intended to makes it easy for medical clinics to perscribe specialty medications and replace the pervious fax-based workflow.  Under 2% of prescriptions are specialty medications, but they are projected to approach half of U.S. drug spending by 2021",
+			overview : "Specialty Pharmacies offer services and medications to help treat rare and complex medical conditions. This application automates the specialty enrollment process and electronically connect prescribers, pharmacists and specialty hubs for a streamlined experience and faster time to fill for patients.",
+			approach : "Specialty Patient Enrollment was new product to be built from the ground-up, I was embeded within an Agile Team as the User Interface Designer.  Iterate design based on feedback and create final deliverables.",
 
 			duties: [
-				{ "duty" : "Business requirement mockups and prototypes" },
-				{ "duty" : "HTML, CSS/LESS architecture" },
-				{ "duty" : "Styled shared UI components" },
+				{ "duty" : "Wireframing" },
+				{ "duty" : "Visual designs, prototyping" },
+				{ "duty" : "Front-end development" },
+				{ "duty" : "HTML & CSS architecture" },
 				{ "duty" : "Responsive design" },
-				{ "duty" : "Cross browser testing" },
-				{ "duty" : "Selenium test debugging" },
-				{ "duty" : "Bootstrap library" }
+				{ "duty" : "Research interviews" }
 			],
 			links: [
 				{ "text" : "Specialty Patient Enrollment", "link" : "http://surescripts.com/enhance-prescribing/" },
@@ -185,34 +185,38 @@ var project = {
 		},
 		{
 			id : "2",
-			project : "Insights  Med. Adherence",
-			type : "Web Application",
+			project : "Insights for Medication Adherence",
+			type : "Enterprise, Web Application",
 			company : "Surescripts",
 			date : "2015",
 			intro : "Provides patient prescription adherence to the physician at the point-of-care.",
-			description : "While at Surescripts I was on an Agile Team that created Insights for Medication Adherence.  The purpose of the application was to put patient-specific prescription adherence summaries right in front of the physician at the point-of-care.",
+			overview : "As a Physician, knowing if your patient has been taking their medication is valuable insight to the health of the patient.  This dashboard put patient-specific prescription adherence summaries right in front of the physician at the point-of-care. ",
+			approach : "???",
 
 			duties: [
-				{ "duty" : "UI design, HTML, CSS/LESS architecture" },
-				{ "duty" : "Business requirement mockups and prototypes" },
-				{ "duty" : "Front-end design and development" },
-				{ "duty" : "Custom Bootstrap theme" }		
+				{ "duty" : "Wireframing" },
+				{ "duty" : "Visual designs, prototyping" },
+				{ "duty" : "Front-end development" },
+				{ "duty" : "HTML & CSS architecture" },
+				{ "duty" : "Research interviews" }
 			],
 			links: [
 				{ "text" : "Insights for Medication Adherence", "link" : "https://surescripts.com/inform-care-decisions/insights-alerts/" },
 			],					
 			screenshots: [
-				{ "url" : "projects/insights@2x.png" }
+				{ "url" : "mma-01.png" },
+				{ "url" : "mma-02.png" }
 			]		
 		},
 		{
 			id : "3",
-			project : "Patient Alerts",
-			type : "Web Application",
+			project : "Care Event Notifications",
+			type : "Enterprise, Web Application",
 			company : "Surescripts",
 			date : "2018",
-			intro : "Lorum Ipsum.",
-			description : "Lorum Ipsum.",
+			intro : "",
+			overview : "Physicians are alerted if a patient does not pick up their prescription, if no refills remain, or if a different provider prescribes a new medication to the patient.",
+			approach : "???",
 
 			duties: [
 				{ "duty" : "Lorum Ipsum." },
@@ -230,16 +234,16 @@ var project = {
 		{
 			id : "4",
 			project : "CareManager - Point of Care",
-			type : "Web Application",
+			type : "Enterprise, Web Application",
 			company : "Enli Health Intelligence",
 			date : "2014",
 			intro : "Provides a health summary of the entire patient populations based on evidence-based guidelines.",
-			description : "While working at Enli, I was the frontend designer for ENLI's CareManager Point-of-Care and CareManager Central Worklist.  This application allows clinics insight into it's patient population to monitor high risk patients.",
-			ux : "UX Challenge: The goal of Caremanager was to provide the doctor or clinic a quick look into the patients health records during the patient's appointment.  Colors were used to alert the doctor about disease category health scores.",
+			overview : "ENLI's CareManager Suite allows clinics insight into it's patient population and monitor high risk patients. The goal of Caremanager was to provide the doctor or clinic a quick look into the patients health records during the patient's appointment.  Colors were used to alert the doctor about disease category health scores.",
+			approach : "???",
 
 			duties: [
 				{ "duty" : "UI design" },
-				{ "duty" : "HTML, CSS/LESS architecture" },
+				{ "duty" : "HTML, CSS/SCSS architecture" },
 				{ "duty" : "Business requirement mockups and prototypes." },
 				{ "duty" : "Frontend design and development." }				
 			],
@@ -253,17 +257,44 @@ var project = {
 		},
 		{
 			id : "5",
-			project : "Medical Icons",
-			type : "Mockup",
-			company : "Surescripts",
-			date : "2017",
-			intro : "Logo optioons presented in organized options.",
-			description : "Here is a example of different icon options I presented to the Surescripts Business Team to review.",
-			
+			project : "CareManager - Central Worklist.",
+			type : "Enterprise, Web Application",
+			company : "Enli Health Intelligence",
+			date : "2014",
+			intro : "Provides a health summary of the entire patient populations based on evidence-based guidelines.",
+			overview : "Central Worklist Suite allows clinics insight into it's patient population and monitor high risk patients. Colors were used to alert the doctor about disease category health scores.",
+			approach : "Lead frontend designer for ENLI's CareManager Point-of-Care and CareManager Central Worklist.",
+
 			duties: [
-				{ "duty" : "Used the Font Awesome icon library" },
-				{ "duty" : "Gathered a collection of medical related icons." },
-				{ "duty" : "Presented to Business Team for review." }		
+				{ "duty" : "Wireframe" },
+				{ "duty" : "Low & high fidelity workflow mockups" },				
+				{ "duty" : "Frontend design" },
+				{ "duty" : "HTML, CSS/SCSS architecture" },
+				{ "duty" : "Prototype" }				
+			],
+			links: [
+				{ "text" : "CareManager Central Worklist", "link" : "http://www.enli.net/caremanager-central-worklist/" },
+				{ "text" : "CareManager Point of Care", "link" : "http://www.enli.net/caremanager-point-of-care/" },
+			],				
+			screenshots: [
+				{ "url" : "projects/poc@2x.png" }
+			]			
+		},		
+		{
+			id : "6",
+			project : "Patient Portal",
+			type : "Enterprise, Web Application",
+			company : "Enli Health Intelligence",
+			date : "2012",
+			intro : "The Patient Portal allows you to securely message your doctor, view your medical records and refill a prescription.",
+			overview : "The Patient Portal allows you to securely message your doctor, view your medical records and refill a prescription.",
+			approach : "UI design and front-end development for Enli's 'Patient Portal' enterprise software. The Patient Portal provides healthcare providers a secure online presence including secure messaging, appointment, medical record access, and online payments.",
+
+			duties: [
+				{ "duty" : "Frontend design and development for Enli's Patient Portal enterprise software." },
+				{ "duty" : "Mobile interface to the Patient Portal." },
+				{ "duty" : "Largest customer: GE Healthcare." },
+				{ "duty" : "Passed Drummond EHR Certification for WCAG Accessibility compliance." }	
 			],
 			links: [
 				{  },
@@ -273,14 +304,15 @@ var project = {
 			]				
 		},
 		{
-			id : "6",
+			id : "7",
 			project : "Component Styleguide",
 			type : "Styleguide",
 			company : "Surescripts",
 			date : "2019",
 			intro : "At Surescripts, I worked on on several agile teams across several products.  urescripts I built and maintained a library of styled components to support a corporate styleguide.",
-			description : "At Surescripts, I had the oppertunity to work on several agile teams across multiple products.  To ensure consistency between products, I built and maintained a library of styled components to support a corporate styleguide.",
-			
+			overview : "At Surescripts, I had the oppertunity to work on several agile teams across multiple products.  To ensure consistency between products, I built and maintained a library of styled components to support a corporate styleguide.",
+			approach : "???",
+
 			duties: [
 				{ "duty" : "Built a component library for Angular applications." },
 				{ "duty" : "Built a component library for Angular applications." }		

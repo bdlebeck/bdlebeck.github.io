@@ -12,7 +12,6 @@ $font-color: 		#555555;
 
 
 @import url('normalize.css');
-@import 'mixins';
 
 /*Shared classes from design.scss*/
 html,
@@ -30,150 +29,44 @@ body {
   }
 
 
- 
-@media only screen and (max-width: 600px) {
-
-}
-
-.container {
-	width: 80%;
-	margin: .5rem auto;
-}
-@media only screen and (max-width: 600px) {
-	.container {
-		width: 100%;
-	}
-}
-
-
-
-
-
-
-
-
 
 .details-highlights {
 	webkit-animation: fadeIn .6s;
 	animation: fadeIn .6s;
-	@include flexbox();
-	@include flex-direction(column);
-	line-height: 1.6rem;
-	max-width: 50rem;
-	margin: 7rem auto 0 auto;
 
-	h3 {
-		font-size: 1.2rem;
-		font-weight: 600px;
-		margin: 0;
-	}
-
-	.detail-header {
-		@include flexbox();
-		@include flex-direction(row);
-		@include justify-content(space-between);
-		font-weight: 700;
-		margin-bottom: .5rem;
-
-		span { display: block; }
-
-		.title {
-			font-size: 1.4rem;
-			font-weight: 600;
-		}
-		.subtitle {
-			color: #999999;;
-			font-size: 1.0rem;
-			font-weight: 300;
-		}			
-		.date {
-			color: $color2;
-			font-size: 1.8em;
-			font-weight: 300;
-			margin: 0;
-		}			
-	}
-	@media only screen and (max-width: 600px) {
-		.detail-header {
-			@include flex-direction(column);
-			.title {
-				font-size: 1.1rem;
-			}
-			.subtitle {
-				font-size: 1.0rem;
-			}			
-			.date {
-				font-size: 1.0rem;
-			}				
-		}
-		
-	}
 
 	.details-screenshots {
-		@include flex(1);
-		
 		.career__screenshot {
-			border: 1px solid #cccccc;
+			border: 1px solid #dcdcdc;
 			max-width: 100%;
 		}	
 	}	
 
-	.details-content {
-		font-size: 1.0rem;
-		margin: 2rem 0;
-		@include flex(1);
-
-		ul {
-			padding-left: 1.2rem;
-			li {
-				margin-bottom: .5rem;
-			}
-		}
-	}
 }
 
 @media only screen and (max-width: 600px) {
 	.details-highlights {
-		margin: 6rem 2rem 0 2rem;
+
 
 		.details-content {
-			padding: 0;		
+	
 		}
 	}
 }
 
 
 .pagination-container {
-	background-color: #005d99;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;	
-
-	.pagination-fixed {
-		@include flexbox();
-		@include flex-direction(row);	
-		@include justify-content(space-between);	
-		@include align-items(center);
-		height: 4rem;
-		margin: 0 auto;
-		max-width: 50rem;
-	}
 
 	.home, .back, .next {
-		border: none;
-		background-color: transparent;
 		cursor: pointer;
-		display: inline;
-		font-size: 2.0rem;
+		font-size: 1.0rem;
 	}	
 	.back, .next {
-		color: #ffffff;
 		margin: 0 .2rem;
 	}	
 
 	.home {
-		color: #ffffff;
+		display:inline;
 	}	
 	.home:hover {
 		color: lighten($color1, 20%);
@@ -183,12 +76,7 @@ body {
 	}	
 				
 }
-@media only screen and (max-width: 600px) {
-	.pagination-container {
-		padding: 0 2rem;
-		width:  auto;
-	}
-}
+
 
 
 /*Desktop*/
@@ -198,10 +86,10 @@ body {
 
 
 
-.pagination {
+.pagination2 {
 	display: inline;
 	a {
-		color: #ffffff;
+		color: $color1;
 		cursor: pointer;
 		font-size: 1.0rem;
 		margin: 0 .4rem;

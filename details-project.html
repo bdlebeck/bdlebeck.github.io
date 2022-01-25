@@ -5,66 +5,159 @@
 	    <title>Brian Lebeck - UI Design | UI Development</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1" />
 	    <link rel="stylesheet" href="css/details.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:700&display=swap" rel="stylesheet">
 		<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet"> 
 	</head>
-	<body class="details">
+	<body class="details has-navbar-fixed-top">
 
-		<div class="pagination-container">
-			<div class="pagination-fixed">
-				<div>
-					<a class="home" href="#"><i class="far fa-arrow-alt-circle-left"></i></a>
-				</div>
-				<div>
-					<div id="pages" href="#" class="pagination"></div>				
-				</div>
-				<div>
-					<a class="back" href="#"><i class="fas fa-arrow-alt-circle-left"></i></a>
-					<a class="next" href="#"><i class="fas fa-arrow-alt-circle-right"></i></a>
-				</div>
-			</div>	
-		</div>
 
-		<main>			
-			<section id="details"></section>
-		</main>			
+				<nav class="navbar is-light is-fixed-top" role="navigation" aria-label="main navigation">
+
+					<div class="navbar-brand">
+						<a class="navbar-item" href="index.html">
+							<img src="images/BDLogo.png">
+						</a>
+					
+						<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+							<span aria-hidden="true"></span>
+							<span aria-hidden="true"></span>
+							<span aria-hidden="true"></span>
+						</a>
+					</div>
+				
+					<div id="navbarBasicExample" class="navbar-menu">
+						<div class="navbar-start">
+			
+						</div>
+				
+						<div class="navbar-end">
+							<a href="index.html" id="resume" class="navbar-item ">
+								Resume
+							</a>
+							<a href="details-project.html" id="portfolio" page="1" class="navbar-item is-active">
+								Portfolio
+							</a>
+						</div>
+					</div>
+
+				</nav>
+
+
+
+		<main class="container is-fluid mt-3 pb-6">	
+
+			<div class="columns">
+				<div class="column is-6 is-offset-4 has-text-centered">
+
+<!--
+					<div class="pagination-container">
+						<a class="home" href="#"><i class="far fa-arrow-alt-circle-left"></i></a>
+						<div id="pages" href="#" class="pagination2"></div>				
+						<a class="back" href="#"><i class="fas fa-arrow-alt-circle-left"></i></a>
+						<a class="next" href="#"><i class="fas fa-arrow-alt-circle-right"></i></a>
+					</div>-->
+
+					<ul>
+						<li></li>
+					</ul>
+
+					
+					<nav class="pagination is-small" role="navigation" aria-label="pagination">
+						<a class="home is-hidden" href="#"><i class="fas fa-home"></i></a>
+						<button class="pagination-previous button is-small back" href="#"><i class="fas fa-arrow-alt-circle-left has-text-link"></i></button>
+						<ul id="pages" href="#" class="pagination-list"></ul>
+						<button class="pagination-next button is-small next" href="#"><i class="fas fa-arrow-alt-circle-right has-text-link"></i></button>					
+					</nav>	
+								
+				</div>
+			</div>
+
+
+			<div id="details" class="mt-5"></div>
+		</main>		
+		
+		
 
 		<script id="template" type="x-tmpl-mustache">
 			{{#items}}
 				<div id="{{id}}" class="details-highlights hidden">
 
-						<div class="detail-header">
-								<div>
-									<span class="title">{{ project }}</span>
-									<span class="subtitle">{{ company }}</span>
-								</div>
-								<div>
-									<span class="date">{{ date }}</span>
-								</div>
+					<div class="columns">
+						<div class="column is-4">
+
+						</div>						
+						<div class="column is-5">
+							<div>
+								<h3 class="m-0">{{ project }}</h3>
+								<span class="is-block">{{ company }}</span>
+								<span class="date is-block">{{ type }}</span>
+								<span class="is-block">{{ date }}</span>
 							</div>
-					
-					<p>
-						{{{ description }}}
-					</p>		
-					<p>
-						{{ ux }}
-					</p>								
+						</div>
+						<div class="column is-3">
 
-					<div class="details-screenshots">
-						{{ #screenshots }}
-							<a href="images/{{ url }}" target="new"><img src="images/{{ url }}" class="career__screenshot"/></a>
-						{{ /screenshots }}
-					</div>				
-
-					<div class="details-content"> 
-						<h3>Team Role</h3>
-						<ul>
-						{{ #duties }}
-							<li>{{ duty }}</li>
-						{{ /duties }}
-						</ul>
+						</div>						
 					</div>
 
+					<div class="columns my-6">		
+						<div class="column is-4 has-text-left-mobile has-text-right-tablet">
+							<h3 class="m-0 has-text-weight-semibold mr-5">Overview</h3>
+						</div>
+						<div class="column is-5">
+							<p class="">{{{ overview }}}</p>
+						</div>
+						<div class="column is-3">
+
+						</div>
+					</div>	
+
+					<div class="columns my-6">
+						<div class="column is-4 has-text-left-mobile has-text-right-tablet">
+							<h3 class="m-0 has-text-weight-semibold mr-5">My Role</h3>
+						</div>						
+						<div class="column is-5">
+							<ul class="details-content ">
+							{{ #duties }}
+								<li>{{ duty }}</li>
+							{{ /duties }}
+							</ul>
+						</div>
+						<div class="column is-3">
+
+						</div>
+					</div>
+
+					<div class="columns my-6">
+						<div class="column is-4 has-text-left-mobile has-text-right-tablet">
+							<h3 class="m-0 has-text-weight-semibold mr-5">Approach</h3>
+						</div>	
+						<div class="column is-5">
+							<p class="">{{{ approach }}}</p>
+						</div>
+						<div class="column is-3">
+
+						</div>						
+					</div>
+
+					<div class="columns">
+						<div class="column is-2">
+
+						</div>							
+						<div class="column is-8 has-text-centered">
+							<div class="details-screenshots">
+								{{ #screenshots }}
+									<a href="images/{{ url }}" target="new"><img src="images/{{ url }}" class="career__screenshot"/></a>
+								{{ /screenshots }}
+							</div>							
+						</div>
+						<div class="column is-2">
+
+						</div>							
+					</div>
 
 				</div>
 			{{/items}}

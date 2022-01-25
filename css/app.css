@@ -8,16 +8,13 @@ body {
 
 html,
 body {
-  color: #555555;
+  color: #444444;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
 }
 
-body {
-  background-color: #ffffff;
-}
-
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Exo 2', sans-serif;
   font-weight: 300;
   margin: 0;
   padding: 0;
