@@ -50,23 +50,22 @@
 
 		<main class="container is-fluid mt-3 pb-6">	
 
+			<div id="details-header" class="mt-5"></div>
+
 			<div class="columns">
-				<div class="column is-6 is-offset-4 has-text-centered">
+				<div class="column is-5 is-offset-4 has-text-centered">
 
 <!--
-					<div class="pagination-container">
-						<a class="home" href="#"><i class="far fa-arrow-alt-circle-left"></i></a>
-						<div id="pages" href="#" class="pagination2"></div>				
-						<a class="back" href="#"><i class="fas fa-arrow-alt-circle-left"></i></a>
-						<a class="next" href="#"><i class="fas fa-arrow-alt-circle-right"></i></a>
-					</div>-->
-
-					<ul>
-						<li></li>
-					</ul>
+<div class="pagination-container">
+	<a class="home" href="#"><i class="far fa-arrow-alt-circle-left"></i></a>
+	<div id="pages" href="#" class="pagination2"></div>				
+	<a class="back" href="#"><i class="fas fa-arrow-alt-circle-left"></i></a>
+	<a class="next" href="#"><i class="fas fa-arrow-alt-circle-right"></i></a>
+</div>
+-->
 
 					
-					<nav class="pagination is-small" role="navigation" aria-label="pagination">
+					<nav class="pagination is-small mt-4" role="navigation" aria-label="pagination">
 						<a class="home is-hidden" href="#"><i class="fas fa-home"></i></a>
 						<button class="pagination-previous button is-small back" href="#"><i class="fas fa-arrow-alt-circle-left has-text-link"></i></button>
 						<ul id="pages" href="#" class="pagination-list"></ul>
@@ -76,34 +75,37 @@
 				</div>
 			</div>
 
-
-			<div id="details" class="mt-5"></div>
+			
+			<div id="details" class=""></div>
 		</main>		
 		
-		
+		<script id="template-header" type="x-tmpl-mustache">
+			{{#items}}
+				<div id="header{{ id }}" class="hidden">
+					<div class="columns header-bkg {{background}}">
+						<div class="column is-7">
+
+						</div>						
+						<div class="column is-5 has-text-white is-flex is-align-items-center">
+							<div>
+								<h3 class="m-0 is-size-4 has-text-weight-semibold">{{ project }}</h3>
+								<span class="is-block is-size-6 is-hidden">{{ company }}</span>
+								<span class="date is-block is-size-6">{{ job }}</span>
+								<span class="date is-block is-size-6">{{ type }}</span>
+								<span class="is-block is-size-6 is-hidden">{{ date }}</span>
+							</div>
+						</div>					
+					</div>	
+				</div>	
+			{{/items}}
+		</script>
+
 
 		<script id="template" type="x-tmpl-mustache">
 			{{#items}}
 				<div id="{{id}}" class="details-highlights hidden">
 
-					<div class="columns">
-						<div class="column is-4">
-
-						</div>						
-						<div class="column is-5">
-							<div>
-								<h3 class="m-0">{{ project }}</h3>
-								<span class="is-block">{{ company }}</span>
-								<span class="date is-block">{{ type }}</span>
-								<span class="is-block">{{ date }}</span>
-							</div>
-						</div>
-						<div class="column is-3">
-
-						</div>						
-					</div>
-
-					<div class="columns my-6">		
+					<div class="columns mt-4 mb-6">		
 						<div class="column is-4 has-text-left-mobile has-text-right-tablet">
 							<h3 class="m-0 has-text-weight-semibold mr-5">Overview</h3>
 						</div>
@@ -113,7 +115,7 @@
 						<div class="column is-3">
 
 						</div>
-					</div>	
+					</div>
 
 					<div class="columns my-6">
 						<div class="column is-4 has-text-left-mobile has-text-right-tablet">
@@ -121,9 +123,9 @@
 						</div>						
 						<div class="column is-5">
 							<ul class="details-content ">
-							{{ #duties }}
-								<li>{{ duty }}</li>
-							{{ /duties }}
+							{{ #roles }}
+								<li>{{ role }}</li>
+							{{ /roles }}
 							</ul>
 						</div>
 						<div class="column is-3">
@@ -131,7 +133,7 @@
 						</div>
 					</div>
 
-					<div class="columns my-6">
+					<div class="columns my-6 is-hidden">
 						<div class="column is-4 has-text-left-mobile has-text-right-tablet">
 							<h3 class="m-0 has-text-weight-semibold mr-5">Approach</h3>
 						</div>	
@@ -143,13 +145,14 @@
 						</div>						
 					</div>
 
-					<div class="columns">
+					<div class="columns is-hidden">
 						<div class="column is-2">
 
 						</div>							
 						<div class="column is-8 has-text-centered">
 							<div class="details-screenshots">
 								{{ #screenshots }}
+									<h2>{{ title }}</h2>
 									<a href="images/{{ url }}" target="new"><img src="images/{{ url }}" class="career__screenshot"/></a>
 								{{ /screenshots }}
 							</div>							

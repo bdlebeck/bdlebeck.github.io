@@ -2,14 +2,21 @@ var current = getCurrent();
 
 //Render the template
 var template = $('#template').html();
-Mustache.parse(template);	
+var templateHeader = $('#template-header').html();
+Mustache.parse(template);
+Mustache.parse(templateHeader);	
 var rendered = Mustache.render(template, project);
+var renderedHeader = Mustache.render(templateHeader, project);
+//Mustache.parse(templateHeader);
+//var rendered = Mustache.render(templateHeader, project);
 
 //Render the HTML
 $('#details').html(rendered);
+$('#details-header').html(renderedHeader);
 
 // Show currently selected
 $("#"+current).removeClass('hidden');
+$("#header"+current).removeClass('hidden');
 
 
 // Init
@@ -65,9 +72,13 @@ $( ".page" ).click(function() {
 	var current = getCurrent();
 	var gotopage = this.getAttribute("page");
 	var currentItem = document.getElementById(current);
+	var currentHeaderItem = document.getElementById("header"+current);
 	var gotoItem = document.getElementById(gotopage);
+	var gotoHeaderItem = document.getElementById("header"+gotopage);
 	currentItem.classList.add("hidden");
+	currentHeaderItem.classList.add("hidden");
 	gotoItem.classList.remove("hidden");
+	gotoHeaderItem.classList.remove("hidden");
 
 	//Update Pagination
 	var currentPage = document.getElementById('page'+current);
@@ -122,11 +133,16 @@ function navigateBack() {
 	if (current == 1) {
 		var last = total;
 		document.getElementById(1).classList.add("hidden");
+		document.getElementById("header"+1).classList.add("hidden");
 		document.getElementById(last).classList.remove("hidden");
+		document.getElementById("header"+last).classList.remove("hidden");
+
 	}
 	else {
 		var currentItem = document.getElementById(current).classList.add("hidden");
-		var backItem = document.getElementById(back).classList.remove("hidden");		
+		var currentItem2 = document.getElementById("header"+current).classList.add("hidden");
+		var backItem = document.getElementById(back).classList.remove("hidden");	
+		var backItem2 = document.getElementById("header"+back).classList.remove("hidden");
 	}
 	updatePagination('back');
 }
@@ -140,11 +156,15 @@ function navigateNext() {
 	if (current == total) {
 		next = 1;
 		document.getElementById(last).classList.add("hidden");
+		document.getElementById("header"+last).classList.add("hidden");
 		document.getElementById(next).classList.remove("hidden");
+		document.getElementById("header"+next).classList.remove("hidden");
 	}
 	else {
 		document.getElementById(current).classList.add("hidden");
+		document.getElementById("header"+current).classList.add("hidden");
 		document.getElementById(next).classList.remove("hidden");
+		document.getElementById("header"+next).classList.remove("hidden");
 	}
 	updatePagination('next');
 }

@@ -27,7 +27,7 @@ body {
 
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Exo 2', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 	margin: 0;
 	padding: 0;
@@ -161,7 +161,22 @@ a:hover {
 }
 
 
+.header-bkg {
+	background-size:cover;
+	height: 200px;
+}
 
+.caremanager {
+	background-image: url("../images/hero-caremanager.png");
+}
+
+.specialty {
+	background-image: url("../images/hero-specialty.png");
+}
+
+.insights {
+	background-image: url("../images/hero-insights.png");
+}
 
 
 

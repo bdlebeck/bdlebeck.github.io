@@ -46,13 +46,13 @@ var career = {
 				{ "accomplishment" : "Lead frontend designer for Enli’s <a href='http://www.enli.net/caremanager-central-worklist/' target='new'>CareManager Manager</a> platform.  Worked with product owners and business team to design the original user interface.  Worked on the engineering team building the frontend layout and design." },
 				{ "accomplishment" : "Lead frontend designer on the development team that created <a href='http://www.enli.net/caremanager-point-of-care/' target='new'>Enli's CareManager Point of Care software</a> from the ground up." }
 			],
-			duties: [
-				{ "duty" : "HTML, CSS3 architecture" },
-				{ "duty" : "Business requirement mockups and prototypes" },
-				{ "duty" : "Javascript DOM/jQuery" },
-				{ "duty" : "Responsive design" },
-				{ "duty" : "Web mobile design" },
-				{ "duty" : "Boorstrap Library" }
+			roles: [
+				{ "role" : "HTML, CSS3 architecture" },
+				{ "role" : "Business requirement mockups and prototypes" },
+				{ "role" : "Javascript DOM/jQuery" },
+				{ "role" : "Responsive design" },
+				{ "role" : "Web mobile design" },
+				{ "role" : "Boorstrap Library" }
 			],
 			links: [
 				{ "text" : "Enli Health Solutions website", "link" : "http://www.enli.net" }
@@ -69,7 +69,7 @@ var career = {
 			shortdate : "2007",
 			city : "Beaverton, OR",
 			intro : "Web designer on the software engineering team at Metro One Telecommuications.",
-			description : "Before the debut of the iPhone, I worked at Metro One, a nationwide telecommuications company.  The company provided operator-based telcom services, address and phone data scrubbing and Infone, an operator-based concierge service.  ",
+			description : "Before the debut of the iPhone, I worked at Metro One, a nationwide telecommuications company.  The company provided call-center telcom services, address and phone data scrubbing and Infone, an personal assistant concierge services.  ",
 
 			accomplishments: [
 				{ "accomplishment" : "Lead web designer on the Metro One's software engineering team." },
@@ -78,11 +78,11 @@ var career = {
 				{ "accomplishment" : "Lead web designer for <a href='http://www.oregonlive.com/business/index.ssf/2005/11/metro_ones_travails_offer_less.html' target='new'>Metro One Telecommunications</a> corporate website." },
 				{ "accomplishment" : "Additional projects including, landing pages, banner ad campaigns (GIF, Flash), product flyer design, trade show booth design, and logo design."} 
 			],
-			duties: [
-				{ "duty" : "HTML, CSS, Javascript" },
-				{ "duty" : "Lead Frontend Designer" },
-				{ "duty" : "Print Flyers, Logo, Marketing Materials" },
-				{ "duty" : "Agile team environment with sprints and retrospectives." }
+			roles: [
+				{ "role" : "HTML, CSS, Javascript" },
+				{ "role" : "Lead Frontend Designer" },
+				{ "role" : "Print Flyers, Logo, Marketing Materials" },
+				{ "role" : "Agile team environment with sprints and retrospectives." }
 			],
 			links: [
 				{ "text" : "Metro One aquired by Melissa Data", "link" : "http://www.melissadata.com/m1data/index.htm" },
@@ -111,10 +111,10 @@ var career = {
 				{ "accomplishment" : "Collaborated with product owner to mockup the typical user workflow." },
 				{ "accomplishment" : "Worked with the engineering team to develop a clickable XHTML/CSS prototype."}
 			],
-			duties: [
-				{ "duty" : "Dynamic XHTML/CSS/JS prototype" },
-				{ "duty" : "Workflow wireframes and mockups" },
-				{ "duty" : "Product workflow mockups" }
+			roles: [
+				{ "role" : "Dynamic XHTML/CSS/JS prototype" },
+				{ "role" : "Workflow wireframes and mockups" },
+				{ "role" : "Product workflow mockups" }
 			],			
 			links: [
 				{ "text" : "Hewlett Packard - Corporate website", "link" : "http://www.hp.com" }
@@ -142,9 +142,9 @@ var career = {
 				{ "accomplishment" : "Developed basic CRUD application for Sunriver rental homes and St. Charles Medical Center jobs board." }
 
 			],
-			duties: [
-				{ "duty" : "Ad agency client website design and development." },
-				{ "duty" : "Landing pages and banner ad campaigns" }
+			roles: [
+				{ "role" : "Ad agency client website design and development." },
+				{ "role" : "Landing pages and banner ad campaigns" }
 			],
 			links: [
 			],
@@ -161,24 +161,26 @@ var project = {
 		{
 			id : "1",
 			project : "Specialty Patient Enrollment",
-			type : "Enterprise Web Application",
+			type : "Healthcare IT - Enterprise",
+			job : "User Experience & Front-end Design",
 			company : "Surescripts",
 			date : "2017",
 			intro : "Making it easy for clinics to fill a specialty medication at the pharmacy.",
 			overview : "Specialty Pharmacies offer services and medications to help treat rare and complex medical conditions. This application automates the specialty enrollment process and electronically connect prescribers, pharmacists and specialty hubs for a streamlined experience and faster time to fill for patients.",
 			approach : "Specialty Patient Enrollment was new product to be built from the ground-up, I was embeded within an Agile Team as the User Interface Designer.  Iterate design based on feedback and create final deliverables.",
-
-			duties: [
-				{ "duty" : "Wireframing" },
-				{ "duty" : "Visual designs, prototyping" },
-				{ "duty" : "Front-end development" },
-				{ "duty" : "HTML & CSS architecture" },
-				{ "duty" : "Responsive design" },
-				{ "duty" : "Research interviews" }
+			background : "specialty",	
+			roles: [
+				{ "role" : "Wireframing" },
+				{ "role" : "Visual designs, prototyping" },
+				{ "role" : "Front-end development" },
+				{ "role" : "HTML & CSS architecture" },
+				{ "role" : "Responsive design" },
+				{ "role" : "Research interviews" }
 			],
 			links: [
 				{ "text" : "Specialty Patient Enrollment", "link" : "http://surescripts.com/enhance-prescribing/" },
-			],			
+			],	
+	
 			screenshots: [
 				{ "url" : "projects/specialty@2x.png" }
 			]				
@@ -186,43 +188,47 @@ var project = {
 		{
 			id : "2",
 			project : "Insights for Medication Adherence",
-			type : "Enterprise, Web Application",
+			type : "Healthcare IT - Enterprise",
+			job : "User Experience & Front-end Design",
 			company : "Surescripts",
 			date : "2015",
 			intro : "Provides patient prescription adherence to the physician at the point-of-care.",
 			overview : "As a Physician, knowing if your patient has been taking their medication is valuable insight to the health of the patient.  This dashboard put patient-specific prescription adherence summaries right in front of the physician at the point-of-care. ",
 			approach : "???",
+			background : "insights",	
 
-			duties: [
-				{ "duty" : "Wireframing" },
-				{ "duty" : "Visual designs, prototyping" },
-				{ "duty" : "Front-end development" },
-				{ "duty" : "HTML & CSS architecture" },
-				{ "duty" : "Research interviews" }
+			roles: [
+				{ "role" : "Wireframing" },
+				{ "role" : "Visual designs, prototyping" },
+				{ "role" : "Front-end development" },
+				{ "role" : "HTML & CSS architecture" },
+				{ "role" : "Research interviews" }
 			],
 			links: [
 				{ "text" : "Insights for Medication Adherence", "link" : "https://surescripts.com/inform-care-decisions/insights-alerts/" },
 			],					
 			screenshots: [
-				{ "url" : "mma-01.png" },
-				{ "url" : "mma-02.png" }
+				{ "url" : "mma-01.png", "title" : "Test" },
+				{ "url" : "mma-02.png", "title" : "Test" }
 			]		
 		},
 		{
 			id : "3",
 			project : "Care Event Notifications",
-			type : "Enterprise, Web Application",
+			type : "Healthcare IT - Enterprise",
+			job : "User Experience & Front-end Design",
 			company : "Surescripts",
 			date : "2018",
 			intro : "",
 			overview : "Physicians are alerted if a patient does not pick up their prescription, if no refills remain, or if a different provider prescribes a new medication to the patient.",
 			approach : "???",
+			background : "caremanager",	
 
-			duties: [
-				{ "duty" : "Lorum Ipsum." },
-				{ "duty" : "Lorum Ipsum." },
-				{ "duty" : "Lorum Ipsum." },
-				{ "duty" : "Lorum Ipsum." }			
+			roles: [
+				{ "role" : "Lorum Ipsum." },
+				{ "role" : "Lorum Ipsum." },
+				{ "role" : "Lorum Ipsum." },
+				{ "role" : "Lorum Ipsum." }			
 			],
 			links: [
 				{ "text" : "Lorum Ipsum.", "link" : "https://surescripts.com/inform-care-decisions/insights-alerts/" },
@@ -234,18 +240,20 @@ var project = {
 		{
 			id : "4",
 			project : "CareManager - Point of Care",
-			type : "Enterprise, Web Application",
+			type : "Healthcare IT - Enterprise",
+			job : "User Experience & Front-end Design",
 			company : "Enli Health Intelligence",
 			date : "2014",
 			intro : "Provides a health summary of the entire patient populations based on evidence-based guidelines.",
 			overview : "ENLI's CareManager Suite allows clinics insight into it's patient population and monitor high risk patients. The goal of Caremanager was to provide the doctor or clinic a quick look into the patients health records during the patient's appointment.  Colors were used to alert the doctor about disease category health scores.",
 			approach : "???",
+			background : "caremanager",	
 
-			duties: [
-				{ "duty" : "UI design" },
-				{ "duty" : "HTML, CSS/SCSS architecture" },
-				{ "duty" : "Business requirement mockups and prototypes." },
-				{ "duty" : "Frontend design and development." }				
+			roles: [
+				{ "role" : "UI design" },
+				{ "role" : "HTML, CSS/SCSS architecture" },
+				{ "role" : "Business requirement mockups and prototypes." },
+				{ "role" : "Frontend design and development." }				
 			],
 			links: [
 				{ "text" : "CareManager Central Worklist", "link" : "http://www.enli.net/caremanager-central-worklist/" },
@@ -257,20 +265,22 @@ var project = {
 		},
 		{
 			id : "5",
-			project : "CareManager - Central Worklist.",
-			type : "Enterprise, Web Application",
+			project : "CareManager - Central Worklist",
+			type : "Healthcare IT - Enterprise",
+			job : "User Experience & Front-end Design",
 			company : "Enli Health Intelligence",
 			date : "2014",
 			intro : "Provides a health summary of the entire patient populations based on evidence-based guidelines.",
 			overview : "Central Worklist Suite allows clinics insight into it's patient population and monitor high risk patients. Colors were used to alert the doctor about disease category health scores.",
 			approach : "Lead frontend designer for ENLI's CareManager Point-of-Care and CareManager Central Worklist.",
+			background : "caremanager",	
 
-			duties: [
-				{ "duty" : "Wireframe" },
-				{ "duty" : "Low & high fidelity workflow mockups" },				
-				{ "duty" : "Frontend design" },
-				{ "duty" : "HTML, CSS/SCSS architecture" },
-				{ "duty" : "Prototype" }				
+			roles: [
+				{ "role" : "Wireframe" },
+				{ "role" : "Low & high fidelity workflow mockups" },				
+				{ "role" : "Frontend design" },
+				{ "role" : "HTML, CSS/SCSS architecture" },
+				{ "role" : "Prototype" }				
 			],
 			links: [
 				{ "text" : "CareManager Central Worklist", "link" : "http://www.enli.net/caremanager-central-worklist/" },
@@ -283,18 +293,20 @@ var project = {
 		{
 			id : "6",
 			project : "Patient Portal",
-			type : "Enterprise, Web Application",
+			type : "Healthcare IT - Enterprise",
+			job : "User Experience & Front-end Design",
 			company : "Enli Health Intelligence",
 			date : "2012",
 			intro : "The Patient Portal allows you to securely message your doctor, view your medical records and refill a prescription.",
 			overview : "The Patient Portal allows you to securely message your doctor, view your medical records and refill a prescription.",
 			approach : "UI design and front-end development for Enli's 'Patient Portal' enterprise software. The Patient Portal provides healthcare providers a secure online presence including secure messaging, appointment, medical record access, and online payments.",
+			background : "caremanager",	
 
-			duties: [
-				{ "duty" : "Frontend design and development for Enli's Patient Portal enterprise software." },
-				{ "duty" : "Mobile interface to the Patient Portal." },
-				{ "duty" : "Largest customer: GE Healthcare." },
-				{ "duty" : "Passed Drummond EHR Certification for WCAG Accessibility compliance." }	
+			roles: [
+				{ "role" : "Frontend design and development for Enli's Patient Portal enterprise software." },
+				{ "role" : "Mobile interface to the Patient Portal." },
+				{ "role" : "Largest customer: GE Healthcare." },
+				{ "role" : "Passed Drummond EHR Certification for WCAG Accessibility compliance." }	
 			],
 			links: [
 				{  },
@@ -306,16 +318,18 @@ var project = {
 		{
 			id : "7",
 			project : "Component Styleguide",
-			type : "Styleguide",
+			type : "Healthcare IT - Enterprise",
+			job : "User Experience & Front-end Design",
 			company : "Surescripts",
 			date : "2019",
 			intro : "At Surescripts, I worked on on several agile teams across several products.  urescripts I built and maintained a library of styled components to support a corporate styleguide.",
 			overview : "At Surescripts, I had the oppertunity to work on several agile teams across multiple products.  To ensure consistency between products, I built and maintained a library of styled components to support a corporate styleguide.",
 			approach : "???",
+			background : "caremanager",	
 
-			duties: [
-				{ "duty" : "Built a component library for Angular applications." },
-				{ "duty" : "Built a component library for Angular applications." }		
+			roles: [
+				{ "role" : "Built a component library for Angular applications." },
+				{ "role" : "Built a component library for Angular applications." }		
 			],
 			links: [
 				{  },
