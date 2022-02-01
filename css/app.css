@@ -120,8 +120,9 @@ a:hover {
 }
 
 .header-bkg {
+  background-color: #212121;
   background-size: cover;
-  height: 200px;
+  /*min-height: 200px;*/
 }
 
 .caremanager {
