@@ -165,7 +165,7 @@ var project = {
 			job : "User Experience & Front-end Design",
 			company : "Surescripts",
 			date : "2017",
-			intro : "Making it easy for clinics to fill a specialty medication at the pharmacy.",
+			intro : "",
 			overview : "Specialty Pharmacies offer services and medications to help treat rare and complex medical conditions. This application automates the specialty enrollment process and electronically connect prescribers, pharmacists and specialty hubs for a streamlined experience and faster time to fill for patients.",
 			approach : "Specialty Patient Enrollment was new product to be built from the ground-up, I was embeded within an Agile Team as the User Interface Designer.  Iterate design based on feedback and create final deliverables.",
 			background : "specialty",	
