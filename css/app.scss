@@ -7,7 +7,7 @@ $color3: 			#D9E5D6;
 $color4: 			#29B2A4;
 $color5: 			#BDFFFD;
 $danger:			#FF4100;
-$font: 				16px;
+$font: 				17.6px;
 $font-color: 		#444444;
 
 
@@ -21,38 +21,15 @@ body {
 html,
 body {
 	color: $font-color;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 300;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
 }
 
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Raleway', sans-serif;
-	font-weight: 300;
 	margin: 0;
 	padding: 0;
-}
-h1 {
-	font-size: 2.2rem;
-	margin: 0 0 0 0;
-}
-h2 {
-	font-size: 1.8rem;
-	margin: 0 0 2rem 0;
-
-}
-h3 {
-	font-size: 1.4rem;
-	margin: .5rem 0;
-}
-h4 {
-	font-size: 1.2rem;
-}
-h5 {
-	font-size: 1.0rem;	
-}
-h6 {
-	font-size: .9rem;	
 }
 
 a, a:visited, a:active {
@@ -157,15 +134,8 @@ a:hover {
 }
 
 
-@media only screen and (max-width: 600px) {
-}
 
 
-.header-bkg {
-	background-color: #212121;
-	background-size:cover;
-	/*min-height: 200px;*/
-}
 
 .caremanager {
 	background-image: url("../images/hero-caremanager.png");
@@ -179,6 +149,15 @@ a:hover {
 	background-image: url("../images/hero-insights.png");
 }
 
+.worklist {
+	background-image: url("../images/hero-central-worklist.png");
+}
 
+.portal {
+	background-image: url("../images/hero-patient-portal.png");
+}
 
+.care-event {
+	background-image: url("../images/hero-care-event.png");
+}
 
