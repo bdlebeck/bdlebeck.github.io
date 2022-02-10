@@ -2,49 +2,21 @@
 html,
 body {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 17.6px;
   scroll-behavior: smooth;
 }
 
 html,
 body {
   color: #444444;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 300;
   margin: 0;
   padding: 0;
-}
-
-h1 {
-  font-size: 2.2rem;
-  margin: 0 0 0 0;
-}
-
-h2 {
-  font-size: 1.8rem;
-  margin: 0 0 2rem 0;
-}
-
-h3 {
-  font-size: 1.4rem;
-  margin: .5rem 0;
-}
-
-h4 {
-  font-size: 1.2rem;
-}
-
-h5 {
-  font-size: 1.0rem;
-}
-
-h6 {
-  font-size: .9rem;
 }
 
 a, a:visited, a:active {
@@ -120,9 +92,22 @@ a:hover {
 }
 
 .header-bkg {
-  background-color: #212121;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+  background-image: url("../images/hero-blank.png");
   /*min-height: 200px;*/
+}
+
+@media only screen and (max-width: 769px) {
+  .header-bkg {
+    /*background-color: #ffffff;
+		background-image: none;	
+		height: inherit;
+		span {
+			color: #333333;
+		}*/
+  }
 }
 
 .caremanager {
@@ -135,4 +120,16 @@ a:hover {
 
 .insights {
   background-image: url("../images/hero-insights.png");
+}
+
+.worklist {
+  background-image: url("../images/hero-central-worklist.png");
+}
+
+.portal {
+  background-image: url("../images/hero-patient-portal.png");
+}
+
+.care-event {
+  background-image: url("../images/hero-care-event.png");
 }

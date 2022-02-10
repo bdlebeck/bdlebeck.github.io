@@ -84,8 +84,8 @@ $( ".page" ).click(function() {
 	var currentPage = document.getElementById('page'+current);
 	var gotoPage = document.getElementById('page'+gotopage);
 
-	currentPage.classList.remove("is-current");
-	gotoPage.classList.add("is-current");	
+	currentPage.classList.remove("active");
+	gotoPage.classList.add("active");	
 
 	localStorage.setItem('current', gotopage);
 });
@@ -110,10 +110,13 @@ function getCircles() {
 	var current = getCurrent();
 	var total = getTotal() +1;
 	for (i=1;i<total;i++) {  
-		//var page = $("<a class='page' page='"+i+"'><i id='page"+i+"' class='fas fa-circle'></i></a>");
-		var page = $("<li><a id='page"+i+"' class='page pagination-link' page='"+i+"'>"+i+"</a></li>");
-		var activepage = $("<a id='page"+i+"' class='page pagination-link is-current' page='"+i+"'>"+i+"</a>");
-		//var activepage = $("<a id='page"+i+"' class='page' page='"+i+"'><i class='fas fa-dot-circle active'></i></a>");
+
+		var page = $("<a class='page' page='"+i+"'><i id='page"+i+"' class='fas fa-circle'></i></a>");
+		var activepage = $("<a class='page' page='"+i+"'><i id='page"+i+"' class='fas fa-dot-circle active'></i></a>");
+
+		//var page = $("<li><a id='page"+i+"' class='page pagination-link' page='"+i+"'>"+i+"</a></li>");
+		//var activepage = $("<a id='page"+i+"' class='page pagination-link is-current' page='"+i+"'>"+i+"</a>");
+		
 
 		if(i === current){
 			$('#pages').append(activepage);
@@ -188,25 +191,29 @@ function updatePagination(e) {
 	var nextPage = document.getElementById('page'+next).classList;
 
 	if (direction == 'next') {
+
+		//currentPage.find('svg').removeClass('fa-dot-circle').addClass('fa-circle');
+
 		currentPage.remove("fa-dot-circle");
-		currentPage.remove("is-current");
+		//currentPage.remove("is-current");
 		currentPage.add("fa-circle");
 	
 		nextPage.remove("fa-circle");
 		nextPage.add("fa-dot-circle");
-		nextPage.add("is-current");		
+		//nextPage.add("is-current");		
 	}
 	else if (direction == 'back') {
 		currentPage.remove("fa-dot-circle");
-		currentPage.remove("is-current");
+		//currentPage.remove("is-current");
 		currentPage.add("fa-circle");
 	
 		previousPage.remove("fa-circle");
 		previousPage.add("fa-dot-circle");
-		previousPage.add("is-current");		
+		//previousPage.add("is-current");		
 	}
 	else {
-		currentPage.add("is-current");
+		//currentPage.add("is-current");
+		previousPage.add("fa-dot-circle");
 	}
 	
 }

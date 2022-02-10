@@ -74,7 +74,7 @@ var career = {
 			accomplishments: [
 				{ "accomplishment" : "Lead web designer on the Metro One's software engineering team." },
 				{ "accomplishment" : "Front-end deisgn and development for M1 Data & Analytics, a web-based phone and address data service (aquired by <a href='http://www.melissadata.com/m1data/index.htm' target='new'>Melissa data</a>)." },
-				{ "accomplishment" : "Lead web designer for for <a href='https://www.youtube.com/watch?v=VD_92iUHa8A' target='new'>Infone</a>, Metro One's retail phone service providing personal concierge services via operator." },
+				{ "accomplishment" : "Lead web designer for for <a href='https://www.youtube.com/watch?v=VD_92iUHa8A' target='new'>Infone</a>, Metro One's retail phone service providing personal concierge services via call center operator." },
 				{ "accomplishment" : "Lead web designer for <a href='http://www.oregonlive.com/business/index.ssf/2005/11/metro_ones_travails_offer_less.html' target='new'>Metro One Telecommunications</a> corporate website." },
 				{ "accomplishment" : "Additional projects including, landing pages, banner ad campaigns (GIF, Flash), product flyer design, trade show booth design, and logo design."} 
 			],
@@ -162,17 +162,17 @@ var project = {
 			id : "1",
 			project : "Specialty Patient Enrollment",
 			type : "Healthcare IT - Enterprise",
-			job : "User Experience & Front-end Design",
+			job : "UX Designer & Front-end Design",
 			company : "Surescripts",
 			date : "2017",
 			intro : "",
-			overview : "Specialty Pharmacies offer services and medications to help treat rare and complex medical conditions. This application automates the specialty enrollment process and electronically connect prescribers, pharmacists and specialty hubs for a streamlined experience and faster time to fill for patients.",
-			approach : "Specialty Patient Enrollment was new product to be built from the ground-up, I was embeded within an Agile Team as the User Interface Designer.  Iterate design based on feedback and create final deliverables.",
-			background : "specialty",	
+			overview : "Specialty Pharmacies offer medications to help treat rare and complex medical conditions. Specialty Patient Enrollment automates the specialty medication enrollment process and electronically connect prescribers and pharmacies with a streamlined experience and faster time to fill for patients.",
+			approach : "A new product to be built from the ground-up, I was embeded within an Agile Team as the User Interface Designer.  Iterate design based on feedback and create final deliverables.",
+			background : "../images/hero-specialty.png",	
 			roles: [
-				{ "role" : "Wireframing" },
-				{ "role" : "Visual designs, prototyping" },
-				{ "role" : "Front-end development" },
+				{ "role" : "Workflow wireframes" },
+				{ "role" : "High/low fidelity mockups" },
+				{ "role" : "Front-end design" },
 				{ "role" : "HTML & CSS architecture" },
 				{ "role" : "Responsive design" },
 				{ "role" : "Research interviews" }
@@ -182,18 +182,18 @@ var project = {
 			],	
 	
 			screenshots: [
-				{ "url" : "projects/specialty@2x.png" }
+				{ "url" : "projects/specialty@2x.png", "title" : "Specialty Patient Enrollment Form"  }
 			]				
 		},
 		{
 			id : "2",
 			project : "Insights for Medication Adherence",
 			type : "Healthcare IT - Enterprise",
-			job : "User Experience & Front-end Design",
+			job : "UX Designer & Front-end Design",
 			company : "Surescripts",
 			date : "2015",
 			intro : "",
-			overview : "Provides patient prescription adherence to the physician at the point-of-care. As a Physician, knowing if your patient has been taking their medication is valuable insight to the health of the patient.  This dashboard put patient-specific prescription adherence summaries right in front of the physician at the point-of-care. ",
+			overview : "As a physician, knowing if your patient has been taking their medication is valuable insight to the health of the patient.  This dashboard provides the physician patient prescription adherence summaries during an office visit.  ",
 			approach : "Insights for Medication Adherence was new product to be built from the ground-up, I was embeded within an Agile Team as the User Interface Designer.  Iterate design based on feedback and create final deliverables.",
 			background : "insights",	
 
@@ -208,21 +208,21 @@ var project = {
 				{ "text" : "Insights for Medication Adherence", "link" : "https://surescripts.com/inform-care-decisions/insights-alerts/" },
 			],					
 			screenshots: [
-				{ "url" : "mma-01.png", "title" : "Test" },
-				{ "url" : "mma-02.png", "title" : "Test" }
+				{ "url" : "mma-01.png", "title" : "Insights for Medication Adherence" },
+				{ "url" : "mma-02.png", "title" : "Point of Care" }
 			]		
 		},
 		{
 			id : "3",
 			project : "Care Event Notifications",
 			type : "Healthcare IT - Enterprise",
-			job : "User Experience & Front-end Design",
+			job : "UX Designer & Front-end Design",
 			company : "Surescripts",
 			date : "2018",
 			intro : "",
 			overview : "Physicians are alerted if a patient does not pick up their prescription, if no refills remain, or if a different provider prescribes a new medication to the patient.",
 			approach : "Care Event Notifications was new product to be built from the ground-up, I was embeded within an Agile Team as the User Interface Designer.  Iterate design based on feedback and create final deliverables.",
-			background : "caremanager",	
+			background : "care-event",	
 
 			roles: [
 				{ "role" : "Lorum Ipsum." },
@@ -241,7 +241,7 @@ var project = {
 			id : "4",
 			project : "CareManager - Point of Care",
 			type : "Healthcare IT - Enterprise",
-			job : "User Experience & Front-end Design",
+			job : "UX Designer & Front-end Design",
 			company : "Enli Health Intelligence",
 			date : "2014",
 			intro : "",
@@ -265,15 +265,15 @@ var project = {
 		},
 		{
 			id : "5",
-			project : "CareManager - Central Worklist",
+			project : "Central Worklist",
 			type : "Healthcare IT - Enterprise",
-			job : "User Experience & Front-end Design",
+			job : "UX Designer & Front-end Design",
 			company : "Enli Health Intelligence",
 			date : "2014",
 			intro : "",
-			overview : "Provides a health summary of the entire patient populations based on evidence-based guidelines. Central Worklist Suite allows clinics insight into it's patient population and monitor high risk patients. Colors were used to alert the doctor about disease category health scores.",
+			overview : "Central Worklist Suite allows medical clinics insight into it's patient population and monitor high risk patients. Provides a health summary of the entire patient populations based on evidence-based guidelines. Colors were used to alert the doctor about disease category health scores.",
 			approach : "Lead frontend designer for ENLI's CareManager Point-of-Care and CareManager Central Worklist.",
-			background : "caremanager",	
+			background : "worklist",	
 
 			roles: [
 				{ "role" : "Wireframe" },
@@ -300,7 +300,7 @@ var project = {
 			intro : "",
 			overview : "The Patient Portal provides healthcare providers a secure online presence including secure messaging, appointment, medical record access, and online payments.",
 			approach : "UI design and front-end development for Enli's 'Patient Portal' enterprise software. ",
-			background : "caremanager",	
+			background : "portal",	
 
 			roles: [
 				{ "role" : "Frontend design and development for Enli's Patient Portal enterprise software." },

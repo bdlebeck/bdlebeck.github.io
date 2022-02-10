@@ -6,38 +6,34 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1" />
 	    <link rel="stylesheet" href="css/details.css">
 		<link rel="stylesheet" href="css/app.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet"> 
-		<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Exo+2:700&display=swap" rel="stylesheet">
-		<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet"> 
+
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Exo+2&family=Inter:wght@400;600;700&family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+		<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"  data-auto-replace-svg="nest" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 	</head>
-	<body class="details has-navbar-fixed-top">
+	<body class="details">
 
-		<nav class="navbar is-light is-fixed-top" role="navigation" aria-label="main navigation">
+		<nav class="p-4" role="navigation" aria-label="main navigation">
 
-			<div class="navbar-brand">
-				<a class="navbar-item" href="index.html">
-					<img src="images/BDLogo.png">
-				</a>
-			
-				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navigation-menu">
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-				</a>
-			</div>
-		
-			<div id="navigation-menu" class="navbar-menu">
-				<div class="navbar-start">
-	
+			<div class="columns is-mobile">
+				<div class="column has-text-center-mobile has-text-center-tablet">
+					<a class="" href="index.html">
+						<img src="images/BDLogo.png" style="max-height:30px">
+					</a>
 				</div>
-		
-				<div class="navbar-end">
-					<a href="index.html" id="resume" class="navbar-item ">
+				<div class="column has-text-centered">
+					<a class="home is-hidden" href="#"><i class="far fa-arrow-alt-circle-left"></i></a>
+					<div id="pages" href="#" class="pagination2 is-hidden-mobile"></div>				
+					<a class="back" href="#"><i class="fas fa-arrow-alt-circle-left"></i></a>
+					<a class="next" href="#"><i class="fas fa-arrow-alt-circle-right"></i></a>
+				</div>
+				<div class="column has-text-right">
+					<a href="index.html" id="resume" class="">
 						Resume
 					</a>
-					<a href="details-project.html" id="portfolio" page="1" class="navbar-item is-active">
+					<a href="details-project.html" id="portfolio" page="1" class="is-active">
 						Portfolio
 					</a>
 				</div>
@@ -47,46 +43,38 @@
 
 
 
-		<main class="mt-3 pb-6">	
-
-			<div id="details-header" class=""></div>
-
-			<div class="container is-fluid">
-				<div class="columns">
-					<div class="column is-5 is-offset-4 has-text-centered">
-						<!--
-						<div class="pagination-container">
-							<a class="home" href="#"><i class="far fa-arrow-alt-circle-left"></i></a>
-							<div id="pages" href="#" class="pagination2"></div>				
-							<a class="back" href="#"><i class="fas fa-arrow-alt-circle-left"></i></a>
-							<a class="next" href="#"><i class="fas fa-arrow-alt-circle-right"></i></a>
-						</div>
-						-->
-						<nav class="pagination is-small mt-4" role="navigation" aria-label="pagination">
-							<a class="home is-hidden" href="#"><i class="fas fa-home"></i></a>
-							<button class="pagination-previous button is-small back" href="#"><i class="fas fa-arrow-alt-circle-left has-text-link"></i></button>
-							<ul id="pages" href="#" class="pagination-list"></ul>
-							<button class="pagination-next button is-small next" href="#"><i class="fas fa-arrow-alt-circle-right has-text-link"></i></button>					
-						</nav>	
-									
-					</div>
-				</div>
-			
+		<main class="pb-6">	
+			<div class="is-fluid">
+				<!--
+				<nav class="mt-4" role="navigation" aria-label="pagination">
+					<a class="home is-hidden" href="#"><i class="fas fa-home"></i></a>
+					<button class="button back" href="#"><i class="fas fa-arrow-alt-circle-left has-text-link"></i></button>
+					<ul id="pages" href="#" class=""></ul>
+					<button class="button next" href="#"><i class="fas fa-arrow-alt-circle-right has-text-link"></i></button>				
+				</nav>
+				-->				
+				<div id="details-header" class=""></div>
 				<div id="details" class=""></div>
 			</div>
-		</main>		
+		</main>	
 		
+
+
+		<!--<div class="column is-12-mobile is-5-tablet is-offset-7-tablet has-text-left-tablet has-text-white has-text-weight-semibold">-->
 		<script id="template-header" type="x-tmpl-mustache">
 			{{#items}}
-				<div id="header{{ id }}" class="hidden">
-					<div class="columns header-bkg {{background}}">
-
-						<div class="column is-12-mobile is-8-tablet is-offset-4-tablet has-text-white has-text-centered-mobile has-text-left-tablet has-text-weight-semibold">
-							<span class="is-size-6">{{ project }}</span>
-							<span class="is-block is-size-7">{{ job }}</span>
-							<span class="is-block is-size-7">{{ type }}</span>
+				<div id="header{{ id }}" class="hidden is-fluid">
+					<div class="columns">
+						<div class="column is-hidden-mobile is-6-tablet has-background-primary">
+							<img class="" src="{{background}}"/>
 						</div>
-				
+						<div class="column is-12-mobile is-6-tablet has-text-left-tablet has-background-primary">
+							<div class-"container">
+								<h1 class="is-size-7-mobile is-size-4-tablet has-text-weight-bold">{{ project }}</h1>
+								<span class="is-block is-size-7 has-text-weight-semibold">{{ job }}</span>
+								<span class="is-block is-size-7 has-text-weight-semibold">{{ type }}</span>
+							</div>
+						</div>				
 					</div>	
 				</div>	
 			{{/items}}
@@ -111,7 +99,7 @@
 
 					<div class="columns mt-4 mb-6">		
 						<div class="column is-4 has-text-left-mobile has-text-right-tablet">
-							<h3 class="m-0 has-text-weight-semibold mr-5">Approach</h3>
+							<h3 class="m-0 has-text-weight-semibold mr-5">My Role</h3>
 						</div>
 						<div class="column is-5">
 							<p class="">{{{ approach }}}</p>
@@ -123,7 +111,7 @@
 
 					<div class="columns mb-6">
 						<div class="column is-4 has-text-left-mobile has-text-right-tablet">
-							<h3 class="m-0 has-text-weight-semibold mr-5">My Role</h3>
+							<h3 class="m-0 has-text-weight-semibold mr-5">Deliverables</h3>
 						</div>						
 						<div class="column is-5">
 							<ul class="details-content ">
@@ -133,23 +121,11 @@
 							</ul>
 						</div>
 						<div class="column is-3">
-
+							
 						</div>
 					</div>
 
-					<div class="columns my-6 is-hidden">
-						<div class="column is-4 has-text-left-mobile has-text-right-tablet">
-							<h3 class="m-0 has-text-weight-semibold mr-5">Approach</h3>
-						</div>	
-						<div class="column is-5">
-							<p class="">{{{ approach }}}</p>
-						</div>
-						<div class="column is-3">
-
-						</div>						
-					</div>
-
-					<div class="columns is-hidden">
+					<div class="columns">
 						<div class="column is-2">
 
 						</div>							
