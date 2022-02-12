@@ -64,6 +64,10 @@ $( ".next" ).click(function() {
 	} 
 });
 
+$(body).swipe(function(){
+	alert("test");
+  })
+
 
 // Page click
 $( ".page" ).click(function() {
@@ -75,6 +79,7 @@ $( ".page" ).click(function() {
 	var currentHeaderItem = document.getElementById("header"+current);
 	var gotoItem = document.getElementById(gotopage);
 	var gotoHeaderItem = document.getElementById("header"+gotopage);
+	
 	currentItem.classList.add("hidden");
 	currentHeaderItem.classList.add("hidden");
 	gotoItem.classList.remove("hidden");
@@ -84,8 +89,10 @@ $( ".page" ).click(function() {
 	var currentPage = document.getElementById('page'+current);
 	var gotoPage = document.getElementById('page'+gotopage);
 
-	currentPage.classList.remove("active");
-	gotoPage.classList.add("active");	
+	currentPage.classList.remove("currentPage");
+	currentPage.classList.add("defaultPage");
+	gotoPage.classList.remove("defaultPage");	
+	gotoPage.classList.add("currentPage");	
 
 	localStorage.setItem('current', gotopage);
 });
@@ -111,8 +118,11 @@ function getCircles() {
 	var total = getTotal() +1;
 	for (i=1;i<total;i++) {  
 
-		var page = $("<a class='page' page='"+i+"'><i id='page"+i+"' class='fas fa-circle'></i></a>");
-		var activepage = $("<a class='page' page='"+i+"'><i id='page"+i+"' class='fas fa-dot-circle active'></i></a>");
+		//var page = $("<a class='page' page='"+i+"'><i id='page"+i+"' class='fas fa-circle'></i>  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path d='M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z'/></svg></a>");
+		//var activepage = $("<a class='page' page='"+i+"'><i id='page"+i+"' class='fas fa-dot-circle active'></i></a>");
+
+		var page = $("<a class='page' page='"+i+"'><div id='page"+i+"' class='defaultPage'></div></a>");
+		var activepage = $("<a class='page' page='"+i+"'><div id='page"+i+"' class='currentPage'></div></a>");
 
 		//var page = $("<li><a id='page"+i+"' class='page pagination-link' page='"+i+"'>"+i+"</a></li>");
 		//var activepage = $("<a id='page"+i+"' class='page pagination-link is-current' page='"+i+"'>"+i+"</a>");
@@ -120,9 +130,15 @@ function getCircles() {
 
 		if(i === current){
 			$('#pages').append(activepage);
+			//$('#page'+current+' .isActive').removeClass('is-hidden');
+			//$('#page'+current+' .isDefault').addClass('hidden');
+			//$('#page'+current+'.isDefault').addClass('is-hidden');
+			//$('#page'+current).removeClass('is-hidden');
 		}
 		else {
 			$('#pages').append(page);
+			//$('#page'+current).addClass('is-hidden');
+			//$('#pages .isDefault').removeClass('is-hidden');
 		}
 	}
 }
@@ -192,28 +208,21 @@ function updatePagination(e) {
 
 	if (direction == 'next') {
 
-		//currentPage.find('svg').removeClass('fa-dot-circle').addClass('fa-circle');
-
-		currentPage.remove("fa-dot-circle");
-		//currentPage.remove("is-current");
-		currentPage.add("fa-circle");
+		currentPage.remove("currentPage");
+		currentPage.add("defaultPage");
 	
-		nextPage.remove("fa-circle");
-		nextPage.add("fa-dot-circle");
-		//nextPage.add("is-current");		
+		nextPage.remove("defaultPage");
+		nextPage.add("currentPage");	
 	}
 	else if (direction == 'back') {
-		currentPage.remove("fa-dot-circle");
-		//currentPage.remove("is-current");
-		currentPage.add("fa-circle");
+		currentPage.remove("currentPage");
+		currentPage.add("defaultPage");
 	
-		previousPage.remove("fa-circle");
-		previousPage.add("fa-dot-circle");
-		//previousPage.add("is-current");		
+		previousPage.remove("defaultPage");
+		previousPage.add("currentPage");		
 	}
 	else {
-		//currentPage.add("is-current");
-		previousPage.add("fa-dot-circle");
+		previousPage.add("currentPage");
 	}
 	
 }

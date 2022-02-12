@@ -91,25 +91,6 @@ a:hover {
   color: #BDFFFD;
 }
 
-.header-bkg {
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 400px;
-  background-image: url("../images/hero-blank.png");
-  /*min-height: 200px;*/
-}
-
-@media only screen and (max-width: 769px) {
-  .header-bkg {
-    /*background-color: #ffffff;
-		background-image: none;	
-		height: inherit;
-		span {
-			color: #333333;
-		}*/
-  }
-}
-
 .caremanager {
   background-image: url("../images/hero-caremanager.png");
 }

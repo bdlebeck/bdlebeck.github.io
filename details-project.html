@@ -25,7 +25,8 @@
 				</div>
 				<div class="column has-text-centered">
 					<a class="home is-hidden" href="#"><i class="far fa-arrow-alt-circle-left"></i></a>
-					<div id="pages" href="#" class="pagination2 is-hidden-mobile"></div>				
+					<div id="pages" href="#" class="pagination2 is-inline is-hidden-mobile">
+					</div>
 					<a class="back" href="#"><i class="fas fa-arrow-alt-circle-left"></i></a>
 					<a class="next" href="#"><i class="fas fa-arrow-alt-circle-right"></i></a>
 				</div>
@@ -43,7 +44,7 @@
 
 
 
-		<main class="pb-6">	
+		<main>	
 			<div class="is-fluid">
 				<!--
 				<nav class="mt-4" role="navigation" aria-label="pagination">
@@ -63,13 +64,13 @@
 		<!--<div class="column is-12-mobile is-5-tablet is-offset-7-tablet has-text-left-tablet has-text-white has-text-weight-semibold">-->
 		<script id="template-header" type="x-tmpl-mustache">
 			{{#items}}
-				<div id="header{{ id }}" class="hidden is-fluid">
-					<div class="columns">
+				<div id="header{{ id }}" class="hidden">
+					<div class="columns is-variable is-6-mobile is-0-tablet ">
 						<div class="column is-hidden-mobile is-6-tablet has-background-primary">
 							<img class="" src="{{background}}"/>
 						</div>
-						<div class="column is-12-mobile is-6-tablet has-text-left-tablet has-background-primary">
-							<div class-"container">
+						<div class="column p-6 sis-12-mobile is-6-tablet has-text-left-tablet has-background-primary">
+							<div class-"">
 								<h1 class="is-size-7-mobile is-size-4-tablet has-text-weight-bold">{{ project }}</h1>
 								<span class="is-block is-size-7 has-text-weight-semibold">{{ job }}</span>
 								<span class="is-block is-size-7 has-text-weight-semibold">{{ type }}</span>
@@ -83,9 +84,9 @@
 
 		<script id="template" type="x-tmpl-mustache">
 			{{#items}}
-				<div id="{{id}}" class="details-highlights hidden">
+				<div id="{{id}}" class="container is-fluid details-highlights hidden">
 
-					<div class="columns mt-4 mb-6">		
+					<div class="columns py-6">		
 						<div class="column is-4 has-text-left-mobile has-text-right-tablet">
 							<h3 class="m-0 has-text-weight-semibold mr-5">Overview</h3>
 						</div>
@@ -97,7 +98,7 @@
 						</div>
 					</div>
 
-					<div class="columns mt-4 mb-6">		
+					<div class="columns py-6">		
 						<div class="column is-4 has-text-left-mobile has-text-right-tablet">
 							<h3 class="m-0 has-text-weight-semibold mr-5">My Role</h3>
 						</div>
@@ -109,7 +110,7 @@
 						</div>
 					</div>					
 
-					<div class="columns mb-6">
+					<div class="columns py-6">
 						<div class="column is-4 has-text-left-mobile has-text-right-tablet">
 							<h3 class="m-0 has-text-weight-semibold mr-5">Deliverables</h3>
 						</div>						
@@ -125,7 +126,7 @@
 						</div>
 					</div>
 
-					<div class="columns">
+					<div class="columns py-6">
 						<div class="column is-2">
 
 						</div>							
@@ -147,6 +148,7 @@
 		</script>
 
 		<script type="text/javascript" src="node_modules/zepto/dist/zepto.min.js"></script>
+		<script type="text/javascript" src="node_modules/zepto/src/touch.js"></script>
 		<script type="text/javascript" src="node_modules/mustache/mustache.min.js" ></script>	
 		<script type="text/javascript" src="scripts/zenscroll-min.js"></script>
 		<script type="text/javascript" src="scripts/content.js" ></script>	

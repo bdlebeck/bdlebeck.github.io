@@ -195,7 +195,7 @@ var project = {
 			intro : "",
 			overview : "As a physician, knowing if your patient has been taking their medication is valuable insight to the health of the patient.  This dashboard provides the physician patient prescription adherence summaries during an office visit.  ",
 			approach : "Insights for Medication Adherence was new product to be built from the ground-up, I was embeded within an Agile Team as the User Interface Designer.  Iterate design based on feedback and create final deliverables.",
-			background : "insights",	
+			background : "../images/hero-insights.png",	
 
 			roles: [
 				{ "role" : "Wireframing" },
@@ -222,7 +222,7 @@ var project = {
 			intro : "",
 			overview : "Physicians are alerted if a patient does not pick up their prescription, if no refills remain, or if a different provider prescribes a new medication to the patient.",
 			approach : "Care Event Notifications was new product to be built from the ground-up, I was embeded within an Agile Team as the User Interface Designer.  Iterate design based on feedback and create final deliverables.",
-			background : "care-event",	
+			background : "../images/hero-care-event.png",	
 
 			roles: [
 				{ "role" : "Lorum Ipsum." },
@@ -247,7 +247,7 @@ var project = {
 			intro : "",
 			overview : "Provides a health summary of the entire patient populations based on evidence-based guidelines. ENLI's CareManager Suite allows clinics insight into it's patient population and monitor high risk patients. The goal of Caremanager was to provide the doctor or clinic a quick look into the patients health records during the patient's appointment.  Colors were used to alert the doctor about disease category health scores.",
 			approach : "CareManager was new product to be built from the ground-up, I was embeded within an Agile Team as the User Interface Designer.  Iterate design based on feedback and create final deliverables.",
-			background : "caremanager",	
+			background : "../images/hero-caremanager.png",	
 
 			roles: [
 				{ "role" : "UI design" },
@@ -273,7 +273,7 @@ var project = {
 			intro : "",
 			overview : "Central Worklist Suite allows medical clinics insight into it's patient population and monitor high risk patients. Provides a health summary of the entire patient populations based on evidence-based guidelines. Colors were used to alert the doctor about disease category health scores.",
 			approach : "Lead frontend designer for ENLI's CareManager Point-of-Care and CareManager Central Worklist.",
-			background : "worklist",	
+			background : "../images/hero-central-worklist.png",	
 
 			roles: [
 				{ "role" : "Wireframe" },
@@ -300,7 +300,7 @@ var project = {
 			intro : "",
 			overview : "The Patient Portal provides healthcare providers a secure online presence including secure messaging, appointment, medical record access, and online payments.",
 			approach : "UI design and front-end development for Enli's 'Patient Portal' enterprise software. ",
-			background : "portal",	
+			background : "../images/hero-patient-portal.png",	
 
 			roles: [
 				{ "role" : "Frontend design and development for Enli's Patient Portal enterprise software." },
@@ -325,7 +325,7 @@ var project = {
 			intro : "At Surescripts, I worked on on several agile teams across several products.  urescripts I built and maintained a library of styled components to support a corporate styleguide.",
 			overview : "At Surescripts, I had the oppertunity to work on several agile teams across multiple products.  To ensure consistency between products, I built and maintained a library of styled components to support a corporate styleguide.",
 			approach : "Built a styleguide for Surescripts brand look-and-feel.",
-			background : "caremanager",	
+			background : "../images/hero-caremanager.png",	
 
 			roles: [
 				{ "role" : "Built a component library for Angular applications." },
