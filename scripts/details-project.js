@@ -64,7 +64,7 @@ $( ".next" ).click(function() {
 	} 
 });
 
-$(body).swipe(function(){
+$("#details-header").swipe(function(){
 	alert("test");
   })
 
