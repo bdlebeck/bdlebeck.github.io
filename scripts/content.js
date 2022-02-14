@@ -169,6 +169,7 @@ var project = {
 			overview : "Specialty Pharmacies offer medications to help treat rare and complex medical conditions. Specialty Patient Enrollment automates the specialty medication enrollment process and electronically connect prescribers and pharmacies with a streamlined experience and faster time to fill for patients.",
 			approach : "A new product to be built from the ground-up, I was embeded within an Agile Team as the User Interface Designer.  Iterate design based on feedback and create final deliverables.",
 			background : "../images/hero-specialty.png",	
+			backgroundColor : "#8B0000",
 			roles: [
 				{ "role" : "Workflow wireframes" },
 				{ "role" : "High/low fidelity mockups" },
@@ -196,6 +197,7 @@ var project = {
 			overview : "As a physician, knowing if your patient has been taking their medication is valuable insight to the health of the patient.  This dashboard provides the physician patient prescription adherence summaries during an office visit.  ",
 			approach : "Insights for Medication Adherence was new product to be built from the ground-up, I was embeded within an Agile Team as the User Interface Designer.  Iterate design based on feedback and create final deliverables.",
 			background : "../images/hero-insights.png",	
+			backgroundColor : "#228B22",
 
 			roles: [
 				{ "role" : "Wireframing" },
@@ -222,7 +224,8 @@ var project = {
 			intro : "",
 			overview : "Physicians are alerted if a patient does not pick up their prescription, if no refills remain, or if a different provider prescribes a new medication to the patient.",
 			approach : "Care Event Notifications was new product to be built from the ground-up, I was embeded within an Agile Team as the User Interface Designer.  Iterate design based on feedback and create final deliverables.",
-			background : "../images/hero-care-event.png",	
+			background : "../images/hero-care-event.png",
+			backgroundColor : "#2F4F4F",	
 
 			roles: [
 				{ "role" : "Lorum Ipsum." },
@@ -239,7 +242,7 @@ var project = {
 		},		
 		{
 			id : "4",
-			project : "CareManager - Point of Care",
+			project : "CareManager",
 			type : "Healthcare IT - Enterprise",
 			job : "UX Designer & Front-end Design",
 			company : "Enli Health Intelligence",
@@ -248,6 +251,7 @@ var project = {
 			overview : "Provides a health summary of the entire patient populations based on evidence-based guidelines. ENLI's CareManager Suite allows clinics insight into it's patient population and monitor high risk patients. The goal of Caremanager was to provide the doctor or clinic a quick look into the patients health records during the patient's appointment.  Colors were used to alert the doctor about disease category health scores.",
 			approach : "CareManager was new product to be built from the ground-up, I was embeded within an Agile Team as the User Interface Designer.  Iterate design based on feedback and create final deliverables.",
 			background : "../images/hero-caremanager.png",	
+			backgroundColor : "#DAA520",
 
 			roles: [
 				{ "role" : "UI design" },
@@ -274,6 +278,7 @@ var project = {
 			overview : "Central Worklist Suite allows medical clinics insight into it's patient population and monitor high risk patients. Provides a health summary of the entire patient populations based on evidence-based guidelines. Colors were used to alert the doctor about disease category health scores.",
 			approach : "Lead frontend designer for ENLI's CareManager Point-of-Care and CareManager Central Worklist.",
 			background : "../images/hero-central-worklist.png",	
+			backgroundColor : "#4B0082",
 
 			roles: [
 				{ "role" : "Wireframe" },
@@ -301,6 +306,7 @@ var project = {
 			overview : "The Patient Portal provides healthcare providers a secure online presence including secure messaging, appointment, medical record access, and online payments.",
 			approach : "UI design and front-end development for Enli's 'Patient Portal' enterprise software. ",
 			background : "../images/hero-patient-portal.png",	
+			backgroundColor : "#191970",
 
 			roles: [
 				{ "role" : "Frontend design and development for Enli's Patient Portal enterprise software." },
@@ -317,7 +323,7 @@ var project = {
 		},
 		{
 			id : "7",
-			project : "Component Styleguide",
+			project : "Design System",
 			type : "Healthcare IT - Enterprise",
 			job : "User Experience & Front-end Design",
 			company : "Surescripts",
@@ -325,7 +331,8 @@ var project = {
 			intro : "At Surescripts, I worked on on several agile teams across several products.  urescripts I built and maintained a library of styled components to support a corporate styleguide.",
 			overview : "At Surescripts, I had the oppertunity to work on several agile teams across multiple products.  To ensure consistency between products, I built and maintained a library of styled components to support a corporate styleguide.",
 			approach : "Built a styleguide for Surescripts brand look-and-feel.",
-			background : "../images/hero-caremanager.png",	
+			background : "../images/hero-caremanager.png",
+			backgroundColor : "#5F9EA0",	
 
 			roles: [
 				{ "role" : "Built a component library for Angular applications." },

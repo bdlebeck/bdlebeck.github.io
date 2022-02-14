@@ -64,10 +64,6 @@ $( ".next" ).click(function() {
 	} 
 });
 
-$("#details-header").swipe(function(){
-	alert("test");
-  })
-
 
 // Page click
 $( ".page" ).click(function() {

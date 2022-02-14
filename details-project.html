@@ -4,12 +4,11 @@
 	    <meta charset="utf-8" />
 	    <title>Brian Lebeck - UI Design | UI Development</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1" />
-	    <link rel="stylesheet" href="css/details.css">
 		<link rel="stylesheet" href="css/app.css">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com"> 
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Exo+2&family=Inter:wght@400;600;700&family=Raleway:wght@500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&family=Inter:wght@400;600;700&family=Raleway:wght@500&display=swap" rel="stylesheet">
 
 		<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"  data-auto-replace-svg="nest" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 	</head>
@@ -25,10 +24,7 @@
 				</div>
 				<div class="column has-text-centered">
 					<a class="home is-hidden" href="#"><i class="far fa-arrow-alt-circle-left"></i></a>
-					<div id="pages" href="#" class="pagination2 is-inline is-hidden-mobile">
-					</div>
-					<a class="back" href="#"><i class="fas fa-arrow-alt-circle-left"></i></a>
-					<a class="next" href="#"><i class="fas fa-arrow-alt-circle-right"></i></a>
+					<div id="pages" href="#" class="pagination2 is-inline is-hidden-mobile"></div>
 				</div>
 				<div class="column has-text-right">
 					<a href="index.html" id="resume" class="">
@@ -45,7 +41,7 @@
 
 
 		<main>	
-			<div class="is-fluid">
+			<div class="is-fluid" style="overflow:scroll">
 				<!--
 				<nav class="mt-4" role="navigation" aria-label="pagination">
 					<a class="home is-hidden" href="#"><i class="fas fa-home"></i></a>
@@ -54,7 +50,7 @@
 					<button class="button next" href="#"><i class="fas fa-arrow-alt-circle-right has-text-link"></i></button>				
 				</nav>
 				-->				
-				<div id="details-header" class=""></div>
+				<div id="details-header" class="" style="overflow:scroll"></div>
 				<div id="details" class=""></div>
 			</div>
 		</main>	
@@ -65,16 +61,28 @@
 		<script id="template-header" type="x-tmpl-mustache">
 			{{#items}}
 				<div id="header{{ id }}" class="hidden">
-					<div class="columns is-variable is-6-mobile is-0-tablet ">
-						<div class="column is-hidden-mobile is-6-tablet has-background-primary">
+					<div class="columns is-mobile is-vcentered is-gapless" style="background-color:{{ backgroundColor }}">
+						<div class="column is-1-mobile is-1-tablet has-text-left">
+							<a class="back ml-2" href="#">
+								<svg>
+									<use xlink:href="#previousIcon" />
+							  	</svg>
+							</a>
+						</div>
+						<div class="column is-hidden-mobile is-5-tablet">
 							<img class="" src="{{background}}"/>
 						</div>
-						<div class="column p-6 sis-12-mobile is-6-tablet has-text-left-tablet has-background-primary">
-							<div class-"">
-								<h1 class="is-size-7-mobile is-size-4-tablet has-text-weight-bold">{{ project }}</h1>
-								<span class="is-block is-size-7 has-text-weight-semibold">{{ job }}</span>
-								<span class="is-block is-size-7 has-text-weight-semibold">{{ type }}</span>
-							</div>
+						<div class="column has-text-left-tablet has-text-white">
+							<h1 class="is-size-7-mobile is-size-4-tablet is-size-4-desktop is-size-3-widescreen has-text-weight-bold">{{ project }}</h1>
+							<span class="is-block is-size-7-mobile is-size-7-tablet is-size-6-desktop ">{{ job }}</span>
+							<span class="is-block is-size-7-mobile is-size-7-tablet is-size-6-desktop ">{{ type }}</span>
+						</div>
+						<div class="column is-1-mobile is-1-tablet has-text-right">
+							<a class="next mr-2" href="#">
+								<svg>
+									<use xlink:href="#nextIcon" />
+								</svg>
+							</a>
 						</div>				
 					</div>	
 				</div>	
@@ -86,7 +94,7 @@
 			{{#items}}
 				<div id="{{id}}" class="container is-fluid details-highlights hidden">
 
-					<div class="columns py-6">		
+					<div class="columns py-4">		
 						<div class="column is-4 has-text-left-mobile has-text-right-tablet">
 							<h3 class="m-0 has-text-weight-semibold mr-5">Overview</h3>
 						</div>
@@ -98,7 +106,7 @@
 						</div>
 					</div>
 
-					<div class="columns py-6">		
+					<div class="columns py-4">		
 						<div class="column is-4 has-text-left-mobile has-text-right-tablet">
 							<h3 class="m-0 has-text-weight-semibold mr-5">My Role</h3>
 						</div>
@@ -110,7 +118,7 @@
 						</div>
 					</div>					
 
-					<div class="columns py-6">
+					<div class="columns py-4">
 						<div class="column is-4 has-text-left-mobile has-text-right-tablet">
 							<h3 class="m-0 has-text-weight-semibold mr-5">Deliverables</h3>
 						</div>						
@@ -126,7 +134,7 @@
 						</div>
 					</div>
 
-					<div class="columns py-6">
+					<div class="columns py-4">
 						<div class="column is-2">
 
 						</div>							
@@ -153,6 +161,36 @@
 		<script type="text/javascript" src="scripts/zenscroll-min.js"></script>
 		<script type="text/javascript" src="scripts/content.js" ></script>	
 		<script type="text/javascript" src="scripts/details-project.js" ></script>	
+
+		<svg display="none">
+			<symbol viewBox="0 0 18 18" id="previousIcon">
+				<circle cx="9" cy="9" r="9" />
+				<path d="M14 9H6M6 9L8.54545 7V11L6 9Z" stroke-width="3"/>
+			</symbol>
+
+			<symbol viewBox="0 0 18 18" id="nextIcon">
+				<circle cx="9" cy="9" r="9" />
+				<path d="M4 9L12 9M12 9L9.45455 11L9.45455 7L12 9Z" stroke-width="3"/>
+			</symbol>
+		</svg>
+
+		  <style>
+			#details-header svg {
+				cursor: pointer;	
+				fill: #ffffff;
+				opacity: .5;
+				height: 30px;
+				width: 30px;
+			}
+			#details-header svg:hover {
+				fill: #ffffff;
+				opacity: .8;
+			}
+			svg path {
+				opacity: .8;
+				stroke: #000000;
+			}		
+		  </style>
 
 	</body>
 
