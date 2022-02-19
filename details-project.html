@@ -12,12 +12,11 @@
 
 		<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"  data-auto-replace-svg="nest" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 	</head>
-	<body class="details">
+	<body class="details" style="padding-top: .25rem;">
 
-		<nav class="p-4" role="navigation" aria-label="main navigation">
-
-			<div class="columns is-mobile">
-				<div class="column has-text-center-mobile has-text-center-tablet">
+		<div class="navbar">
+			<div class="columns is-mobile is-vcentered">
+				<div class="column has-text-center-mobile has-text-left-tablet">
 					<a class="" href="index.html">
 						<img src="images/BDLogo.png" style="max-height:30px">
 					</a>
@@ -35,33 +34,20 @@
 					</a>
 				</div>
 			</div>
+		</div>
 
-		</nav>
-
-
-
-		<main>	
-			<div class="is-fluid" style="overflow:scroll">
-				<!--
-				<nav class="mt-4" role="navigation" aria-label="pagination">
-					<a class="home is-hidden" href="#"><i class="fas fa-home"></i></a>
-					<button class="button back" href="#"><i class="fas fa-arrow-alt-circle-left has-text-link"></i></button>
-					<ul id="pages" href="#" class=""></ul>
-					<button class="button next" href="#"><i class="fas fa-arrow-alt-circle-right has-text-link"></i></button>				
-				</nav>
-				-->				
-				<div id="details-header" class="" style="overflow:scroll"></div>
-				<div id="details" class=""></div>
+		<main class="mt-6">	
+			<div class="is-fluid">			
+				<div id="details-header"></div>
+				<div id="details"></div>
 			</div>
 		</main>	
 		
 
-
-		<!--<div class="column is-12-mobile is-5-tablet is-offset-7-tablet has-text-left-tablet has-text-white has-text-weight-semibold">-->
 		<script id="template-header" type="x-tmpl-mustache">
 			{{#items}}
-				<div id="header{{ id }}" class="hidden">
-					<div class="columns is-mobile is-vcentered is-gapless" style="background-color:{{ backgroundColor }}">
+				<div id="header{{ id }}" class="hidden" style="position: absolute; z-index:{{ zIndex }}; background-color:{{ backgroundColor }}">
+					<div class="columns is-mobile is-vcentered is-gapless">
 						<div class="column is-1-mobile is-1-tablet has-text-left">
 							<a class="back ml-2" href="#">
 								<svg>
@@ -69,10 +55,10 @@
 							  	</svg>
 							</a>
 						</div>
-						<div class="column is-hidden-mobile is-5-tablet">
+						<div class="column is-10-mobile is-5-tablet has-text-center-mobile ">
 							<img class="" src="{{background}}"/>
 						</div>
-						<div class="column has-text-left-tablet has-text-white">
+						<div class="column is-hidden-mobile has-text-left-tablet has-text-white">
 							<h1 class="is-size-7-mobile is-size-4-tablet is-size-4-desktop is-size-3-widescreen has-text-weight-bold">{{ project }}</h1>
 							<span class="is-block is-size-7-mobile is-size-7-tablet is-size-6-desktop ">{{ job }}</span>
 							<span class="is-block is-size-7-mobile is-size-7-tablet is-size-6-desktop ">{{ type }}</span>
@@ -92,7 +78,15 @@
 
 		<script id="template" type="x-tmpl-mustache">
 			{{#items}}
-				<div id="{{id}}" class="container is-fluid details-highlights hidden">
+				<div id="{{id}}" class="details-highlights container is-fluid hidden" style="position: absolute; z-index:{{ zIndex }}">
+
+					<div class="columns">
+						<div class="column is-12-mobile is-hidden-tablet has-text-left-tablet">
+							<h1 class="is-size-7-mobile is-size-4-tablet is-size-4-desktop is-size-3-widescreen has-text-weight-bold">{{ project }}</h1>
+							<span class="is-block is-size-7-mobile is-size-7-tablet is-size-6-desktop ">{{ job }}</span>
+							<span class="is-block is-size-7-mobile is-size-7-tablet is-size-6-desktop ">{{ type }}</span>
+						</div>
+					</div>
 
 					<div class="columns py-4">		
 						<div class="column is-4 has-text-left-mobile has-text-right-tablet">

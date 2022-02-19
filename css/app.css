@@ -31,15 +31,23 @@ a:hover {
 }
 
 .show {
-  display: block;
-  -webkit-animation: fadeIn 2.1s;
-  animation: fadeIn 2.1s;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s, visibility .5s;
 }
 
 .hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s, visibility .5s;
+}
+
+.display-none {
   display: none;
-  -webkit-animation: fadeOut 2.1s;
-  animation: fadeOut 2.1s;
+}
+
+.display-block {
+  display: block;
 }
 
 .text-right {
@@ -96,14 +104,40 @@ a:hover {
   }
 }
 
-#details-header, #details {
-  webkit-animation: fadeIn 1.6s;
-  animation: fadeIn 1.6s;
+.navbar {
+  overflow: hidden;
+  background-color: #222222;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-#details-header .details-screenshots .career__screenshot, #details .details-screenshots .career__screenshot {
-  border: 1px solid #dcdcdc;
-  max-width: 100%;
+.navbar .columns {
+  width: 100%;
+}
+
+.home {
+  margin-top: 8rem;
+}
+
+#details-header {
+  background-color: #000000;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  #details-header {
+    /*height: 50px;*/
+  }
+  #details-header img {
+    /*max-width:300px;*/
+  }
+}
+
+#details {
+  height: auto;
+  top: 380px;
+  position: relative;
 }
 
 .pagination2 .currentPage {

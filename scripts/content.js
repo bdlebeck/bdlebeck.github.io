@@ -166,10 +166,11 @@ var project = {
 			company : "Surescripts",
 			date : "2017",
 			intro : "",
-			overview : "Specialty Pharmacies offer medications to help treat rare and complex medical conditions. Specialty Patient Enrollment automates the specialty medication enrollment process and electronically connect prescribers and pharmacies with a streamlined experience and faster time to fill for patients.",
+			overview : "Specialty Pharmacies offer medications to help treat rare and complex medical conditions. Specialty Patient Enrollment automates the enrollment process and connects prescribers and pharmacies with a streamlined experience and faster time to fill for patients.",
 			approach : "A new product to be built from the ground-up, I was embeded within an Agile Team as the User Interface Designer.  Iterate design based on feedback and create final deliverables.",
 			background : "../images/hero-specialty.png",	
 			backgroundColor : "#8B0000",
+			zIndex: "10",
 			roles: [
 				{ "role" : "Workflow wireframes" },
 				{ "role" : "High/low fidelity mockups" },
@@ -194,10 +195,11 @@ var project = {
 			company : "Surescripts",
 			date : "2015",
 			intro : "",
-			overview : "As a physician, knowing if your patient has been taking their medication is valuable insight to the health of the patient.  This dashboard provides the physician patient prescription adherence summaries during an office visit.  ",
+			overview : "As a physician, knowing if your patient has been taking their medication is valuable insight to the health of the patient.  This dashboard provides patient prescription adherence summaries during an office visit.  ",
 			approach : "Insights for Medication Adherence was new product to be built from the ground-up, I was embeded within an Agile Team as the User Interface Designer.  Iterate design based on feedback and create final deliverables.",
 			background : "../images/hero-insights.png",	
 			backgroundColor : "#228B22",
+			zIndex: "9",
 
 			roles: [
 				{ "role" : "Wireframing" },
@@ -225,7 +227,8 @@ var project = {
 			overview : "Physicians are alerted if a patient does not pick up their prescription, if no refills remain, or if a different provider prescribes a new medication to the patient.",
 			approach : "Care Event Notifications was new product to be built from the ground-up, I was embeded within an Agile Team as the User Interface Designer.  Iterate design based on feedback and create final deliverables.",
 			background : "../images/hero-care-event.png",
-			backgroundColor : "#2F4F4F",	
+			backgroundColor : "#2F4F4F",
+			zIndex: "8",	
 
 			roles: [
 				{ "role" : "Lorum Ipsum." },
@@ -252,6 +255,7 @@ var project = {
 			approach : "CareManager was new product to be built from the ground-up, I was embeded within an Agile Team as the User Interface Designer.  Iterate design based on feedback and create final deliverables.",
 			background : "../images/hero-caremanager.png",	
 			backgroundColor : "#DAA520",
+			zIndex: "7",
 
 			roles: [
 				{ "role" : "UI design" },
@@ -279,6 +283,7 @@ var project = {
 			approach : "Lead frontend designer for ENLI's CareManager Point-of-Care and CareManager Central Worklist.",
 			background : "../images/hero-central-worklist.png",	
 			backgroundColor : "#4B0082",
+			zIndex: "6",
 
 			roles: [
 				{ "role" : "Wireframe" },
@@ -307,6 +312,7 @@ var project = {
 			approach : "UI design and front-end development for Enli's 'Patient Portal' enterprise software. ",
 			background : "../images/hero-patient-portal.png",	
 			backgroundColor : "#191970",
+			zIndex: "5",
 
 			roles: [
 				{ "role" : "Frontend design and development for Enli's Patient Portal enterprise software." },
@@ -333,6 +339,7 @@ var project = {
 			approach : "Built a styleguide for Surescripts brand look-and-feel.",
 			background : "../images/hero-caremanager.png",
 			backgroundColor : "#5F9EA0",	
+			zIndex: "4",
 
 			roles: [
 				{ "role" : "Built a component library for Angular applications." },

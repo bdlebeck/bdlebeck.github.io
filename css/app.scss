@@ -44,16 +44,24 @@ a:hover {
 }
 
 .show {
-	display: block;
-	-webkit-animation: fadeIn 2.1s;
-    animation: fadeIn 2.1s;	
+	opacity : 1;
+	visibility : visible;
+	transition:opacity 1s, visibility .5s;
 }
 
 .hidden {
-	display: none;
-	-webkit-animation: fadeOut 2.1s;
-    animation: fadeOut 2.1s;	
+	opacity : 0;
+	visibility : hidden;
+	transition:opacity 1s, visibility .5s;
 }
+
+.display-none {
+	display:none;
+}
+.display-block {
+	display:block;
+}
+
 
 .text-right {
 	text-align: right;
@@ -91,18 +99,41 @@ a:hover {
 }
 
 
+.navbar {
+	overflow: hidden;
+	background-color: #222222;
+	position: fixed;
+	top: 0;	
+	width: 100%;
+	.columns {
+		width: 100%;
+	}
+}
 
-#details-header, #details {
-	webkit-animation: fadeIn 1.6s;
-	animation: fadeIn 1.6s;
 
-	.details-screenshots {
-		.career__screenshot {
-			border: 1px solid #dcdcdc;
-			max-width: 100%;
-		}	
-	}	
+.home {
+	margin-top: 8rem;
+}
 
+
+#details-header {
+	background-color: #000000;
+	position:relative; 
+
+}
+@media only screen and (max-width: 768px) {
+	#details-header {
+		/*height: 50px;*/
+		img {
+			/*max-width:300px;*/
+		}
+	}
+}
+
+#details {
+	height: auto;
+	top:380px;
+	position:relative; 
 }
 
 .pagination2 {
@@ -129,6 +160,3 @@ a:hover {
 	}	
 }
 
-@media only screen and (max-width: 600px) {
-
-}
