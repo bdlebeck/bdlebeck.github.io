@@ -35,8 +35,12 @@ document.addEventListener("keydown", function(event) {
 });  
 
 //Touch events
-$('body').swipe(function(){
-	alert('test');
+$('body').swipeLeft(function(){
+	clickNext();
+})
+
+$('body').swipeRight(function(){
+	clickBack();
 })
 
 
