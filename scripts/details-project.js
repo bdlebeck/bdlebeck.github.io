@@ -34,6 +34,11 @@ document.addEventListener("keydown", function(event) {
 	}
 });  
 
+//Touch events
+$('body').swipe(function(){
+	alert('test');
+})
+
 
 // Home click
 $( ".home" ).click(function() {
