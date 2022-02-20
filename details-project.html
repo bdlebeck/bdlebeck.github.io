@@ -36,113 +36,113 @@
 			</div>
 		</div>
 
-		<main class="mt-6">	
+		<main class="">	
 			<div class="is-fluid">			
-				<div id="details-header"></div>
 				<div id="details"></div>
 			</div>
 		</main>	
 		
 
-		<script id="template-header" type="x-tmpl-mustache">
-			{{#items}}
-				<div id="header{{ id }}" class="hidden" style="position: absolute; z-index:{{ zIndex }}; background-color:{{ backgroundColor }}">
-					<div class="columns is-mobile is-vcentered is-gapless">
-						<div class="column is-1-mobile is-1-tablet has-text-left">
-							<a class="back ml-2" href="#">
-								<svg>
-									<use xlink:href="#previousIcon" />
-							  	</svg>
-							</a>
-						</div>
-						<div class="column is-10-mobile is-5-tablet has-text-center-mobile ">
-							<img class="" src="{{background}}"/>
-						</div>
-						<div class="column is-hidden-mobile has-text-left-tablet has-text-white">
-							<h1 class="is-size-7-mobile is-size-4-tablet is-size-4-desktop is-size-3-widescreen has-text-weight-bold">{{ project }}</h1>
-							<span class="is-block is-size-7-mobile is-size-7-tablet is-size-6-desktop ">{{ job }}</span>
-							<span class="is-block is-size-7-mobile is-size-7-tablet is-size-6-desktop ">{{ type }}</span>
-						</div>
-						<div class="column is-1-mobile is-1-tablet has-text-right">
-							<a class="next mr-2" href="#">
-								<svg>
-									<use xlink:href="#nextIcon" />
-								</svg>
-							</a>
-						</div>				
-					</div>	
-				</div>	
-			{{/items}}
-		</script>
-
 
 		<script id="template" type="x-tmpl-mustache">
 			{{#items}}
-				<div id="{{id}}" class="details-highlights container is-fluid hidden" style="position: absolute; z-index:{{ zIndex }}">
 
-					<div class="columns">
-						<div class="column is-12-mobile is-hidden-tablet has-text-left-tablet">
-							<h1 class="is-size-7-mobile is-size-4-tablet is-size-4-desktop is-size-3-widescreen has-text-weight-bold">{{ project }}</h1>
-							<span class="is-block is-size-7-mobile is-size-7-tablet is-size-6-desktop ">{{ job }}</span>
-							<span class="is-block is-size-7-mobile is-size-7-tablet is-size-6-desktop ">{{ type }}</span>
+				<div id="{{id}}" class="details-highlights hidden" style="position: absolute; z-index:{{ zIndex }}">
+
+					<div class="has-background-black" style="">
+						<div style="background-color:{{ backgroundColor }}">
+							<div class="columns is-mobile is-vcentered is-gapless">
+								<div class="column is-1-mobile is-1-tablet has-text-left">
+									<a class="back ml-2" href="#">
+										<svg>
+											<use xlink:href="#previousIcon" />
+										</svg>
+									</a>
+								</div>
+								<div class="column is-10-mobile is-5-tablet has-text-center-mobile">
+									<img class="" src="{{background}}"/>
+								</div>
+								<div class="column is-5-tablet is-hidden-mobile has-text-left-tablet has-text-white">
+									<h1 class="is-size-7-mobile is-size-4-tablet is-size-4-desktop is-size-3-widescreen has-text-weight-bold">{{ project }}</h1>
+									<span class="is-block is-size-7-mobile is-size-7-tablet is-size-6-desktop ">{{ job }}</span>
+									<span class="is-block is-size-7-mobile is-size-7-tablet is-size-6-desktop ">{{ type }}</span>
+								</div>
+								<div class="column is-1-mobile is-1-tablet has-text-right">
+									<a class="next mr-2" href="#">
+										<svg>
+											<use xlink:href="#nextIcon" />
+										</svg>
+									</a>
+								</div>				
+							</div>	
 						</div>
 					</div>
 
-					<div class="columns py-4">		
-						<div class="column is-4 has-text-left-mobile has-text-right-tablet">
-							<h3 class="m-0 has-text-weight-semibold mr-5">Overview</h3>
+					<div class="container is-fluid">
+						<div class="columns">
+							<div class="column is-12-mobile is-hidden-tablet">
+								<h1 class="is-size-4-mobile has-text-weight-bold">{{ project }}</h1>
+								<span class="is-block is-size-6-mobile">{{ job }}</span>
+								<span class="is-block is-size-6-mobile">{{ type }}</span>
+							</div>
 						</div>
-						<div class="column is-5">
-							<p class="">{{{ overview }}}</p>
-						</div>
-						<div class="column is-3">
 
-						</div>
-					</div>
+						<div class="columns py-4">		
+							<div class="column is-4 has-text-left-mobile has-text-right-tablet">
+								<h3 class="m-0 has-text-weight-semibold mr-5">Overview</h3>
+							</div>
+							<div class="column is-5">
+								<p class="">{{{ overview }}}</p>
+							</div>
+							<div class="column is-3">
 
-					<div class="columns py-4">		
-						<div class="column is-4 has-text-left-mobile has-text-right-tablet">
-							<h3 class="m-0 has-text-weight-semibold mr-5">My Role</h3>
+							</div>
 						</div>
-						<div class="column is-5">
-							<p class="">{{{ approach }}}</p>
-						</div>
-						<div class="column is-3">
 
-						</div>
-					</div>					
+						<div class="columns py-4">		
+							<div class="column is-4 has-text-left-mobile has-text-right-tablet">
+								<h3 class="m-0 has-text-weight-semibold mr-5">My Role</h3>
+							</div>
+							<div class="column is-5">
+								<p class="">{{{ approach }}}</p>
+							</div>
+							<div class="column is-3">
 
-					<div class="columns py-4">
-						<div class="column is-4 has-text-left-mobile has-text-right-tablet">
-							<h3 class="m-0 has-text-weight-semibold mr-5">Deliverables</h3>
-						</div>						
-						<div class="column is-5">
-							<ul class="details-content ">
-							{{ #roles }}
-								<li>{{ role }}</li>
-							{{ /roles }}
-							</ul>
-						</div>
-						<div class="column is-3">
-							
-						</div>
-					</div>
+							</div>
+						</div>					
 
-					<div class="columns py-4">
-						<div class="column is-2">
+						<div class="columns py-4">
+							<div class="column is-4 has-text-left-mobile has-text-right-tablet">
+								<h3 class="m-0 has-text-weight-semibold mr-5">Deliverables</h3>
+							</div>						
+							<div class="column is-5">
+								<ul class="details-content ">
+								{{ #roles }}
+									<li>{{ role }}</li>
+								{{ /roles }}
+								</ul>
+							</div>
+							<div class="column is-3">
+								
+							</div>
+						</div>
 
-						</div>							
-						<div class="column is-8 has-text-centered">
-							<div class="details-screenshots">
-								{{ #screenshots }}
-									<h2>{{ title }}</h2>
-									<a href="images/{{ url }}" target="new"><img src="images/{{ url }}" class="career__screenshot"/></a>
-								{{ /screenshots }}
+						<div class="columns py-4">
+							<div class="column is-2">
+
+							</div>							
+							<div class="column is-8 has-text-centered">
+								<div class="details-screenshots">
+									{{ #screenshots }}
+										<h2>{{ title }}</h2>
+										<a href="images/{{ url }}" target="new"><img src="images/{{ url }}" class="career__screenshot"/></a>
+									{{ /screenshots }}
+								</div>							
+							</div>
+							<div class="column is-2">
+
 							</div>							
 						</div>
-						<div class="column is-2">
-
-						</div>							
 					</div>
 
 				</div>
@@ -170,14 +170,14 @@
 		</svg>
 
 		  <style>
-			#details-header svg {
+			#details svg {
 				cursor: pointer;	
 				fill: #ffffff;
 				opacity: .5;
 				height: 30px;
 				width: 30px;
 			}
-			#details-header svg:hover {
+			#details svg:hover {
 				fill: #ffffff;
 				opacity: .8;
 			}

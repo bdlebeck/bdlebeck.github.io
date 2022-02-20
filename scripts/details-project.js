@@ -2,21 +2,14 @@ var current = getCurrent();
 
 //Render the template
 var template = $('#template').html();
-var templateHeader = $('#template-header').html();
-Mustache.parse(template);
-Mustache.parse(templateHeader);	
+Mustache.parse(template);	
 var rendered = Mustache.render(template, project);
-var renderedHeader = Mustache.render(templateHeader, project);
-//Mustache.parse(templateHeader);
-//var rendered = Mustache.render(templateHeader, project);
+
 
 //Render the HTML
 $('#details').html(rendered);
-$('#details-header').html(renderedHeader);
 
 // Show currently selected
-$("#header"+current).removeClass('hidden');
-$("#header"+current).addClass('show');
 $("#"+current).removeClass('hidden');
 $("#"+current).removeClass('display-none');
 
@@ -103,14 +96,10 @@ $( ".page" ).click(function() {
 	var current = getCurrent();
 	var gotopage = this.getAttribute("page");
 	var currentItem = document.getElementById(current);
-	var currentHeaderItem = document.getElementById("header"+current);
 	var gotoItem = document.getElementById(gotopage);
-	var gotoHeaderItem = document.getElementById("header"+gotopage);
 	
 	currentItem.classList.add("hidden");
-	currentHeaderItem.classList.add("hidden");
 	gotoItem.classList.remove("hidden");
-	gotoHeaderItem.classList.remove("hidden");
 
 	//Update Pagination
 	var currentPage = document.getElementById('page'+current);
@@ -145,27 +134,14 @@ function getCircles() {
 	var total = getTotal() +1;
 	for (i=1;i<total;i++) {  
 
-		//var page = $("<a class='page' page='"+i+"'><i id='page"+i+"' class='fas fa-circle'></i>  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path d='M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z'/></svg></a>");
-		//var activepage = $("<a class='page' page='"+i+"'><i id='page"+i+"' class='fas fa-dot-circle active'></i></a>");
-
 		var page = $("<a class='page' page='"+i+"'><div id='page"+i+"' class='defaultPage'></div></a>");
 		var activepage = $("<a class='page' page='"+i+"'><div id='page"+i+"' class='currentPage'></div></a>");
-
-		//var page = $("<li><a id='page"+i+"' class='page pagination-link' page='"+i+"'>"+i+"</a></li>");
-		//var activepage = $("<a id='page"+i+"' class='page pagination-link is-current' page='"+i+"'>"+i+"</a>");
 		
-
 		if(i === current){
 			$('#pages').append(activepage);
-			//$('#page'+current+' .isActive').removeClass('is-hidden');
-			//$('#page'+current+' .isDefault').addClass('hidden');
-			//$('#page'+current+'.isDefault').addClass('is-hidden');
-			//$('#page'+current).removeClass('is-hidden');
 		}
 		else {
 			$('#pages').append(page);
-			//$('#page'+current).addClass('is-hidden');
-			//$('#pages .isDefault').removeClass('is-hidden');
 		}
 	}
 }
@@ -178,21 +154,12 @@ function navigateBack() {
 
 	if (current == 1) {
 		var last = total;
-
-		document.getElementById("header"+1).classList.add("hidden");
-		document.getElementById("header"+1).classList.remove("show");
-		document.getElementById("header"+last).classList.remove("hidden");
-		document.getElementById("header"+last).classList.add("show");
 		document.getElementById(1).classList.add("hidden");
 		document.getElementById(1).classList.remove("show");
 		document.getElementById(last).classList.remove("hidden");
 		document.getElementById(last).classList.add("show");
 	}
 	else {
-		document.getElementById("header"+current).classList.add("hidden");	
-		document.getElementById("header"+current).classList.remove("show");
-		document.getElementById("header"+back).classList.remove("hidden");
-		document.getElementById("header"+back).classList.add("show");
 		document.getElementById(current).classList.add("hidden");
 		document.getElementById(current).classList.remove("show");
 		document.getElementById(back).classList.remove("hidden");	
@@ -207,25 +174,14 @@ function navigateNext() {
 	var total = getTotal();
 	var last = getTotal();
 
-	var currentHeader = document.getElementById("header"+current);
-	var nextHeader = document.getElementById("header"+next);
-
 	if (current == total) {
 		next = 1;
-		document.getElementById("header"+last).classList.add("hidden");
-		document.getElementById("header"+last).classList.remove("show");
-		document.getElementById("header"+next).classList.remove("hidden");
-		document.getElementById("header"+next).classList.add("show");
 		document.getElementById(last).classList.add("hidden");
 		document.getElementById(last).classList.remove("show");
 		document.getElementById(next).classList.remove("hidden");	
 		document.getElementById(next).classList.add("show");
 	}
 	else {
-		document.getElementById("header"+current).classList.add("hidden");	
-		document.getElementById("header"+current).classList.remove("show");
-		document.getElementById("header"+next).classList.remove("hidden");
-		document.getElementById("header"+next).classList.add("show");
 		document.getElementById(current).classList.add("hidden");
 		document.getElementById(current).classList.remove("show");
 		document.getElementById(next).classList.remove("hidden");	
@@ -238,7 +194,6 @@ function hideThis(c){
     $(c).addClass("hidden");
 	$(c).one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",
 		function(event) {
-		/*$(c).addClass("display-none");*/
 	});	
 }
 function showThis(e){
@@ -246,8 +201,7 @@ function showThis(e){
 	$(e).addClass("show");
 	
 	$(e).one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",
-		function(event) {
-			//$(e).addClass("show");	
+		function(event) {	
 	});	
 }
 
