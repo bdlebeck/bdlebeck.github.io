@@ -162,3 +162,33 @@ a:hover {
   cursor: pointer;
   margin: 0 .2rem;
 }
+
+.bg1 {
+  background: darkred;
+  background: linear-gradient(180deg, darkred 0%, darkred 48%, #530000 100%);
+}
+
+.bg2 {
+  background: #228b20;
+  background: linear-gradient(180deg, #228b20 0%, #228b20 48%, #134d12 100%);
+}
+
+.bg3 {
+  background: #2F4F4F;
+}
+
+.bg4 {
+  background: #DAA520;
+}
+
+.bg5 {
+  background: #4B0082;
+}
+
+.bg6 {
+  background: #191970;
+}
+
+.bg7 {
+  background: #5F9EA0;
+}

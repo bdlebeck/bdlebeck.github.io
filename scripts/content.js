@@ -161,7 +161,7 @@ var project = {
 		{
 			id : "1",
 			project : "Specialty Patient Enrollment",
-			type : "Healthcare IT - Enterprise",
+			type : "Healthcare - Enterprise",
 			job : "UX Designer & Front-end Design",
 			company : "Surescripts",
 			date : "2017",
@@ -169,7 +169,7 @@ var project = {
 			overview : "Specialty Pharmacies offer medications to help treat rare and complex medical conditions. Specialty Patient Enrollment automates the enrollment process and connects prescribers and pharmacies with a streamlined experience and faster time to fill for patients.",
 			approach : "A new product to be built from the ground-up, I was embeded within an Agile Team as the User Interface Designer.  Iterate design based on feedback and create final deliverables.",
 			background : "../images/hero-specialty.png",	
-			backgroundColor : "#8B0000",
+			backgroundColor : "bg1",
 			zIndex: "10",
 			roles: [
 				{ "role" : "Workflow wireframes" },
@@ -190,7 +190,7 @@ var project = {
 		{
 			id : "2",
 			project : "Insights for Medication Adherence",
-			type : "Healthcare IT - Enterprise",
+			type : "Healthcare - Enterprise",
 			job : "UX Designer & Front-end Design",
 			company : "Surescripts",
 			date : "2015",
@@ -198,7 +198,7 @@ var project = {
 			overview : "As a physician, knowing if your patient has been taking their medication is valuable insight to the health of the patient.  This dashboard provides patient prescription adherence summaries during an office visit.  ",
 			approach : "Insights for Medication Adherence was new product to be built from the ground-up, I was embeded within an Agile Team as the User Interface Designer.  Iterate design based on feedback and create final deliverables.",
 			background : "../images/hero-insights.png",	
-			backgroundColor : "#228B22",
+			backgroundColor : "bg2",
 			zIndex: "9",
 
 			roles: [
@@ -219,7 +219,7 @@ var project = {
 		{
 			id : "3",
 			project : "Care Event Notifications",
-			type : "Healthcare IT - Enterprise",
+			type : "Healthcare - Enterprise",
 			job : "UX Designer & Front-end Design",
 			company : "Surescripts",
 			date : "2018",
@@ -227,7 +227,7 @@ var project = {
 			overview : "Physicians are alerted if a patient does not pick up their prescription, if no refills remain, or if a different provider prescribes a new medication to the patient.",
 			approach : "Care Event Notifications was new product to be built from the ground-up, I was embeded within an Agile Team as the User Interface Designer.  Iterate design based on feedback and create final deliverables.",
 			background : "../images/hero-care-event.png",
-			backgroundColor : "#2F4F4F",
+			backgroundColor : "bg3",
 			zIndex: "8",	
 
 			roles: [
@@ -246,7 +246,7 @@ var project = {
 		{
 			id : "4",
 			project : "CareManager",
-			type : "Healthcare IT - Enterprise",
+			type : "Healthcare - Enterprise",
 			job : "UX Designer & Front-end Design",
 			company : "Enli Health Intelligence",
 			date : "2014",
@@ -254,7 +254,7 @@ var project = {
 			overview : "Provides a health summary of the entire patient populations based on evidence-based guidelines. ENLI's CareManager Suite allows clinics insight into it's patient population and monitor high risk patients. The goal of Caremanager was to provide the doctor or clinic a quick look into the patients health records during the patient's appointment.  Colors were used to alert the doctor about disease category health scores.",
 			approach : "CareManager was new product to be built from the ground-up, I was embeded within an Agile Team as the User Interface Designer.  Iterate design based on feedback and create final deliverables.",
 			background : "../images/hero-caremanager.png",	
-			backgroundColor : "#DAA520",
+			backgroundColor : "bg4",
 			zIndex: "7",
 
 			roles: [
@@ -274,15 +274,15 @@ var project = {
 		{
 			id : "5",
 			project : "Central Worklist",
-			type : "Healthcare IT - Enterprise",
+			type : "Healthcare - Enterprise",
 			job : "UX Designer & Front-end Design",
 			company : "Enli Health Intelligence",
 			date : "2014",
 			intro : "",
-			overview : "Central Worklist Suite allows medical clinics insight into it's patient population and monitor high risk patients. Provides a health summary of the entire patient populations based on evidence-based guidelines. Colors were used to alert the doctor about disease category health scores.",
+			overview : "Central Worklist Suite allows medical clinics insight into it's patient population and monitor high risk patients. Provides a health summary of the entire patient populations based on evidence-based guidelines.",
 			approach : "Lead frontend designer for ENLI's CareManager Point-of-Care and CareManager Central Worklist.",
 			background : "../images/hero-central-worklist.png",	
-			backgroundColor : "#4B0082",
+			backgroundColor : "bg5",
 			zIndex: "6",
 
 			roles: [
@@ -303,7 +303,7 @@ var project = {
 		{
 			id : "6",
 			project : "Patient Portal",
-			type : "Healthcare IT - Enterprise",
+			type : "Healthcare - Enterprise",
 			job : "User Experience & Front-end Design",
 			company : "Enli Health Intelligence",
 			date : "2012",
@@ -311,7 +311,7 @@ var project = {
 			overview : "The Patient Portal provides healthcare providers a secure online presence including secure messaging, appointment, medical record access, and online payments.",
 			approach : "UI design and front-end development for Enli's 'Patient Portal' enterprise software. ",
 			background : "../images/hero-patient-portal.png",	
-			backgroundColor : "#191970",
+			backgroundColor : "bg6",
 			zIndex: "5",
 
 			roles: [
@@ -330,7 +330,7 @@ var project = {
 		{
 			id : "7",
 			project : "Design System",
-			type : "Healthcare IT - Enterprise",
+			type : "Healthcare - Enterprise",
 			job : "User Experience & Front-end Design",
 			company : "Surescripts",
 			date : "2019",
@@ -338,7 +338,7 @@ var project = {
 			overview : "At Surescripts, I had the oppertunity to work on several agile teams across multiple products.  To ensure consistency between products, I built and maintained a library of styled components to support a corporate styleguide.",
 			approach : "Built a styleguide for Surescripts brand look-and-feel.",
 			background : "../images/hero-caremanager.png",
-			backgroundColor : "#5F9EA0",	
+			backgroundColor : "bg7",	
 			zIndex: "4",
 
 			roles: [
