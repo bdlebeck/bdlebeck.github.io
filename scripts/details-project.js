@@ -5,19 +5,17 @@ var template = $('#template').html();
 Mustache.parse(template);	
 var rendered = Mustache.render(template, project);
 
-
 //Render the HTML
 $('#details').html(rendered);
 
 // Show currently selected
 $("#"+current).removeClass('hidden');
-$("#"+current).removeClass('display-none');
-
+$("#"+current).addClass('show');
 
 // Init
 getCircles();
 
-// Arrow keyboard navigation
+// Keyboard navigation
 document.addEventListener("keydown", function(event) {
 	if(event.keyCode === 39){
 		clickNext();
@@ -35,7 +33,6 @@ $('body').swipeLeft(function(){
 $('body').swipeRight(function(){
 	clickBack();
 })
-
 
 // Home click
 $( ".home" ).click(function() {
@@ -97,14 +94,12 @@ $( ".page" ).click(function() {
 	var gotopage = this.getAttribute("page");
 	var currentItem = document.getElementById(current);
 	var gotoItem = document.getElementById(gotopage);
-	
 	currentItem.classList.add("hidden");
 	gotoItem.classList.remove("hidden");
 
 	//Update Pagination
 	var currentPage = document.getElementById('page'+current);
 	var gotoPage = document.getElementById('page'+gotopage);
-
 	currentPage.classList.remove("currentPage");
 	currentPage.classList.add("defaultPage");
 	gotoPage.classList.remove("defaultPage");	
@@ -112,7 +107,6 @@ $( ".page" ).click(function() {
 
 	localStorage.setItem('current', gotopage);
 });
-
 
 function getCurrent() {
 	var current = parseInt(localStorage.getItem('current'));
@@ -205,7 +199,6 @@ function showThis(e){
 	});	
 }
 
-
 function updatePagination(e) {
 	var current = getCurrent();
 	var direction = e;
@@ -242,7 +235,6 @@ function updatePagination(e) {
 	else {
 		previousPage.add("currentPage");
 	}
-	
 }
 
 

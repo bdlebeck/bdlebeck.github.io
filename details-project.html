@@ -14,7 +14,7 @@
 	</head>
 	<body class="details" style="padding-top: .25rem;">
 
-		<div class="navbar">
+		<nav class="navbar">
 			<div class="columns is-mobile is-vcentered">
 				<div class="column has-text-center-mobile has-text-left-tablet">
 					<a class="" href="index.html">
@@ -26,15 +26,15 @@
 					<div id="pages" href="#" class="pagination2 is-inline is-hidden-mobile"></div>
 				</div>
 				<div class="column has-text-right">
-					<a href="index.html" id="resume" class="">
+					<a href="index.html" id="resume" class="active has-text-white mr-4">
 						Resume
 					</a>
-					<a href="details-project.html" id="portfolio" page="1" class="is-active">
+					<a href="details-project.html" id="portfolio" page="1" class="has-text-white">
 						Portfolio
 					</a>
 				</div>
 			</div>
-		</div>
+		</nav>
 
 		<main class="">	
 			<div class="is-fluid">			
@@ -48,32 +48,35 @@
 				<div id="{{id}}" class="details-highlights hidden" style="position: absolute; z-index:{{ zIndex }}">
 
 					<div class="has-background-black" style="">
-						<div class="{{ backgroundColor }}">
-							<div class="columns is-mobile is-vcentered is-gapless">
-								<div class="column is-1-mobile is-1-tablet has-text-left">
-									<a class="back ml-2" href="#">
-										<svg>
-											<use xlink:href="#previousIcon" />
-										</svg>
-									</a>
-								</div>
-								<div class="column is-10-mobile is-5-tablet has-text-center-mobile">
-									<img class="" src="{{background}}"/>
-								</div>
-								<div class="column is-5-tablet is-hidden-mobile has-text-left-tablet has-text-white">
-									<h1 class="is-size-7-mobile is-size-4-tablet is-size-4-desktop is-size-3-widescreen has-text-weight-bold">{{ project }}</h1>
-									<span class="is-block is-size-7-mobile is-size-7-tablet is-size-6-desktop ">{{ job }}</span>
-									<span class="is-block is-size-7-mobile is-size-7-tablet is-size-6-desktop ">{{ type }}</span>
-								</div>
-								<div class="column is-1-mobile is-1-tablet has-text-right">
-									<a class="next mr-2" href="#">
-										<svg>
-											<use xlink:href="#nextIcon" />
-										</svg>
-									</a>
-								</div>				
-							</div>	
-						</div>
+						<div class="columns is-mobile is-vcentered is-gapless {{ backgroundColor }}">
+							<div class="column is-1-mobile is-1-tablet has-text-left">
+								<a class="back ml-2" href="#">
+									<svg>
+										<use xlink:href="#previousIcon" />
+									</svg>
+								</a>
+							</div>
+							<div class="column is-10-mobile is-5-tablet has-text-center-mobile">
+								<img class="" alt="Project screenshot" 
+								sizes="(min-width: 770) 320px,
+										(min-width: 1024) 426px,
+										100vw" 
+								srcset="{{heroSmall}} 1200w,
+										{{heroLarge}} 1400w"/>
+							</div>
+							<div class="column is-5-tablet is-hidden-mobile has-text-left-tablet has-text-white">
+								<h1 class="is-size-7-mobile is-size-4-tablet is-size-4-desktop is-size-3-widescreen has-text-weight-bold">{{ project }}</h1>
+								<span class="is-block is-size-7-mobile is-size-7-tablet is-size-6-desktop ">{{ job }}</span>
+								<span class="is-block is-size-7-mobile is-size-7-tablet is-size-6-desktop ">{{ type }}</span>
+							</div>
+							<div class="column is-1-mobile is-1-tablet has-text-right">
+								<a class="next mr-2" href="#">
+									<svg>
+										<use xlink:href="#nextIcon" />
+									</svg>
+								</a>
+							</div>				
+						</div>	
 					</div>
 
 					<div class="container is-fluid">
@@ -156,32 +159,31 @@
 		<script type="text/javascript" src="scripts/touch.js"></script>
 
 		<svg display="none">
-			<symbol viewBox="0 0 18 18" id="previousIcon">
-				<circle cx="9" cy="9" r="9" />
-				<path d="M14 9H6M6 9L8.54545 7V11L6 9Z" stroke-width="3"/>
+			<symbol viewBox="0 0 27 118" fill="none" id="previousIcon">
+				<path d="M18.5 109L9 59L18.5 9" stroke-width="16" stroke-linecap="round"/>
 			</symbol>
 
-			<symbol viewBox="0 0 18 18" id="nextIcon">
-				<circle cx="9" cy="9" r="9" />
-				<path d="M4 9L12 9M12 9L9.45455 11L9.45455 7L12 9Z" stroke-width="3"/>
+			<symbol viewBox="0 0 27 118" id="nextIcon">
+				<path d="M9 9L18.5 59L9 109" stroke-width="16" stroke-linecap="round"/>
 			</symbol>
 		</svg>
 
 		  <style>
 			#details svg {
 				cursor: pointer;	
-				fill: #ffffff;
-				opacity: .5;
-				height: 30px;
-				width: 30px;
+				opacity: .2;
+				stroke: #000000;
+				height: 118px;
+				width: 27px;
 			}
 			#details svg:hover {
-				fill: #ffffff;
-				opacity: .8;
-			}
-			svg path {
-				opacity: .8;
 				stroke: #000000;
+				opacity: .6;
+			}
+
+			svg path {
+				/*opacity: .8;
+				stroke: #000000;*/
 			}		
 		  </style>
 

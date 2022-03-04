@@ -11,6 +11,7 @@ $font: 				17.6px;
 $font-color: 		#444444;
 
 
+
 html,
 body {
 	box-sizing: border-box;
@@ -46,13 +47,13 @@ a:hover {
 .show {
 	opacity : 1;
 	visibility : visible;
-	transition:opacity 1s, visibility .5s;
+	transition:opacity .5s, visibility 1s;
 }
 
 .hidden {
 	opacity : 0;
 	visibility : hidden;
-	transition:opacity 1s, visibility .5s;
+	transition:opacity .5s, visibility 1s;
 }
 
 .display-none {
@@ -101,18 +102,13 @@ a:hover {
 
 .navbar {
 	overflow: hidden;
-	background-color: #222222;
+	background-color: #111111;
 	position: fixed;
 	top: 0;	
 	width: 100%;
 	.columns {
 		width: 100%;
 	}
-}
-
-
-.home {
-	margin-top: 8rem;
 }
 
 
@@ -160,34 +156,46 @@ a:hover {
 	}	
 }
 
+$bgColor1: 		rgb(139,0,0);
+$bgColor2:		rgb(34,139,32);
+$bgColor3:		rgb(47,79,79);
+$bgColor4:		rgb(218,165,32);
+$bgColor5:		rgb(75,0,130);
+$bgColor6:		rgb(25,25,112);
+$bgColor7:		rgb(95,158,160);
 
 .bg1 {
-	background: rgb(139,0,0);
-	background: linear-gradient(180deg, rgba(139,0,0,1) 0%, rgba(139,0,0,1) 48%, rgba(83,0,0,1) 100%);
+	background: $bgColor1;
+	background: linear-gradient(180deg, $bgColor1 0%, $bgColor1 48%, darken($bgColor1, 20%) 100%);
 }
 
 .bg2 {
-	background: rgb(34,139,32);
-	background: linear-gradient(180deg, rgba(34,139,32,1) 0%, rgba(34,139,32,1) 48%, rgba(19,77,18,1) 100%);
+	background: $bgColor2;
+	background: linear-gradient(180deg, $bgColor2 0%, $bgColor2 48%, darken($bgColor2, 20%) 100%);
 }
 
-
 .bg3 {
-	background: #2F4F4F;
+	background: $bgColor3;
+	background: linear-gradient(180deg, $bgColor3 0%, $bgColor3 48%, darken($bgColor3, 20%) 100%);
 }
 
 .bg4 {
-	background: #DAA520;
+	background: $bgColor4;
+	background: linear-gradient(180deg, $bgColor4 0%, $bgColor4 48%, darken($bgColor4, 20%) 100%);
 }
 
 .bg5 {
-	background: #4B0082;
+	background: $bgColor5;
+	background: linear-gradient(180deg, $bgColor5 0%, $bgColor5 48%, darken($bgColor5, 20%) 100%);
 }
 
 .bg6 {
-	background: #191970;
+	background: $bgColor6;
+	background: linear-gradient(180deg, $bgColor6 0%, $bgColor6 48%, darken($bgColor6, 20%) 100%);
 }
 
 .bg7 {
-	background: #5F9EA0;
+	background: $bgColor7;
+	background: linear-gradient(180deg, $bgColor7 0%, $bgColor7 48%, darken($bgColor7, 20%) 100%);
 }
+

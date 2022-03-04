@@ -13,12 +13,10 @@
 
 		<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 	</head>
-	<body class="home">
+	<body class="" style="padding-top: .25rem;">
 
-		<div class="">
-
-			<div class="navbar">
-				<div class="columns is-mobile is-vcentered">
+			<nav class="navbar">
+				<div class="columns is-mobile is-vcentered">				
 					<div class="column has-text-center-mobile has-text-left-tablet">
 						<a class="" href="index.html">
 							<img src="images/BDLogo.png" style="max-height:30px">
@@ -29,21 +27,49 @@
 						<div id="pages" href="#" class="pagination2 is-inline is-hidden-mobile"></div>
 					</div>
 					<div class="column has-text-right">
-						<a href="index.html" id="resume" class="">
+						<a href="index.html" id="resume" class="active has-text-white mr-4">
 							Resume
 						</a>
-						<a href="details-project.html" id="portfolio" page="1" class="is-active">
+						<a href="details-project.html" id="portfolio" page="1" class="has-text-white">
 							Portfolio
 						</a>
-					</div>
+					</div>					
 				</div>
-			</div>
+			</nav>
 	
-
 			<main class="mt-6 pb-6">
 
-				<div class="about">
+				<div class="has-background-black" style="">
+					<div class="columns is-mobile is-vcentered is-gapless bg3">
+						<div class="column is-1-mobile is-1-tablet has-text-left">
+						</div>						
+						<div class="column is-10-mobile is-5-tablet has-text-center-mobile">
+							<img class="" alt="Project screenshot" 
+							sizes="(min-width: 770) 320px,
+									(min-width: 1024) 426px,
+									100vw" 
+							srcset="images/hero-resume-320.png 1200w,
+									images/hero-resume-1024.png 1400w"/>
+						</div>
+						<div class="column is-5-tablet is-hidden-mobile has-text-left-tablet has-text-white">
+							<h1 class="is-size-7-mobile is-size-4-tablet is-size-4-desktop is-size-3-widescreen has-text-weight-bold">Brian D. Lebeck</h1>
+							<span class="is-block is-size-7-mobile is-size-7-tablet is-size-6-desktop ">UX Designer</span>
+							<span class="is-block is-size-7-mobile is-size-7-tablet is-size-6-desktop ">Portland, OR.</span>
+							<a href="https://www.linkedin.com/in/bdlebeck/" target="_blank" title="LinkedIn" class="mr-3">
+								<i class="fab fa-linkedin-in has-text-white"></i>
+							</a>
+							<a href="https://www.linkedin.com/in/bdlebeck/" target="_blank" title="Download Resume">
+								<i class="fas fa-file-pdf has-text-white" class="mr-3"></i>
+							</a>							
+						</div>
+						<div class="column is-1-mobile is-1-tablet has-text-right">
+						</div>										
+					</div>	
+				</div>	
 
+				<div class="about is-hidden">
+					<div class="column is-1-mobile is-1-tablet has-text-left">
+					</div>
 					<div class="columns is-tablet container is-fluid"> 
 						<div class="column is-12-mobile is-4-tablet has-text-centered-mobile has-text-right-tablet">
 							<img src="images/headshot.png" class="" style="height:120px"/>
@@ -67,10 +93,10 @@
 
 				<div class="container is-fluid">
 					<div class="columns is-tablet my-6">
-						<div class="column is-4 has-text-left-mobile has-text-right-tablet">
+						<div class="column is-3 has-text-left-mobile has-text-right-tablet">
 							<h3 class="m-0 has-text-weight-semibold mr-5">About Me</h3>
 						</div>
-						<div class="column is-5">
+						<div class="column is-6">
 							<div class="block">
 								<p>
 									I have over 17 years of hands-on work experience in enterprise UX design, rapid prototyping, and front-end design for enterprise software. I practice user centered design principles basing design decisions on user needs and business goals.
@@ -84,10 +110,10 @@
 					</div>	
 
 					<div class="columns is-tablet mb-6">
-						<div class="column is-4 has-text-left-mobile has-text-right-tablet">
+						<div class="column is-3 has-text-left-mobile has-text-right-tablet">
 							<h3 class="m-0 has-text-weight-semibold mr-5" style="line-height:1rem">Skill Summary</h3>	
 						</div>
-						<div class="column is-5">
+						<div class="column is-6">
 							<div class="columns">
 								<div class="column is-6">
 									<div class="block">
@@ -110,10 +136,10 @@
 
 					<div class="career-projects background">
 						<div class="columns is-tablet">
-							<div class="column is-4 has-text-left-mobile has-text-right-tablet">
+							<div class="column is-3 has-text-left-mobile has-text-right-tablet">
 								<h3 class="m-0 has-text-weight-semibold mr-5" style="line-height:1rem">Experience</h3>	
 							</div>					
-							<div class="column career is-5">
+							<div class="column career is-6">
 								<div id="career"></div>
 							</div>
 							<div class="column is-3"></div>
@@ -123,10 +149,10 @@
 					<div class="education background">
 
 						<div class="columns is-tablet"">
-							<div class="column is-4  has-text-left-mobile has-text-right-tablet">
+							<div class="column is-3 has-text-left-mobile has-text-right-tablet">
 								<h3 class="has-text-weight-semibold mr-5" style="line-height:1rem">Education</h3>
 							</div>
-							<div class="column is-5">
+							<div class="column is-6">
 
 								<div class="block">
 									<span class="is-block">Oregon State University - Corvallis, Oregon</span> <span>College of Liberal Arts and Sciences, Multimedia Concentration</span><br/>
@@ -156,7 +182,6 @@
 
 			</main>
 
-		</div>
 	</body> 
 
 

@@ -33,13 +33,13 @@ a:hover {
 .show {
   opacity: 1;
   visibility: visible;
-  transition: opacity 1s, visibility .5s;
+  transition: opacity .5s, visibility 1s;
 }
 
 .hidden {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 1s, visibility .5s;
+  transition: opacity .5s, visibility 1s;
 }
 
 .display-none {
@@ -106,7 +106,7 @@ a:hover {
 
 .navbar {
   overflow: hidden;
-  background-color: #222222;
+  background-color: #111111;
   position: fixed;
   top: 0;
   width: 100%;
@@ -114,10 +114,6 @@ a:hover {
 
 .navbar .columns {
   width: 100%;
-}
-
-.home {
-  margin-top: 8rem;
 }
 
 #details-header {
@@ -165,30 +161,35 @@ a:hover {
 
 .bg1 {
   background: darkred;
-  background: linear-gradient(180deg, darkred 0%, darkred 48%, #530000 100%);
+  background: linear-gradient(180deg, darkred 0%, darkred 48%, #250000 100%);
 }
 
 .bg2 {
   background: #228b20;
-  background: linear-gradient(180deg, #228b20 0%, #228b20 48%, #134d12 100%);
+  background: linear-gradient(180deg, #228b20 0%, #228b20 48%, #0e380d 100%);
 }
 
 .bg3 {
-  background: #2F4F4F;
+  background: darkslategray;
+  background: linear-gradient(180deg, darkslategray 0%, darkslategray 48%, #090f0f 100%);
 }
 
 .bg4 {
-  background: #DAA520;
+  background: goldenrod;
+  background: linear-gradient(180deg, goldenrod 0%, goldenrod 48%, #816213 100%);
 }
 
 .bg5 {
-  background: #4B0082;
+  background: indigo;
+  background: linear-gradient(180deg, indigo 0%, indigo 48%, #10001c 100%);
 }
 
 .bg6 {
-  background: #191970;
+  background: midnightblue;
+  background: linear-gradient(180deg, midnightblue 0%, midnightblue 48%, #06061d 100%);
 }
 
 .bg7 {
-  background: #5F9EA0;
+  background: cadetblue;
+  background: linear-gradient(180deg, cadetblue 0%, cadetblue 48%, #395f60 100%);
 }
